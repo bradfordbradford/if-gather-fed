@@ -1,0 +1,89 @@
+!!!
+
+%html{:lang => "en"}
+
+    %head
+        / Meta
+        %meta{:charset => "UTF-8"}
+        %title If: Gather --dev
+        %meta{:name=>"description", :content=>"If:Gather is…"}
+        %meta{:name=>"author", :content=>"If:Gather"}
+        %meta{:name=>"viewport", :content=>"width=device-width,initial-scale=1"}
+        / Style
+        %link{:rel => "stylesheet", :href => "/css/site.css"}
+        / Fonts
+        %script{:type => "text/javascript", :src => "//use.typekit.net/ahk2bse.js"}
+        %script{:type => "text/javascript"} try{Typekit.load();}catch(e){}
+
+        / Scripts
+        %script{:rel => "javascript", :src => "../js/vendor/modernizr-custom.2.6.2.js"}
+
+    %body.home
+
+        #site-wrap
+
+            %section.site-header
+                .brand
+                    %h1
+                        %a{:href => "index.html"}
+                            IF:GATHERING
+
+
+                %nav.site-nav
+                    %ul
+                        %li
+                            %a.active{:href => "gathering"}
+                                Gathering
+
+                        %li
+                            %a{:href => "what-if"}
+                                What If?
+
+                        %li
+                            %a{:href => "equip"}
+                                Equip
+
+                        %li
+                            %a{:href => "unleash"}
+                                Unleash
+
+                        %li
+                            %a{:href => "connect"}
+                                Connect
+
+                        %li
+                            %a{:href => "who-we-are"}
+                                Who We Are
+
+
+            %section.content-wrap
+
+                .inner
+                    %h4
+                        we exist to gather, equip and unleash
+                        the next generation of women to
+                        live out their purpose.
+
+
+
+            %footer.site-footer
+                .inner
+                    .site-map
+                        %a{:href => "#"}
+                            Gathering
+                        %a{:href => "#"}
+                            What If?
+                        %a{:href => "#"}
+                            Equip
+                        %a{:href => "#"}
+                            Unleash
+                        %a{:href => "#"}
+                            Connect
+                        %a{:href => "#"}
+                            Who We Are
+
+                    .brand
+                        %img{:src => "#", :alt => ""}/
+
+
+

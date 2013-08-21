@@ -1,0 +1,32 @@
+
+
+
+
+
+
+// ----------------------
+// Structure: Breakpoints
+// ----------------------
+
+
+
+// For A World of Devices
+// ------------------------
+@mixin breakpoint($point) {
+  @if $point == large-monitors {
+    @media (min-width: 1250px) { @content; }
+  }
+  @else if $point == correct-landscape {
+    @media (max-width: 1038px)  { @content; }
+  }
+  @else if $point == tablet-H {
+    @media (max-width: 979px) { @content; }
+  }
+  @else if $point == tablet-V {
+    @media (max-width: 768px)  { @content; }
+  }
+
+  @else if $point == phones {
+    @media (max-width: 480px)  { @content; }
+  }
+}

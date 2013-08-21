@@ -1,0 +1,16 @@
+
+
+
+
+
+
+
+ul.image-list {
+    @include grid-row();
+    list-style:none;
+
+    &.four-across li {
+        @include grid-column(3);
+        padding:0 4px;
+    }
+}
