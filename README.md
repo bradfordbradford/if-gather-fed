@@ -1,4 +1,4 @@
-![image](https://github.com/lindseybradford/sse-fed/blob/master/images/logo-color.jpg?raw=true)
+![image](https://github.com/bradfordbradford/if-gather-fed/blob/master/images/logos/ifgather-logo-drk-large+@2x.png?raw=true)
 =====================
 
 
