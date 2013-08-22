@@ -38,7 +38,7 @@
   // "foundation/components/keystrokes",
   // "foundation/components/labels",
   // "foundation/components/inline-lists",`
-  "foundation/components/pagination";
+  "foundation/components/pagination",
   // "foundation/components/panels",
   // "foundation/components/pricing-tables",
   // "foundation/components/progress-bars",
@@ -49,7 +49,7 @@
   // "foundation/components/tables",
   // "foundation/components/thumbs",
   // "foundation/components/tooltips",
-  // "foundation/components/dropdown";
+  "foundation/components/dropdown";
 
 
 
@@ -57,18 +57,33 @@
 @import
 
   // Structure
-  "if-gather/structure/base",
-  "if-gather/structure/breakpoints",
-  "if-gather/structure/fonts",
-  "if-gather/structure/type",
+  "if-gather/structure/ig_fonts",
+  "if-gather/structure/ig_breakpoints",
+  "if-gather/structure/ig_base",
+  "if-gather/structure/ig_type",
 
   // Components
   // "if-gather/components/…"
-  "if-gather/components/image-list",
+  "if-gather/components/ig_image-list",
+  "if-gather/components/ig_post-list",
+  "if-gather/components/ig_buttons",
+  "if-gather/components/ig_forms",
 
   // Utilities
   // "if-gather/utilities/…"
-  "if-gather/utilities/image-hover";
+  "if-gather/utilities/ig_image-hover",
+  "if-gather/utilities/ig_patterns",
+
+// Layouts
+  // "if-gather/layouts/…"
+  "if-gather/layouts/ig_home",
+  "if-gather/layouts/ig_gathering",
+  "if-gather/layouts/ig_whatif",
+  "if-gather/layouts/ig_equip",
+  "if-gather/layouts/ig_unleash"
+  ;
+
+
 
 
 

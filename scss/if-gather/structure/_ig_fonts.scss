@@ -1,0 +1,39 @@
+
+
+
+
+
+
+
+
+
+
+
+
+// ----------------------------
+// Structure: Font Faces
+// ----------------------------
+
+@font-face {
+    font-family: "Sackers-Roman";
+    src: url('../webfonts/typefaces/SackersClassicRomanStd-Lt_0.otf')
+}
+
+@font-face {
+    font-family: "Sackers-Gothic";
+    src: url('../webfonts/typefaces/SackersGothicStd-Light.otf')
+}
+
+@font-face {
+    font-family: 'EntypoRegular';
+    src: url('../webfonts/entypo/entypo.eot');
+    src: url('../webfonts/entypo/entypo.eot?#iefix') format('embedded-opentype'),
+         url('../webfonts/entypo/entypo.woff') format('woff'),
+         url('../webfonts/entypo/entypo.ttf') format('truetype'),
+         url('../webfonts/entypo/entypo.svg#EntypoRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+

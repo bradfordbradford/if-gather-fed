@@ -1,0 +1,68 @@
+
+
+
+
+
+
+// Layout: Gathering
+// -----------------
+body.gathering {
+
+    // More Info
+    .more-info-wrap {
+        header {
+            margin-bottom: 24px;
+            clear:both;
+
+            h3 {
+                font-size: emCalc(14);
+            }
+        }
+    }
+
+
+    // Register Now
+    .register-now {
+        @include rgrid(12, 9);
+        @include center-cols;
+        padding: 20px 0px 12px;
+        margin: 24px auto 40px;
+
+        h2 {
+            font-size: emCalc(24);
+            width: 300px;
+            margin: 0 auto;
+
+            &:after {
+                top:5px;
+                right: -30px;
+            }
+
+        }
+
+        @include breakpoint(tablet-V) {
+            h2 {
+                font-size:emCalc(18);
+                width: 230px;
+
+                &:after {
+                    top: 2px;
+                }
+            }
+        }
+    }
+
+
+    // Info Columns
+    .info-col {
+        margin: 40px auto;
+        @include rgrid(12, 4);
+
+        h4 {
+            font-size: emCalc(16);
+        }
+    }
+
+
+
+}

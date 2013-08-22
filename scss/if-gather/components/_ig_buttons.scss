@@ -1,0 +1,52 @@
+
+
+
+
+
+
+// ----------------------------
+// Component: Button
+// ----------------------------
+.button {
+    box-shadow: none;
+    background: rgba(0, 0, 0, 0);
+    color: $primary-color;
+    font-family: $sans-gothic;
+    position: relative;
+    width: 100%;
+    padding: .8em;
+
+    &:after {
+        content: '';
+        position: absolute;
+        font-family: "EntypoRegular";
+        font-size: emCalc(24);
+        padding-top: 4px;
+        top: 0px;
+        right: 10px;
+        padding-left: 10px;
+        height: 100%;
+        border-left: 1px solid $primary-color;
+    }
+
+    &:hover {
+        background: transparent;
+        color: inherit;
+    }
+
+}
+
+.dropdown.button {
+    padding: 0.5em .8em;
+}
+
+// Dropdown Menu
+.f-dropdown {
+    max-width: 66%;
+
+    li a {
+        padding:8px 12px 4px;
+    }
+}
+
+

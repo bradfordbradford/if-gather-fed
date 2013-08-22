@@ -1,0 +1,42 @@
+
+
+
+
+
+
+// ----------------------------
+// Component: Forms
+// ----------------------------
+input.search {
+    box-shadow: none;
+    background: rgba(0, 0, 0, 0);
+    color: $primary-color;
+    font-family: $sans-gothic;
+    position: relative;
+    width: 100%;
+
+
+    &:after {
+        content: '';
+        position: absolute;
+        font-family: "EntypoRegular";
+        font-size: emCalc(24);
+        padding-top: 9px;
+        top: 0px;
+        right: 10px;
+        padding-left: 10px;
+        height: 100%;
+        border-left: 1px solid $primary-color;
+    }
+
+
+}
+
+
+
+input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], textarea {
+    height: auto;
+    padding: .4em .8em;
+    // padding-left: 1.5em;
+    font-size: 1em;
+}

@@ -1,0 +1,24 @@
+
+
+
+
+
+
+// ----------------------------
+// Component: Image List
+// ----------------------------
+
+ul.image-list {
+    @include grid-row();
+    list-style:none;
+
+    &.four-across li {
+        @include rgrid(12, 3);
+        padding: 4px;
+    }
+
+    &.three-across li {
+        @include rgrid(12, 4);
+        padding: 4px;
+    }
+}

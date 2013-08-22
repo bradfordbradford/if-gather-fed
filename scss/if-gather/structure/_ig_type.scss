@@ -1,0 +1,211 @@
+
+
+
+
+
+
+// --------------------
+// Structure: Type
+// --------------------
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+h1 {
+
+}
+
+h2 {
+    letter-spacing: .4em;
+    line-height: emCalc(24);
+}
+
+h3 {
+    line-height: emCalc(24);
+    letter-spacing: .24em;
+}
+
+h4 {
+
+}
+
+p {
+    line-height: 1.9em;
+}
+
+
+hr {
+    width: 32px;
+    margin: 1.25em auto 1.1875em;
+
+    &.dotted {
+        border-style:hidden;
+        position: relative;
+        margin: 0.25em auto 2.1875em;
+
+        &:after {
+            position: absolute;
+            content: '............';
+            letter-spacing: .24em;
+            top: -12px;
+            left: 50%;
+            margin-left: -40px;
+        }
+    }
+
+    &.full {
+        width: 100%
+    }
+}
+
+
+header.page-header {
+    margin:40px auto;
+    text-align: center;
+
+    h2 {
+        font-size: emCalc(28);
+    }
+
+    p {
+        @include rgrid(12, 7);
+        @include center-cols;
+        letter-spacing: .12em;
+        font-size: emCalc(16);
+    }
+}
+
+.emph {
+    font-size: emCalc(16);
+    font-style: italic;
+    text-transform: none;
+    font-family: $serif-generic;
+    font-weight: 200;
+    margin: 12px auto 14px;
+    text-align: center;
+}
+
+.ems-before-after {
+    position: relative;
+    border-top: 1px solid $primary-color;
+    width: 32px;
+    top: -4px;
+    display: inline-block;
+    margin: 0 12px;
+}
+
+.sans {
+    font-family: $sans-gothic;
+}
+
+
+.ornament {
+    background: url("../images/ornaments/ifgather-ornaments.png") no-repeat;
+}
+
+
+.newspaper-col {
+    @include columns(2 8em);
+    padding: 0 15px;
+
+    @include breakpoint(tablet-V) {
+        @include columns(1);
+    }
+}
+
+// Darts
+.dart-wht-right {
+    display: inline-block;
+    background-position:-68px -62px;
+    height: 14px;
+    width: 30px;
+}
+
+.dart-blk-right {
+    display: inline-block;
+    background-position:-68px -24px;
+    height: 14px;
+    width: 30px;
+}
+
+.dart-wht-left {
+    display: inline-block;
+    background-position:-14px -64px;
+    height: 14px;
+    width: 30px;
+}
+
+.dart-blk-left {
+    display: inline-block;
+    background-position:-14px -24px;
+    height: 14px;
+    width: 30px;
+}
+
+.dart-left {
+    position: relative;
+
+    &:before {
+        content: '';
+        left: 60px;
+        position: absolute;
+        background: url("../images/ornaments/ifgather-ornaments.png") no-repeat -14px -24px;
+        height: 14px;
+        width: 30px;
+        top: 2px;
+    }
+}
+
+.dart-right {
+    position: relative;
+
+    &:after {
+        content: '';
+        right: 80px;
+        position: absolute;
+        background: url("../images/ornaments/ifgather-ornaments.png") no-repeat -68px -24px;
+        height: 14px;
+        width: 30px;
+        top: 2px;
+    }
+}
+
+// Brackets
+.brackets {
+    position: relative;
+    padding:0 60px;
+
+    &:before {
+        left: 0;
+        content: '{';
+    }
+
+    &:after {
+        right: 0;
+        content: '}';
+    }
+
+    &.lrg {
+            &:before, &:after {
+            position: absolute;
+            font-family: $serif-roman;
+            font-size: emCalc(186);
+            top: 0;
+        }
+    }
+
+    &.med {
+            &:before, &:after {
+            position: absolute;
+            font-family: $serif-roman;
+            font-size: emCalc(120);
+            top: 0;
+        }
+    }
+
+
+}
+
+

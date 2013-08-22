@@ -1,0 +1,32 @@
+
+
+
+
+
+
+// ----------------------------
+// Utility: Patterns
+// ----------------------------
+.cream-pattern {
+    background: url(../images/patterns/cream.png) repeat;
+    width: auto;
+    display: block;
+
+    &.shadow {
+        -moz-box-shadow: inset 0 0 16px rgba(0, 0, 0, 0.1);
+        -webkit-box-shadow: inset 0 0 16px rgba(0, 0, 0, 0.1);
+        box-shadow: inset 0 0 16px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.sage-pattern {
+    background: url(../images/patterns/sage.png) repeat;
+    width: auto;
+    display: block;
+}
+
+.grey-pattern {
+    background: url(../images/patterns/grey.png) repeat;
+    width: auto;
+    display: block;
+}

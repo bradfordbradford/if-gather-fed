@@ -52,8 +52,8 @@ $em-base: 16 !default;
 $default-float: left;
 
 // $body-bg: #fff;
-// $body-font-color: #222;
-// $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$body-font-color: #423836;
+$body-font-family: "Georgia", serif;
 // $body-font-weight: normal;
 // $body-font-style: normal;
 
@@ -67,13 +67,14 @@ $default-float: left;
 
 // Base Colors
 
-$primary-color: #58585A;
+$primary-color: #5f5e5f;
 $secondary-color: #D0B26F;
 $alert-color: #D0B26F;
 $success-color: #58585A;
 
 // Utility Colors
-$white: #f1f1f1;
+$white: #fff;
+
 
 // Make sure border radius matches unless we want it different.
 
@@ -127,6 +128,18 @@ $white: #f1f1f1;
 // $landscape: "only screen and (orientation: landscape)";
 // $portrait: "only screen and (orientation: portrait)";
 
+
+@mixin center-cols {
+  margin: auto auto;
+  float:none
+}
+
+@mixin rgrid($phone-grid:"", $desktop-grid:""){
+    @extend .small-#{$phone-grid};
+    @extend .large-#{$desktop-grid};
+    @extend .columns;
+}
+
 //// Cursors
 
 //Custom use example -> $cursor-default-value: url(http://cursors-site.net/path/to/custom/cursor/default.cur),progress;
@@ -161,7 +174,11 @@ $white: #f1f1f1;
 // Typography Variables
 //
 
-$serif-1: "Sackers-Roman";
+$serif-roman: "Sackers-Roman";
+$sans-gothic: "Sackers-Gothic";
+$serif-generic: "Georgia", "Times New Roman", Georgia, serif;
+$sans-generic: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+
 
 // Control header font styles
 
@@ -169,7 +186,7 @@ $header-font-family: "Sackers-Roman";
 // "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif
 $header-font-weight: normal;
 // $header-font-style: normal;
-// $header-font-color: #222;
+$header-font-color: #5f5e5f;
 // $header-line-height: 1.4;
 // $header-top-margin: .2em;
 // $header-bottom-margin: .5em;
@@ -178,8 +195,8 @@ $header-font-weight: normal;
 // Control header font sizes
 
 // $h1-font-size: emCalc(44);
-$h2-font-size: emCalc(32);
-// $h3-font-size: emCalc(27);
+$h2-font-size: emCalc(22);
+$h3-font-size: emCalc(18);
 // $h4-font-size: emCalc(23);
 // $h5-font-size: emCalc(18);
 // $h6-font-size: 1em;
@@ -201,8 +218,8 @@ $h2-font-size: emCalc(32);
 
 // $paragraph-font-family: inherit;
 // $paragraph-font-weight: normal;
-// $paragraph-font-size: 1em;
-// $paragraph-line-height: 1.6;
+$paragraph-font-size: emCalc(15);
+$paragraph-line-height: 1.6;
 // $paragraph-margin-bottom: emCalc(20);
 // $paragraph-aside-font-size: emCalc(14);
 // $paragraph-aside-line-height: 1.35;
@@ -225,7 +242,7 @@ $h2-font-size: emCalc(32);
 
 // $hr-border-width: 1px;
 // $hr-border-style: solid;
-// $hr-border-color: #ddd;
+$hr-border-color: #5f5e5f;
 // $hr-margin: emCalc(20);
 
 // Style lists
@@ -298,13 +315,13 @@ $h2-font-size: emCalc(32);
 // $input-font-size: emCalc(14);
 // $input-bg-color: #fff;
 // $input-focus-bg-color: darken(#fff, 2%);
-// $input-border-color: darken(#fff, 20%);
-// $input-focus-border-color: darken(#fff, 40%);
+$input-border-color: $primary-color;
+$input-focus-border-color: $primary-color;
 // $input-border-style: solid;
 // $input-border-width: 1px;
 // $input-disabled-bg: #ddd;
-// $input-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
-// $input-include-glowing-effect: true;
+$input-box-shadow: none; // inset 0 1px 2px rgba(0,0,0,0.1);
+$input-include-glowing-effect: false;
 
 // We use these to style the fieldset border and spacing.
 

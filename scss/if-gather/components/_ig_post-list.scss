@@ -1,0 +1,32 @@
+
+
+
+
+
+
+// ----------------------------
+// Component: Post List
+// ----------------------------
+
+ul.post-list {
+    list-style: none;
+
+    li {
+
+        border-bottom: 1px $primary-color solid;
+
+        &:first-child {
+            border-top:1px $primary-color solid;
+        }
+
+        &:last-child {
+            border-bottom:0px;
+        }
+    }
+
+
+    .dart-blk-right {
+        margin:6px 15px 0 0;
+        float:right;
+    }
+}

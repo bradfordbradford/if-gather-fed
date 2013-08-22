@@ -1,0 +1,160 @@
+!!!
+
+%html{:lang => "en"}
+
+    %head
+        / Meta
+        %meta{:charset => "UTF-8"}
+        %title If: Gather --dev
+        %meta{:name=>"description", :content=>"If:Gather is…"}
+        %meta{:name=>"author", :content=>"If:Gather"}
+        %meta{:name=>"viewport", :content=>"width=device-width,initial-scale=1"}
+        / Style
+        %link{:rel => "stylesheet", :href => "/css/site.css"}
+        / Fonts
+        %script{:type => "text/javascript", :src => "//use.typekit.net/ahk2bse.js"}
+        %script{:type => "text/javascript"} try{Typekit.load();}catch(e){}
+
+        / Scripts
+        %script{:rel => "javascript", :src => "../js/vendor/modernizr-custom.2.6.2.js"}
+
+    %body.equip
+
+        #site-wrap
+
+            %section.site-header
+                .brand
+                    %a{:href => "index.html"}
+                        %img{:src => "../images/logos/ifgather-logo-drk-large+@2x.png", :alt => ""}/
+                        %h1 IF:GATHERING
+
+
+
+                %nav.site-nav
+                    %ul
+                        %li
+                            %a{:href => "gathering"}
+                                Gathering
+
+                        %li
+                            %a{:href => "what-if"}
+                                What If?
+
+                        %li.active
+                            %a{:href => "equip"}
+                                Equip
+
+                        %li
+                            %a{:href => "unleash"}
+                                Unleash
+
+                        %li
+                            %a{:href => "connect"}
+                                Connect
+
+                        %li
+                            %a{:href => "who-we-are"}
+                                Who We Are
+
+
+            %section.content-wrap.equip-post-list
+
+                .row
+
+                    %section.hero-img
+                        %img{:src => "../images/content/bg-placeholder.jpg", :alt => ""}/
+
+                    %section.post-wrap.equip-post-list
+                        %header.title.main
+                            %h2 Latest Posts
+
+                        .sort-options
+                            .inner.brackets.med
+                                %a.dropdown.button{:href => "#", 'data-dropdown' => 'sort-options-list'}
+                                    sort by
+
+
+
+                                %ul#sort-options-list.f-dropdown
+                                    %li
+                                        %a{:href => "tag"} Tag One
+                                    %li
+                                        %a{:href => "#"} Tag Two
+                                    %li
+                                        %a{:href => "#"} Tag Three
+
+                                %form{:action => "/search", :method => 'get'}
+                                    %input.search{:type => "text", :placeholder => "search"}/
+
+
+
+                        %ul.post-list
+                            %li
+                                %a{:href => "equip-post"}
+                                    %header.article-header
+                                        %h4 Registration Open
+                                        .date 10.14.13
+                                    %p
+                                        Letterpress selvage ullamco viral reprehenderit locavore, gastropub Truffaut leggings readymade
+                                        %span.dart-blk-right.ornament
+
+                            %li
+                                %a{:href => "equip-post"}
+                                    %header.article-header
+                                        %h4 Registration Open
+                                        .date 10.14.13
+                                    %p
+                                        Letterpress selvage ullamco viral reprehenderit locavore, gastropub Truffaut leggings readymade
+                                        %span.dart-blk-right.ornament
+
+                            %li
+                                %a{:href => "equip-post"}
+                                    %header.article-header
+                                        %h4 Registration Open
+                                        .date 10.14.13
+                                    %p
+                                        Letterpress selvage ullamco viral reprehenderit locavore, gastropub Truffaut leggings readymade
+                                        %span.dart-blk-right.ornament
+
+                            %li
+                                %a{:href => "equip-post"}
+                                    %header.article-header
+                                        %h4 Registration Open
+                                        .date 10.14.13
+                                    %p
+                                        Letterpress selvage ullamco viral reprehenderit locavore, gastropub Truffaut leggings readymade
+                                        %span.dart-blk-right.ornament
+
+
+
+
+
+
+
+
+            %footer.site-footer
+                .inner
+                    .site-map
+                        %a{:href => "gathering"}
+                            Gathering
+                        %a{:href => "what-if"}
+                            What If?
+                        %a{:href => "equip"}
+                            Equip
+                        %a{:href => "unleash"}
+                            Unleash
+                        %a{:href => "connect"}
+                            Connect
+                        %a{:href => "who-we-are"}
+                            Who We Are
+
+                    .brand
+                        %img{:src => "../images/logos/ifgather-logo-white-sm.png", :alt => ""}/
+
+
+    / More Scripts
+    %script{:rel => "javascript", :src => "https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"}
+    %script{:rel => "javascript", :src => "../js/foundation/foundation.js"}
+    %script{:rel => "javascript", :src => "../js/foundation/foundation.dropdown.js"}
+    %script{:rel => "javascript", :src => "../js/site.js"}
+

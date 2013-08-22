@@ -1,0 +1,194 @@
+
+
+
+
+
+
+// --------------------
+// Structure: Base
+// --------------------
+html {
+    height: 100%;
+}
+// Default Header
+body {
+    background: url(../images/patterns/cream.png) repeat;
+}
+
+// Site Header
+// ----------------
+.site-header {
+
+    .brand {
+        text-align: center;
+        padding: 94px 0 104px;
+        @include transition(all .5s ease-in);
+
+        a {
+            display: block;
+        }
+        h1 {
+             text-indent: -9999px;
+             position: absolute;
+        }
+
+    }
+
+    @include breakpoint(tablet-H) {
+        .brand {
+            a {
+                width:60%;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    @include breakpoint(phones) {
+        .brand {
+            padding: 80px 0 32px;
+
+            a {
+                width:80%;
+            }
+        }
+    }
+}
+
+
+
+// Site Navigation
+// ----------------
+nav.site-nav {
+
+    ul {
+        list-style: none;
+        display: table;
+        margin: 0 auto;
+        position: relative;
+        top: -40px;
+        @include transition(all .5s ease-in);
+
+        li {
+            display: inline-block;
+
+            a {
+                padding: 14px 20px;
+                font-family: $serif-roman;
+                color: $primary-color;
+                letter-spacing: .4em;
+                position: relative;
+                font-size: emCalc(14);
+                @include transition(all .15s ease-in-out);
+
+                &:hover {
+                    color: $secondary-color !important;
+                }
+            }
+
+            &.active {
+                a:after {
+                    content: '';
+                    top:61px;
+                    height: 0;
+                    left: 50%;
+                    margin-left: -6px;
+                    position: absolute;
+                    border-bottom: 14px solid $white;
+                    border-left: 14px solid transparent;
+                    border-right: 14px solid transparent;
+                }
+            }
+
+        }
+    }
+
+    @include breakpoint(tablet-H) {
+        ul {
+            li {
+                a {
+                    padding: 10px;
+                }
+            }
+        }
+    }
+
+    @include breakpoint(tablet-V) {
+        ul {
+            opacity:0;
+        }
+    }
+}
+
+
+
+// Site Content
+// ----------------
+.content-wrap {
+    background: $white;
+    padding-bottom: 142px;
+}
+
+
+
+// Site Footer
+// ----------------
+.site-footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background: url('../images/patterns/grey.png') repeat;
+    padding: 40px 0;
+
+    .inner {
+        @include grid-row();
+    }
+
+    ul li {
+        display: inline-block;
+    }
+
+    a {
+        color: $white;
+        font-family: $serif-roman;
+        padding: 0 10px 0 0;
+        letter-spacing: .2em;
+        font-size: emCalc(14px);
+    }
+
+    .site-map {
+        float:left;
+        line-height:30px;
+
+        a {
+            display: inline-block;
+        }
+    }
+
+    .brand {
+        float:right;
+        width: 50px;
+    }
+
+    .row {
+        padding: 0 20px;
+    }
+
+    @include breakpoint(tablet-V) {
+
+        .brand {
+            width: 50px;
+            float: none;
+            margin: 0 auto;
+        }
+
+        .site-map {
+            float: none;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+    }
+}
+
+
+

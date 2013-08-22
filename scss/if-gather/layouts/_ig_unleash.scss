@@ -1,0 +1,31 @@
+
+
+
+
+
+
+// Layout: Unleash
+// -----------------
+body.unleash {
+
+    // Site Header
+    background: url('../images/banners/banner-1.jpg') repeat-y 0 0;
+    background-size: 100%;
+
+    // Navigation
+    nav.site-nav ul li a {
+        color: $white;
+    }
+
+    header.page-header {
+        .brackets.med:before, .brackets.med:after {
+            top: 50px;
+            margin: 0 -24px;
+        }
+        margin-bottom: 60px;
+    }
+
+
+
+}
+

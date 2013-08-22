@@ -1,0 +1,230 @@
+
+
+
+
+
+
+// ----------------------------
+// Layout: Home
+// ----------------------------
+
+body.home {
+
+
+    // Header & Navigation
+    // -------------------
+
+    // Site Header
+    background: url('../images/banners/banner-1.jpg') repeat-y 0 0;
+    background-size: 100%;
+
+    // Brand
+    .site-header .brand {
+        padding: 164px 0;
+    }
+
+    @include breakpoint(tablet-H) {
+        .site-header .brand {
+            padding: 120px 0;
+        }
+    }
+    @include breakpoint(phones) {
+        .site-header .brand {
+            padding: 80px 0 32px;
+        }
+    }
+
+    // Navigation
+    nav.site-nav ul li a {
+        color: $white;
+    }
+
+
+
+    // Section: Welcome
+    // -----------------
+    section.welcome {
+
+        // Mission Statement
+        .mission-statement {
+            @include rgrid(12, 8);
+            @include center-cols;
+            margin: 42px auto 54px;
+        }
+
+        // What If
+        .what-if-wrap {
+            position: relative;
+
+            a {
+                padding: 46px 60px;
+                margin-left: 124px;
+                height: 200px;
+
+                header {
+                    float:right;
+                    h2 {
+                        text-align: center;
+                        margin: 0;
+                    }
+                }
+            }
+            .what-if-clg {
+                background: url(../images/collages/what-if-clg.png) no-repeat;
+                height: 229px;
+                width: 100%;
+                position: absolute;
+                top: 12px;
+            }
+
+            @include breakpoint(tablet-V) {
+                a {
+                    margin: 0;
+
+                    header {
+                        float: none;
+                    }
+                }
+                .what-if-clg {
+                    display: none;
+                }
+            }
+        }
+    }
+
+
+    // Section: Register
+    // ------------------
+    section.register {
+        background: url(../images/banners/banner-2.jpg) no-repeat;
+        background-size: 100%;
+        margin-top: -52px;
+        height: 100%;
+
+        .quote {
+            float:left;
+            margin: 92px 0 0 54px;
+
+        }
+
+        .register-now-wrap {
+            width: 40%;
+            clear: both;
+            float: right;
+
+            a {
+                font-family: $sans-gothic;
+                text-transform: uppercase;
+                color: $white;
+                padding: 18px;
+                text-align: center;
+                letter-spacing: .4em;
+                font-size: emCalc(14);
+                margin-top: -24px;
+            }
+
+            .dart-wht-right {
+                position: relative;
+                top: 2px;
+            }
+
+        }
+
+        @include breakpoint(tablet-V) {
+            margin-top: 0;
+
+            .quote {
+                float: none;
+                margin: 32px;
+                font-size: 14px;
+            }
+
+            .register-now-wrap {
+                width: 100%;
+            }
+        }
+    }
+
+    // Section: Questions
+    // ------------------
+    section.questions {
+        background: url(../images/banners/banner-3.jpg) no-repeat;
+        background-size: 100%;
+        height: 100%;
+
+        .question {
+
+        }
+    }
+
+
+    // Element: Highlight Article
+    // -----------------
+    .highlight-article {
+        margin: 42px 0 92px;
+
+        header {
+            padding: 0 15px;
+            h2 {
+                letter-spacing: .64em;
+                display: inline-block;
+                font-size: emCalc(32);
+            }
+        }
+
+        span.tagline {
+            display: inline-block;
+            font-size: emCalc(18);
+            color: $header-font-color;
+            text-indent: 24px;
+            position: relative;
+            top: -4px;
+            letter-spacing: .12em;
+        }
+
+        .brackets.lrg {
+            &:before, &:after {
+                top: 80px;
+            }
+        }
+        article {
+            @include rgrid(12, 9);
+            float: right;
+
+            p {
+                &:before, &:after {
+                    top: -60px;
+                }
+            }
+        }
+
+
+        @include breakpoint(phones) {
+            header {
+                padding: 0 15px;
+                font-size: 12px;
+                margin-bottom: 24px;
+            }
+        }
+    }
+
+    // Element: Quote & Question
+    // ------------------
+    .quote, .question {
+        padding: 30px 52px 28px;
+        width: auto;
+
+        h3 {
+            margin: 0;
+            font-size: emCalc(20);
+            line-height: 36px;
+        }
+    }
+
+
+
+
+}
+
+
+
