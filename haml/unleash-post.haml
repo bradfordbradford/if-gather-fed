@@ -10,15 +10,41 @@
         %meta{:name=>"author", :content=>"If:Gather"}
         %meta{:name=>"viewport", :content=>"width=device-width,initial-scale=1"}
         / Style
-        %link{:rel => "stylesheet", :href => "/css/site.css"}
+        %link{:rel => "stylesheet", :href => "../css/site.css"}
         / Fonts
         %script{:type => "text/javascript", :src => "//use.typekit.net/ahk2bse.js"}
         %script{:type => "text/javascript"} try{Typekit.load();}catch(e){}
 
         / Scripts
-        %script{:rel => "javascript", :src => "../js/vendor/modernizr-custom.2.6.2.js"}
+        %script{:rel => "javascript", :src => "../js/vendor/custom.modernizr.js"}
 
     %body.unleash-post
+
+        %nav.pushy.pushy-left
+            %ul
+                %li
+                    %a{:href => "gathering.html"}
+                        Gathering
+
+                %li
+                    %a{:href => "what-if.html"}
+                        What If?
+
+                %li
+                    %a{:href => "equip.html"}
+                        Equip
+
+                %li
+                    %a{:href => "unleash.html"}
+                        Unleash
+
+                %li
+                    %a{:href => "connect.html"}
+                        Connect
+
+                %li
+                    %a{:href => "who-we-are.html"}
+                        Who We Are
 
         #site-wrap
 
@@ -33,28 +59,32 @@
                 %nav.site-nav
                     %ul
                         %li
-                            %a{:href => "gathering"}
+                            %a{:href => "gathering.html"}
                                 Gathering
 
                         %li
-                            %a{:href => "what-if"}
+                            %a{:href => "what-if.html"}
                                 What If?
 
                         %li
-                            %a{:href => "equip"}
+                            %a{:href => "equip.html"}
                                 Equip
 
                         %li.active
-                            %a{:href => "unleash"}
+                            %a{:href => "unleash.html"}
                                 Unleash
 
                         %li
-                            %a{:href => "connect"}
+                            %a{:href => "connect.html"}
                                 Connect
 
                         %li
-                            %a{:href => "who-we-are"}
+                            %a{:href => "who-we-are.html"}
                                 Who We Are
+
+                .menu-btn
+                    %span ☰
+                    Menu
 
 
             %section.content-wrap
@@ -106,28 +136,33 @@
 
 
                             .return-nav-wrap.brackets.med
-                                %a.return{:href => "unleash"}
+                                %a.return{:href => "unleash.html"}
                                     %h4 back to latest posts
 
 
             %footer.site-footer
                 .inner
                     .site-map
-                        %a{:href => "gathering"}
+                        %a{:href => "gathering.html"}
                             Gathering
-                        %a{:href => "what-if"}
+                        %a{:href => "what-if.html"}
                             What If?
-                        %a{:href => "equip"}
+                        %a{:href => "equip.html"}
                             Equip
-                        %a{:href => "unleash"}
+                        %a{:href => "unleash.html"}
                             Unleash
-                        %a{:href => "connect"}
+                        %a{:href => "connect.html"}
                             Connect
-                        %a{:href => "who-we-are"}
+                        %a{:href => "who-we-are.html"}
                             Who We Are
 
                     .brand
-                        %img{:src => "../images/logos/ifgather-logo-white-sm.png", :alt => ""}/
+                        %a{:href => "index.html"}
+                            %img{:src => "../images/logos/ifgather-logo-white-sm.png", :alt => ""}/
 
+
+    %script{:rel => "javascript", :src => "https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"}
+    %script{:rel => "javascript", :src => "../js/pushy/pushy.min.js"}
+    %script{:rel => "javascript", :src => "../js/site-ck.js"}
 
 

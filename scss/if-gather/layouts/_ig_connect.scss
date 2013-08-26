@@ -5,10 +5,10 @@
 
 
 // ----------------------------
-// Layout: What If
+// Layout: Connect
 // ----------------------------
 
-body.what-if {
+body.connect {
 
     // Header & Navigation
     // -------------------
@@ -24,14 +24,10 @@ body.what-if {
         color: $white;
     }
 
-    // Brackets
-    header.page-header {
-        .brackets.med:before, .brackets.med:after {
-            top: 50px;
-            margin: 0 -24px;
-        }
-        margin-bottom: 60px;
+    form {
+        margin-top: 24px;
     }
+
 
 }
 

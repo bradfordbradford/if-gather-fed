@@ -16,7 +16,7 @@
     width: 100%;
     padding: .8em;
 
-    &:after {
+    &.dropdown:after {
         content: '';
         position: absolute;
         font-family: "EntypoRegular";

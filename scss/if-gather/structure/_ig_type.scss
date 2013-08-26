@@ -78,6 +78,16 @@ header.page-header {
     }
 }
 
+// Info Columns
+.info-col {
+    margin: 40px auto;
+    @include rgrid(12, 4);
+
+    h4 {
+        font-size: emCalc(16);
+    }
+}
+
 .emph {
     font-size: emCalc(16);
     font-style: italic;

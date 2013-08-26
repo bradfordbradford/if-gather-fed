@@ -7,7 +7,7 @@
 // ----------------------------
 // Component: Forms
 // ----------------------------
-input.search {
+input.search, textarea {
     box-shadow: none;
     background: rgba(0, 0, 0, 0);
     color: $primary-color;
@@ -37,6 +37,5 @@ input.search {
 input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], textarea {
     height: auto;
     padding: .4em .8em;
-    // padding-left: 1.5em;
     font-size: 1em;
 }

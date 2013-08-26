@@ -14,20 +14,36 @@ ul.image-list {
     font-size: 14px;
 
     &.four-across li {
-        @include rgrid(12, 3);
+        @include rgrid(3);
         padding: 4px;
     }
 
     &.three-across li {
-        @include rgrid(12, 4);
+        @include rgrid(4);
         padding: 4px;
     }
 
     @include breakpoint(tablet-H) {
         &.three-across, &.four-across {
             padding: 0 15px;
+        }
+    }
 
+    // For Overlay Typography
+    @include breakpoint(tablet-V) {
+        hr, p {
+            display: none;
+        }
 
+        h4 {
+            padding: 12px;
+        }
+    }
+
+    @include breakpoint(phones) {
+        &.three-across li, &.four-across li {
+            width: 100%;
+            float: none;
         }
     }
 }

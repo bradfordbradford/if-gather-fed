@@ -18,7 +18,7 @@
         / Scripts
         %script{:rel => "javascript", :src => "../js/vendor/custom.modernizr.js"}
 
-    %body.gathering
+    %body.connect
 
         %nav.pushy.pushy-left
             %ul
@@ -57,7 +57,7 @@
 
                 %nav.site-nav
                     %ul
-                        %li.active
+                        %li
                             %a{:href => "gathering.html"}
                                 Gathering
 
@@ -73,7 +73,7 @@
                             %a{:href => "unleash.html"}
                                 Unleash
 
-                        %li
+                        %li.active
                             %a{:href => "connect.html"}
                                 Connect
 
@@ -91,57 +91,24 @@
                 .row
                     %header.page-header
                         %h2
-                            If: Gathering
+                            connect
                         %hr.dotted/
 
-                        %p
-                            A fresh, deep, honest space for the next generation of women
-                            to wrestle with essential questions that plague their generation.
-                            %br/
-                            Questions like: If God is real, then what?
-
-
                 .row
-                    %section.gathering-dates
-                        .cream-pattern
-                            .inner
-                                %img{:src => "../images/collages/ifgather-gathering-date.png", :alt => "IF:GATHER - Feb 7-8, 2014 (Austin, TX)"}/
+                    %form{:action => "#", :method => 'get'}
+                        %input.search{:type => "text", :placeholder => "First Name"}/
 
+                        %input.search{:type => "text", :placeholder => "Last Name"}/
 
-                        .register-now.sage-pattern
-                            %h2.dart-right Register Now
+                        %input.search{:type => "text", :placeholder => "Email Name"}/
 
-                .row
-                    %section.more-info-wrap
-                        %header
-                            %h3.sans More About the Gathering
-                            %hr.dotted/
+                        %textarea{:name => "", :rows => '10', :cols => '10', :placeholder => "Message"}
 
-                        .more-info-text.newspaper-col
-                            %p
-                                Esse bespoke before they sold out voluptate do Pinterest, enim wayfarers organic tote bag minim mustache exercitation. Helvetica nostrud minim forage, Echo Park semiotics +1 commodo labore YOLO pitchfork wolf leggings Wes Anderson salvia. Jean shorts butcher four loko. Helvetica placeat irony forage aliqua yr irure
-
-                        .info-col
-                            %h4.sans Culture
-                            %p
-                                Sriracha flexitarian yr, umami blue bottle next level cliche ugh wolf cardigan elit laboris mustache Brooklyn meggings. Flannel est meh, helvetica placeat irony forage aliqua yr irure. Leggings eu High Life, pickled skateboard Schlitz swag delectus trust fund
-
-                        .info-col
-                            %h4.sans Content
-                            %p
-                                Esse bespoke before they sold out voluptate do Pinterest, enim wayfarers organic tote bag minim mustache exercitation. Helvetica nostrud minim forage, Echo Park semiotics +1 commodo labore YOLO pitchfork wolf leggings Wes Anderson salvia. Jean shorts butcher four loko.
-
-
-                        .info-col
-                            %h4.sans Schedule
-                            %p
-                                Sriracha flexitarian yr, umami blue bottle next level cliche ugh wolf cardigan elit laboris mustache Brooklyn meggings. Flannel est meh, helvetica placeat irony forage aliqua yr irure. Leggings eu High Life, pickled skateboard Schlitz swag delectus trust fund
+                        %a.button{:href => "mailto:#"}
+                            send
 
 
 
-                        %header
-                            %h3.sans lodging &amp; food around austin texas
-                            %hr.dotted/
 
 
 

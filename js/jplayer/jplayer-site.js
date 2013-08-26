@@ -1,8 +1,3 @@
-
-
-// If/Gather Scripts
-// -----------------
-
 // jPlayer for Unleash Page
 $(document).ready(function(){
 
@@ -77,7 +72,3 @@ $(document).ready(function(){
     });
 
 });
-
-
-// Start Foundation
-$(document).foundation();

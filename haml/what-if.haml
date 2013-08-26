@@ -10,15 +10,43 @@
         %meta{:name=>"author", :content=>"If:Gather"}
         %meta{:name=>"viewport", :content=>"width=device-width,initial-scale=1"}
         / Style
-        %link{:rel => "stylesheet", :href => "/css/site.css"}
+        %link{:rel => "stylesheet", :href => "../css/site.css"}
         / Fonts
         %script{:type => "text/javascript", :src => "//use.typekit.net/ahk2bse.js"}
         %script{:type => "text/javascript"} try{Typekit.load();}catch(e){}
 
         / Scripts
-        %script{:rel => "javascript", :src => "../js/vendor/modernizr-custom.2.6.2.js"}
+        %script{:rel => "javascript", :src => "../js/vendor/custom.modernizr.js"}
+
 
     %body.what-if
+
+        %nav.pushy.pushy-left
+            %ul
+                %li
+                    %a{:href => "gathering.html"}
+                        Gathering
+
+                %li
+                    %a{:href => "what-if.html"}
+                        What If?
+
+                %li
+                    %a{:href => "equip.html"}
+                        Equip
+
+                %li
+                    %a{:href => "unleash.html"}
+                        Unleash
+
+                %li
+                    %a{:href => "connect.html"}
+                        Connect
+
+                %li
+                    %a{:href => "who-we-are.html"}
+                        Who We Are
+
 
         #site-wrap
 
@@ -29,33 +57,36 @@
                         %h1 IF:GATHERING
 
 
+                #jquery_jplayer
 
                 %nav.site-nav
                     %ul
                         %li
-                            %a.active{:href => "gathering"}
+                            %a{:href => "gathering.html"}
                                 Gathering
 
                         %li.active
-                            %a{:href => "what-if"}
+                            %a{:href => "what-if.html"}
                                 What If?
 
                         %li
-                            %a{:href => "equip"}
+                            %a{:href => "equip.html"}
                                 Equip
 
                         %li
-                            %a{:href => "unleash"}
+                            %a{:href => "unleash.html"}
                                 Unleash
 
                         %li
-                            %a{:href => "connect"}
+                            %a{:href => "connect.html"}
                                 Connect
 
                         %li
-                            %a{:href => "who-we-are"}
+                            %a{:href => "who-we-are.html"}
                                 Who We Are
-
+                .menu-btn
+                    %span ☰
+                    Menu
 
             %section.content-wrap
 
@@ -63,10 +94,28 @@
                     %header.page-header
                         %h2
                             what if: we feared nothing?
+                        %hr.dotted/
+
+                        %p.brackets.med
+                            Sriracha flexitarian yr, umami blue bottle next level cliche
+                            ugh wolf cardigan elit laboris mustache Brooklyn meggings.
+                            Flannel est meh, helvetica placeat irony forage aliqua yr irure.
+                            Leggings eu High Life, pickled skateboard Schlitz swag delectus.
 
                 .row
-                    %ul.image-list.four-across
+                    %ul#player-wrap.image-list.four-across
                         %li
+                            %a.track{:href => "http://www.jplayer.org/audio/mp3/Miaow-04-Lismore.mp3"}
+                            .overlay
+                                .info
+                                    %h4
+                                        Jessica Hische
+                                    %hr/
+                                    %p Occupation &amp; Primary Past-Time
+                            %img{:src => "../images/content/placeholder-square.jpg", :alt => ""}/
+
+                        %li
+                            %a.track{:href => "http://www.jplayer.org/audio/mp3/Miaow-04-Lismore.mp3"}
                             .overlay
                                 .info
                                     %h4
@@ -76,109 +125,26 @@
                             %img{:src => "../images/content/placeholder-square.jpg", :alt => ""}/
 
                         %li
+                            %a.track{:href => "http://www.jplayer.org/audio/mp3/Miaow-04-Lismore.mp3"}
                             .overlay
                                 .info
                                     %h4
-                                        Mary Sparks
+                                        Megan Wilkes
                                     %hr/
                                     %p Occupation &amp; Primary Past-Time
                             %img{:src => "../images/content/placeholder-square.jpg", :alt => ""}/
 
                         %li
+                            %a.track{:href => "http://www.jplayer.org/audio/mp3/Miaow-04-Lismore.mp3"}
                             .overlay
                                 .info
                                     %h4
-                                        Mary Sparks
-                                    %hr/
-                                    %p Occupation &amp; Primary Past-Time
-                            %img{:src => "../images/content/placeholder-square.jpg", :alt => ""}/
-
-                        %li
-                            .overlay
-                                .info
-                                    %h4
-                                        Mary Sparks
+                                        Julie Neill
                                     %hr/
                                     %p Occupation &amp; Primary Past-Time
                             %img{:src => "../images/content/placeholder-square.jpg", :alt => ""}/
 
 
-
-
-                        %li
-                            .overlay
-                                .info
-                                    %h4
-                                        Mary Sparks
-                                    %hr/
-                                    %p Occupation &amp; Primary Past-Time
-                            %img{:src => "../images/content/placeholder-square.jpg", :alt => ""}/
-
-                        %li
-                            .overlay
-                                .info
-                                    %h4
-                                        Mary Sparks
-                                    %hr/
-                                    %p Occupation &amp; Primary Past-Time
-                            %img{:src => "../images/content/placeholder-square.jpg", :alt => ""}/
-
-                        %li
-                            .overlay
-                                .info
-                                    %h4
-                                        Mary Sparks
-                                    %hr/
-                                    %p Occupation &amp; Primary Past-Time
-                            %img{:src => "../images/content/placeholder-square.jpg", :alt => ""}/
-
-                        %li
-                            .overlay
-                                .info
-                                    %h4
-                                        Mary Sparks
-                                    %hr/
-                                    %p Occupation &amp; Primary Past-Time
-                            %img{:src => "../images/content/placeholder-square.jpg", :alt => ""}/
-
-
-
-
-                        %li
-                            .overlay
-                                .info
-                                    %h4
-                                        Mary Sparks
-                                    %hr/
-                                    %p Occupation &amp; Primary Past-Time
-                            %img{:src => "../images/content/placeholder-square.jpg", :alt => ""}/
-
-                        %li
-                            .overlay
-                                .info
-                                    %h4
-                                        Mary Sparks
-                                    %hr/
-                                    %p Occupation &amp; Primary Past-Time
-                            %img{:src => "../images/content/placeholder-square.jpg", :alt => ""}/
-
-                        %li
-                            .overlay
-                                .info
-                                    %h4
-                                        Mary Sparks
-                                    %hr/
-                                    %p Occupation &amp; Primary Past-Time
-                            %img{:src => "../images/content/placeholder-square.jpg", :alt => ""}/
-
-                        %li
-                            .overlay
-                                .info
-                                    %h4
-                                        Mary Sparks
-                                    %hr/
-                                    %p Occupation &amp; Primary Past-Time
-                            %img{:src => "../images/content/placeholder-square.jpg", :alt => ""}/
 
 
 
@@ -189,22 +155,29 @@
             %footer.site-footer
                 .inner
                     .site-map
-                        %a{:href => "gathering"}
+                        %a{:href => "gathering.html"}
                             Gathering
-                        %a{:href => "what-if"}
+                        %a{:href => "what-if.html"}
                             What If?
-                        %a{:href => "equip"}
+                        %a{:href => "equip.html"}
                             Equip
-                        %a{:href => "unleash"}
+                        %a{:href => "unleash.html"}
                             Unleash
-                        %a{:href => "connect"}
+                        %a{:href => "connect.html"}
                             Connect
-                        %a{:href => "who-we-are"}
+                        %a{:href => "who-we-are.html"}
                             Who We Are
 
                     .brand
-                        %img{:src => "../images/logos/ifgather-logo-white-sm.png", :alt => ""}/
+                        %a{:href => "index.html"}
+                            %img{:src => "../images/logos/ifgather-logo-white-sm.png", :alt => ""}/
 
 
-            %script{:rel => "javascript", :src => "https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"}
-            %script{:rel => "javascript", :src => "../js/site-ck.js"}
+
+    %script{:rel => "javascript", :src => "https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"}
+    %script{:rel => "javascript", :src => "../js/pushy/pushy.min.js"}
+    %script{:rel => "javascript", :src => "../js/jplayer/jquery.jplayer.min.js"}
+    %script{:rel => "javascript", :src => "../js/site-ck.js"}
+
+
+

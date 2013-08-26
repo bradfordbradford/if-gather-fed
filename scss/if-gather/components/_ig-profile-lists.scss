@@ -1,0 +1,76 @@
+
+
+
+
+
+
+// ----------------------------
+// Component: Profile Lists
+// ----------------------------
+
+ul.profile-list {
+    list-style: none;
+    @include rgrid(12, 10);
+    @include center-cols;
+    margin-bottom: 40px;
+    // clear: both;
+
+
+    &.expansive li {
+        @include grid-row();
+        max-width: 100%;
+        margin: 24px 0 32px;
+        clear: both;
+
+        .profile-img-wrap {
+            @include rgrid(12, 2);
+            margin-top: 6px;
+        }
+
+        .profile-info-wrap {
+            @include rgrid(12, 10);
+        }
+
+        .name {
+            text-align: left;
+            font-size: emCalc(18);
+            margin-bottom: 0px;
+            font-family: $sans-gothic;
+        }
+
+        .occupation {
+            font-style: italic;
+            color: lighten($primary-color, 15%);
+            font-weight: 600;
+            font-size: emCalc(16);
+            display: block;
+            margin-bottom: 0;
+        }
+
+    }
+
+
+    &.headshots li {
+
+        @include rgrid(12, 4);
+        margin-bottom: 24px;
+
+
+        .profile-img-wrap {
+            a {
+                width: 75%;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+
+        .name {
+            font-size: emCalc(14);
+            margin: 18px 0 4px;
+            font-family: $sans-gothic;
+        }
+    }
+
+
+
+}
