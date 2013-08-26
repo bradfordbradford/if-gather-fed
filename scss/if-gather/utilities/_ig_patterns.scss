@@ -23,6 +23,14 @@
     background: url(../images/patterns/sage.png) repeat;
     width: auto;
     display: block;
+
+    .emph {
+        color: $primary-color;
+    }
+
+    hr {
+        border-color: $primary-color;
+    }
 }
 
 .grey-pattern {

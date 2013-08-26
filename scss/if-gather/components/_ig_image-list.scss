@@ -11,6 +11,7 @@
 ul.image-list {
     @include grid-row();
     list-style:none;
+    font-size: 14px;
 
     &.four-across li {
         @include rgrid(12, 3);
@@ -20,5 +21,13 @@ ul.image-list {
     &.three-across li {
         @include rgrid(12, 4);
         padding: 4px;
+    }
+
+    @include breakpoint(tablet-H) {
+        &.three-across, &.four-across {
+            padding: 0 15px;
+
+
+        }
     }
 }

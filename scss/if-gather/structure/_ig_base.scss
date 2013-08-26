@@ -10,14 +10,12 @@
 html {
     height: 100%;
 }
-// Default Header
-body {
-    background: url(../images/patterns/cream.png) repeat;
-}
 
 // Site Header
 // ----------------
 .site-header {
+    // Default Site Header
+    background: url(../images/patterns/cream.png) repeat;
 
     .brand {
         text-align: center;
@@ -141,6 +139,7 @@ nav.site-nav {
 
     .inner {
         @include grid-row();
+        padding: 0 15px;
     }
 
     ul li {

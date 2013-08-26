@@ -15,8 +15,10 @@ body.home {
     // -------------------
 
     // Site Header
-    background: url('../images/banners/banner-1.jpg') repeat-y 0 0;
-    background-size: 100%;
+    .site-header {
+        background: url('../images/banners/banner-1.jpg') repeat-y 0 0;
+        background-size: 100%;
+    }
 
     // Brand
     .site-header .brand {
@@ -57,13 +59,14 @@ body.home {
             position: relative;
 
             a {
-                padding: 46px 60px;
+                padding: 36px 60px 46px;
                 margin-left: 124px;
                 height: 200px;
 
                 header {
                     float:right;
                     h2 {
+                        font-size: emCalc(26);
                         text-align: center;
                         margin: 0;
                     }
@@ -97,7 +100,7 @@ body.home {
     // ------------------
     section.register {
         background: url(../images/banners/banner-2.jpg) no-repeat;
-        background-size: 100%;
+        // background-size: 100%;
         margin-top: -52px;
         height: 100%;
 
@@ -120,12 +123,18 @@ body.home {
                 text-align: center;
                 letter-spacing: .4em;
                 font-size: emCalc(14);
-                margin-top: -24px;
+                margin-top: -64px;
             }
 
             .dart-wht-right {
                 position: relative;
                 top: 2px;
+            }
+
+            @include breakpoint(tablet-V) {
+                a {
+                    margin-top: -12px;
+                }
             }
 
         }
@@ -152,8 +161,38 @@ body.home {
         background-size: 100%;
         height: 100%;
 
-        .question {
+        .quote {
+            @include rgrid(12, 6);
+            float:right;
+            position: relative;
+            z-index: 2;
+            margin: 32px auto 24px;
+        }
 
+        .question {
+            @include rgrid(12, 10);
+            @include center-cols;
+            padding:48px 52px 46px;;
+            clear: both;
+            position: relative;
+            top: -40px;
+            margin-bottom: -54px;
+
+            h3 {
+                font-size: emCalc(28);
+            }
+        }
+
+        @include breakpoint(tablet-V) {
+            .question{
+                float:left;
+                clear: none;
+                margin: auto;
+                top: 0;
+            }
+            .quote {
+                margin: auto;
+            }
         }
     }
 
@@ -161,7 +200,7 @@ body.home {
     // Element: Highlight Article
     // -----------------
     .highlight-article {
-        margin: 42px 0 92px;
+        margin: 52px 0 60px;
 
         header {
             padding: 0 15px;

@@ -61,12 +61,13 @@
 
                 .row
 
-                    %section.hero-img
-                        %img{:src => "../images/content/bg-placeholder.jpg", :alt => ""}/
+                    / %section.hero-img
+                    / %img{:src => "../images/content/bg-placeholder.jpg", :alt => ""}/
 
-                    %section.post-wrap.equip-post-entry
+                    %section.post-wrap.equip-post-entry.push-6.columns
                         %header.title
-                            %h2.dart-left
+                            %h2
+                                %span.dart-blk-left.ornament
                                 %a{:href => "equip"} Back to Latest Posts
 
 
@@ -75,7 +76,20 @@
                                 %h4 Registration Open
                                 .date 10.14.13
                             %p
-                                Letterpress selvage ullamco viral reprehenderit locavore, gastropub Truffaut leggings readymade
+                                Fugiat delectus banh mi non biodiesel, 3 wolf moon magna cardigan 8-bit wayfarers kitsch. Williamsburg gluten-free id yr et, hashtag american apparel selfies Banksy sartorial. Twee Schlitz brunch, ethnic lomo blue bottle dreamcatcher photo booth excepteur Godard +1 craft beer blog quinoa organic. Letterpress tumblr deserunt polaroid. Commodo PBR cray, helvetica mumblecore ex lomo irony. Sartorial craft beer ethical adipisicing ugh. Next level sunt PBR, fanny pack vinyl beard keffiyeh Portland shoreditch Truffaut fixie single-origin coffee kale chips.
+
+                            %p
+                                Esse shabby chic master cleanse skateboard nostrud, Echo Park anim whatever occaecat church-key before they sold out reprehenderit non fixie cillum. Tote bag asymmetrical qui, Terry Richardson Cosby sweater Wes Anderson put a bird on it cred veniam cray pork belly. Narwhal sunt cupidatat, disrupt jean shorts Thundercats minim Portland irure. Truffaut consectetur ea, art party placeat non vero fashion axe. Culpa cillum jean shorts aliqua. Nisi flannel ut vero, anim art party twee mustache fashion axe semiotics Odd Future selfies pug typewriter. Umami non occaecat, fingerstache cred Shoreditch sriracha chillwave fanny pack authentic tattooed.
+
+
+                            %p
+                                Flannel gentrify laboris assumenda 3 wolf moon. Thundercats Marfa banjo, culpa butcher organic flexitarian. Lomo viral laborum esse, qui kale chips quinoa. Kogi odio tattooed culpa trust fund. Vegan accusamus master cleanse pug, forage gluten-free consectetur fixie enim Cosby sweater est raw denim dolore veniam. Asymmetrical PBR craft beer, hella deep v nisi tote bag Portland odio semiotics yr keytar aliquip four loko sint. Dolor master cleanse deep v, Austin deserunt brunch consectetur keytar.
+
+                            %p
+                                Raw denim delectus occupy, Bushwick semiotics church-key qui cardigan sint lomo est quinoa. Excepteur fingerstache occupy 8-bit VHS. Tumblr meggings kale chips Tonx, Thundercats magna cillum gentrify letterpress messenger bag. Nihil Helvetica irure Tumblr, artisan vinyl Bushwick post-ironic iPhone master cleanse hella pork belly. Lo-fi Odd Future proident, consectetur wayfarers chillwave pickled High Life irure deserunt PBR qui. IPhone food truck literally chillwave duis pop-up, nulla raw denim quinoa asymmetrical bespoke adipisicing Helvetica. Etsy before they sold out pork belly, viral biodiesel art party incididunt gluten-free keffiyeh ea kogi.
+
+                            %p
+                                Bushwick you probably haven't heard of them pour-over proident salvia. Aute bicycle rights aliqua banjo American Apparel delectus. Hashtag ad polaroid organic, cray magna direct trade cornhole excepteur consectetur enim wolf. Pop-up Marfa nesciunt photo booth, squid authentic Vice. Tousled cardigan selfies banh mi retro, meggings viral blog wolf you probably haven't heard of them. Etsy laboris squid quinoa locavore, Banksy nisi aliqua you probably haven't heard of them next level pour-over biodiesel esse sustainable before they sold out. Irony sint anim, keffiyeh Marfa VHS next level selvage skateboard aute cillum direct trade fingerstache cred Carles.
 
 
 
@@ -106,4 +120,7 @@
     %script{:rel => "javascript", :src => "../js/foundation/foundation.js"}
     %script{:rel => "javascript", :src => "../js/foundation/foundation.dropdown.js"}
     %script{:rel => "javascript", :src => "../js/site.js"}
+    %script{:rel => "javascript", :src => "http://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.3/jquery.backstretch.min.js"}
+    %script
+        $.backstretch("http://dl.dropbox.com/u/515046/www/garfield-interior.jpg");
 

@@ -28,40 +28,39 @@ body.equip {
     // ------------
     .content-wrap {
         padding-bottom:0;
+        background:transparent;
     }
 
     // Section: Hero Img / Post List
     // ------------------------------
-    .equip-post-list section.hero-img {
-        // @include grid-column(8);
-        @include rgrid(12, 8);
-        padding: 0;
-    }
+    // .equip-post-list section.hero-img {
+    //     @include rgrid(12, 7);
+    //     padding: 0;
+    // }
 
     // Section: Hero Img / Post Entry
     // ------------------------------
-    .equip-post-entry section.hero-img {
-        // @include grid-column(7);
-        @include rgrid(12, 7);
-        padding: 0;
-    }
+    // .equip-post-entry section.hero-img {
+    //     @include rgrid(12, 6);
+    //     padding: 0;
+    // }
 
 
 
     // Section: Post List
     // ------------------
     .equip-post-list section.post-wrap {
-        // @include grid-column(4);
-        @include rgrid(12, 4);
+        @include rgrid(12, 5);
         padding: 0;
+        background: $white;
     }
 
     // Section: Post Entry
     // ------------------
     .equip-post-entry section.post-wrap {
-        // @include grid-column(5);
-        @include rgrid(12, 5);
+        @include rgrid(12, 6);
         padding: 0;
+        background: $white;
     }
 
 
@@ -77,10 +76,19 @@ body.equip {
 
             h2 {
                 letter-spacing: .24em;
+
+                @include breakpoint(tablet-H) {
+                    font-style: emCalc(18);
+                }
+
+                a {
+                    padding-left:12px;
+                }
+
             }
 
             &.main {
-                padding: 20px 15px 32px;
+                padding: 20px 15px 36px;
                 margin-bottom: 40px;
                 &:after, &:before {
                     content: '';
@@ -133,7 +141,7 @@ body.equip {
         clear:both;
         margin: 14px 0 12px;
 
-        h4, .date {
+        h4 {
             display: inline-block;
             font-family: $sans-gothic;
             letter-spacing: .24em;
@@ -144,6 +152,12 @@ body.equip {
             text-align: right;
             float: right;
             margin-top: 4px;
+        }
+
+        @include breakpoint(tablet-H) {
+            .date {
+                float:none;
+            }
         }
     }
 

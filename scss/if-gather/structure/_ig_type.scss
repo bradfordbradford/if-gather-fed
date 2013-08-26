@@ -18,6 +18,7 @@ h1 {
 }
 
 h2 {
+    font-size: emCalc(20);
     letter-spacing: .4em;
     line-height: emCalc(24);
 }
@@ -114,6 +115,15 @@ header.page-header {
         @include columns(1);
     }
 }
+
+// Date
+.date {
+    display: inline-block;
+    font-family: $sans-gothic;
+    letter-spacing: .24em;
+    font-size: emCalc(14);
+}
+
 
 // Darts
 .dart-wht-right {

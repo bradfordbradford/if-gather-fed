@@ -8,15 +8,53 @@
 // -----------------
 body.gathering {
 
-    // More Info
-    .more-info-wrap {
-        header {
-            margin-bottom: 24px;
-            clear:both;
+    // Header & Navigation
+    // -------------------
 
-            h3 {
-                font-size: emCalc(14);
+    // Site Header
+    .site-header {
+        background: url('../images/banners/banner-5.jpg') repeat-y 0 0;
+        background-size: 100%;
+    }
+
+    // Navigation
+    nav.site-nav ul li a {
+        color: $white;
+    }
+
+    // Gathering Dates
+    .gathering-dates {
+        .cream-pattern {
+            padding: 72px 0 60px;
+            position: relative;
+
+            &:after, &:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                height: 0;
+                border-top: 20px solid $white;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                -ms-box-sizing: border-box;
+                box-sizing: border-box;
             }
+
+            &:after {
+                right: 0;
+                width: 50%;
+                border-left: 20px solid rgba(0, 0, 0, 0);
+            }
+
+            &:before {
+                left: 0;
+                width: 50%;
+                border-right: 20px solid rgba(0, 0, 0, 0);
+            }
+        }
+        .inner {
+            margin: 0 auto;
+            width: 80%;
         }
     }
 
@@ -26,11 +64,11 @@ body.gathering {
         @include rgrid(12, 9);
         @include center-cols;
         padding: 20px 0px 12px;
-        margin: 24px auto 40px;
+        margin: 0 auto 54px;
 
         h2 {
-            font-size: emCalc(24);
-            width: 300px;
+            font-size: emCalc(26);
+            width: 330px;
             margin: 0 auto;
 
             &:after {
@@ -52,6 +90,18 @@ body.gathering {
         }
     }
 
+    // More Info
+    .more-info-wrap {
+        header {
+            margin-bottom: 24px;
+            clear:both;
+
+            h3 {
+                font-size: emCalc(14);
+            }
+        }
+    }
+
 
     // Info Columns
     .info-col {
@@ -65,4 +115,43 @@ body.gathering {
 
 
 
+}
+
+
+
+
+
+// -----------
+// Prompt Down
+// -----------
+.prompt-down {
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    margin: 0 auto;
+    top: -30px;
+
+    &:after, &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        height: 0;
+        border-bottom: 30px solid $white;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    &:after {
+        right: 0;
+        width: 50%;
+        border-left: 30px solid rgba(0, 0, 0, 0);
+    }
+
+    &:before {
+        left: 0;
+        width: 50%;
+        border-right: 30px solid rgba(0, 0, 0, 0);
+    }
 }

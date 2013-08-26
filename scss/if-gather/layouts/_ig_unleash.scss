@@ -9,8 +9,10 @@
 body.unleash {
 
     // Site Header
-    background: url('../images/banners/banner-1.jpg') repeat-y 0 0;
-    background-size: 100%;
+    .site-header {
+        background: url('../images/banners/banner-1.jpg') repeat-y 0 0;
+        background-size: 100%;
+    }
 
     // Navigation
     nav.site-nav ul li a {
@@ -29,3 +31,160 @@ body.unleash {
 
 }
 
+
+
+// Layout: Unleash Post
+// ---------------------
+body.unleash-post {
+
+    nav.site-nav {
+        border-bottom: 4px solid #FFF;
+    }
+
+    // Header
+    header.unleash-post-header {
+        @include rgrid(12);
+        margin:-60px auto 40px;
+        position:relative;
+
+
+        // Title
+        .title {
+            padding: 32px 32px 40px;
+            position: relative;
+            @include rgrid(12, 8);
+            @include center-cols;
+
+            .emph {
+                color: $primary-color;
+                font-size: 18px;
+                letter-spacing: .1em;
+            }
+
+            hr {
+                border-color: $primary-color;
+            }
+
+            &:after, &:before {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                height: 0;
+                border-bottom: 20px solid $white;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                -ms-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+
+            &:after {
+                right: 0;
+                width: 50%;
+                border-left: 20px solid rgba(0, 0, 0, 0);
+            }
+
+            &:before {
+                left: 0;
+                width: 50%;
+                border-right: 20px solid rgba(0, 0, 0, 0);
+            }
+
+        }
+
+        @include breakpoint(tablet-V) {
+            margin-top: 0; //Title Margin
+        }
+
+
+
+        // Post Navigation
+        .post-navigation {
+            margin:-124px auto 124px;
+            padding: 0 15px;
+
+            a.dart-left, a.dart-right {
+                font-size: emCalc(16);
+                letter-spacing: .1em;
+
+            }
+
+            a.dart-left {
+                position: absolute;
+                left: 60px;
+
+                &:before {
+                    left: -40px;
+                    top: 0px;
+                }
+            }
+
+            a.dart-right {
+                position: absolute;
+                right: 60px;
+
+                &:after {
+                    right: -40px;
+                    top: 0px;
+                }
+            }
+
+            @include breakpoint(tablet-H) {
+                margin: 12px auto ;
+            }
+        }
+
+    }
+
+
+    // Article
+    article.unleash-article {
+        @include rgrid(12);
+    }
+
+    // Footer
+    footer.unleash-footer {
+        margin-top: 42px;
+
+        hr.full {
+            margin-bottom: 12px;
+        }
+
+        .date {
+            @include rgrid(4, 2);
+            float: left;
+        }
+
+        .spacer {
+            @include rgrid(4, 8);
+            border-top: 1px solid $primary-color;
+        }
+
+        .social {
+            @include rgrid(4, 2);
+            text-align: right;
+            margin: 0;
+            float: right;
+        }
+
+        .return-nav-wrap {
+            @include rgrid(7, 5);
+            @include center-cols;
+            margin-top: 64px;
+
+            h4 {
+                letter-spacing: .1em;
+                font-size: emCalc(20);
+                padding-top: 36px;
+            }
+        }
+
+        @include breakpoint(tablet-V) {
+            .return-nav-wrap {
+                margin-top: 64px;
+                font-size: emCalc(14);
+            }
+        }
+    }
+
+
+}

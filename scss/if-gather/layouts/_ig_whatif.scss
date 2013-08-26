@@ -14,8 +14,10 @@ body.what-if {
     // -------------------
 
     // Site Header
-    background: url('../images/banners/banner-1.jpg') repeat-y 0 0;
-    background-size: 100%;
+    .site-header {
+        background: url('../images/banners/banner-1.jpg') repeat-y 0 0;
+        background-size: 100%;
+    }
 
 
     // Navigation

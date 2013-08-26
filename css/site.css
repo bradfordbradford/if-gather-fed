@@ -44,7 +44,7 @@ select { width: 100%; }
 .row { width: 100%; margin-left: auto; margin-right: auto; margin-top: 0; margin-bottom: 0; max-width: 62.5em; *zoom: 1; }
 .row:before, .row:after { content: " "; display: table; }
 .row:after { clear: both; }
-.row.collapse .column, .row.collapse .columns, .row.collapse header.page-header p, header.page-header .row.collapse p, .row.collapse ul.image-list.four-across li, ul.image-list.four-across .row.collapse li, .row.collapse ul.image-list.three-across li, ul.image-list.three-across .row.collapse li, .row.collapse body.home section.welcome .mission-statement, body.home section.welcome .row.collapse .mission-statement, .row.collapse body.home .highlight-article article, body.home .highlight-article .row.collapse article, .row.collapse body.gathering .register-now, body.gathering .row.collapse .register-now, .row.collapse body.gathering .info-col, body.gathering .row.collapse .info-col, .row.collapse body.equip .equip-post-list section.hero-img, body.equip .equip-post-list .row.collapse section.hero-img, .row.collapse body.equip .equip-post-entry section.hero-img, body.equip .equip-post-entry .row.collapse section.hero-img, .row.collapse body.equip .equip-post-list section.post-wrap, body.equip .equip-post-list .row.collapse section.post-wrap, .row.collapse body.equip .equip-post-entry section.post-wrap, body.equip .equip-post-entry .row.collapse section.post-wrap { position: relative; padding-left: 0; padding-right: 0; float: left; }
+.row.collapse .column, .row.collapse .columns, .row.collapse header.page-header p, header.page-header .row.collapse p, .row.collapse ul.image-list.four-across li, ul.image-list.four-across .row.collapse li, .row.collapse ul.image-list.three-across li, ul.image-list.three-across .row.collapse li, .row.collapse body.home section.welcome .mission-statement, body.home section.welcome .row.collapse .mission-statement, .row.collapse body.home section.questions .quote, body.home section.questions .row.collapse .quote, .row.collapse body.home section.questions .question, body.home section.questions .row.collapse .question, .row.collapse body.home .highlight-article article, body.home .highlight-article .row.collapse article, .row.collapse body.gathering .register-now, body.gathering .row.collapse .register-now, .row.collapse body.gathering .info-col, body.gathering .row.collapse .info-col, .row.collapse body.equip .equip-post-list section.post-wrap, body.equip .equip-post-list .row.collapse section.post-wrap, .row.collapse body.equip .equip-post-entry section.post-wrap, body.equip .equip-post-entry .row.collapse section.post-wrap, .row.collapse body.unleash-post header.unleash-post-header, body.unleash-post .row.collapse header.unleash-post-header, .row.collapse body.unleash-post header.unleash-post-header .title, body.unleash-post header.unleash-post-header .row.collapse .title, .row.collapse body.unleash-post article.unleash-article, body.unleash-post .row.collapse article.unleash-article, .row.collapse body.unleash-post footer.unleash-footer .date, body.unleash-post footer.unleash-footer .row.collapse .date, .row.collapse body.unleash-post footer.unleash-footer .spacer, body.unleash-post footer.unleash-footer .row.collapse .spacer, .row.collapse body.unleash-post footer.unleash-footer .social, body.unleash-post footer.unleash-footer .row.collapse .social, .row.collapse body.unleash-post footer.unleash-footer .return-nav-wrap, body.unleash-post footer.unleash-footer .row.collapse .return-nav-wrap { position: relative; padding-left: 0; padding-right: 0; float: left; }
 .row .row { width: auto; margin-left: -0.9375em; margin-right: -0.9375em; margin-top: 0; margin-bottom: 0; max-width: none; *zoom: 1; }
 .row .row:before, .row .row:after { content: " "; display: table; }
 .row .row:after { clear: both; }
@@ -52,21 +52,21 @@ select { width: 100%; }
 .row .row.collapse:before, .row .row.collapse:after { content: " "; display: table; }
 .row .row.collapse:after { clear: both; }
 
-.column, .columns, header.page-header p, ul.image-list.four-across li, ul.image-list.three-across li, body.home section.welcome .mission-statement, body.home .highlight-article article, body.gathering .register-now, body.gathering .info-col, body.equip .equip-post-list section.hero-img, body.equip .equip-post-entry section.hero-img, body.equip .equip-post-list section.post-wrap, body.equip .equip-post-entry section.post-wrap { position: relative; padding-left: 0.9375em; padding-right: 0.9375em; width: 100%; float: left; }
+.column, .columns, header.page-header p, ul.image-list.four-across li, ul.image-list.three-across li, body.home section.welcome .mission-statement, body.home section.questions .quote, body.home section.questions .question, body.home .highlight-article article, body.gathering .register-now, body.gathering .info-col, body.equip .equip-post-list section.post-wrap, body.equip .equip-post-entry section.post-wrap, body.unleash-post header.unleash-post-header, body.unleash-post header.unleash-post-header .title, body.unleash-post article.unleash-article, body.unleash-post footer.unleash-footer .date, body.unleash-post footer.unleash-footer .spacer, body.unleash-post footer.unleash-footer .social, body.unleash-post footer.unleash-footer .return-nav-wrap { position: relative; padding-left: 0.9375em; padding-right: 0.9375em; width: 100%; float: left; }
 
-@media only screen { .column, .columns, header.page-header p, ul.image-list.four-across li, ul.image-list.three-across li, body.home section.welcome .mission-statement, body.home .highlight-article article, body.gathering .register-now, body.gathering .info-col, body.equip .equip-post-list section.hero-img, body.equip .equip-post-entry section.hero-img, body.equip .equip-post-list section.post-wrap, body.equip .equip-post-entry section.post-wrap { position: relative; padding-left: 0.9375em; padding-right: 0.9375em; float: left; }
+@media only screen { .column, .columns, header.page-header p, ul.image-list.four-across li, ul.image-list.three-across li, body.home section.welcome .mission-statement, body.home section.questions .quote, body.home section.questions .question, body.home .highlight-article article, body.gathering .register-now, body.gathering .info-col, body.equip .equip-post-list section.post-wrap, body.equip .equip-post-entry section.post-wrap, body.unleash-post header.unleash-post-header, body.unleash-post header.unleash-post-header .title, body.unleash-post article.unleash-article, body.unleash-post footer.unleash-footer .date, body.unleash-post footer.unleash-footer .spacer, body.unleash-post footer.unleash-footer .social, body.unleash-post footer.unleash-footer .return-nav-wrap { position: relative; padding-left: 0.9375em; padding-right: 0.9375em; float: left; }
   .small-1 { position: relative; width: 8.33333%; }
   .small-2 { position: relative; width: 16.66667%; }
   .small-3 { position: relative; width: 25%; }
-  .small-4 { position: relative; width: 33.33333%; }
+  .small-4, body.unleash-post footer.unleash-footer .date, body.unleash-post footer.unleash-footer .spacer, body.unleash-post footer.unleash-footer .social { position: relative; width: 33.33333%; }
   .small-5 { position: relative; width: 41.66667%; }
   .small-6 { position: relative; width: 50%; }
-  .small-7 { position: relative; width: 58.33333%; }
+  .small-7, body.unleash-post footer.unleash-footer .return-nav-wrap { position: relative; width: 58.33333%; }
   .small-8 { position: relative; width: 66.66667%; }
   .small-9 { position: relative; width: 75%; }
   .small-10 { position: relative; width: 83.33333%; }
   .small-11 { position: relative; width: 91.66667%; }
-  .small-12, header.page-header p, ul.image-list.four-across li, ul.image-list.three-across li, body.home section.welcome .mission-statement, body.home .highlight-article article, body.gathering .register-now, body.gathering .info-col, body.equip .equip-post-list section.hero-img, body.equip .equip-post-entry section.hero-img, body.equip .equip-post-list section.post-wrap, body.equip .equip-post-entry section.post-wrap { position: relative; width: 100%; }
+  .small-12, header.page-header p, ul.image-list.four-across li, ul.image-list.three-across li, body.home section.welcome .mission-statement, body.home section.questions .quote, body.home section.questions .question, body.home .highlight-article article, body.gathering .register-now, body.gathering .info-col, body.equip .equip-post-list section.post-wrap, body.equip .equip-post-entry section.post-wrap, body.unleash-post header.unleash-post-header, body.unleash-post header.unleash-post-header .title, body.unleash-post article.unleash-article { position: relative; width: 100%; }
   .small-offset-0 { position: relative; margin-left: 0%; }
   .small-offset-1 { position: relative; margin-left: 8.33333%; }
   .small-offset-2 { position: relative; margin-left: 16.66667%; }
@@ -80,18 +80,18 @@ select { width: 100%; }
   .small-offset-10 { position: relative; margin-left: 83.33333%; }
   [class*="column"] + [class*="column"]:last-child { float: right; }
   [class*="column"] + [class*="column"].end { float: left; }
-  .column.small-centered, .columns.small-centered, header.page-header p.small-centered, ul.image-list.four-across li.small-centered, ul.image-list.three-across li.small-centered, body.home section.welcome .small-centered.mission-statement, body.home .highlight-article article.small-centered, body.gathering .small-centered.register-now, body.gathering .small-centered.info-col, body.equip .equip-post-list section.small-centered.hero-img, body.equip .equip-post-entry section.small-centered.hero-img, body.equip .equip-post-list section.small-centered.post-wrap, body.equip .equip-post-entry section.small-centered.post-wrap { position: relative; margin-left: auto; margin-right: auto; float: none !important; } }
+  .column.small-centered, .columns.small-centered, header.page-header p.small-centered, ul.image-list.four-across li.small-centered, ul.image-list.three-across li.small-centered, body.home section.welcome .small-centered.mission-statement, body.home section.questions .small-centered.quote, body.home section.questions .small-centered.question, body.home .highlight-article article.small-centered, body.gathering .small-centered.register-now, body.gathering .small-centered.info-col, body.equip .equip-post-list section.small-centered.post-wrap, body.equip .equip-post-entry section.small-centered.post-wrap, body.unleash-post header.small-centered.unleash-post-header, body.unleash-post header.unleash-post-header .small-centered.title, body.unleash-post article.small-centered.unleash-article, body.unleash-post footer.unleash-footer .small-centered.date, body.unleash-post footer.unleash-footer .small-centered.spacer, body.unleash-post footer.unleash-footer .small-centered.social, body.unleash-post footer.unleash-footer .small-centered.return-nav-wrap { position: relative; margin-left: auto; margin-right: auto; float: none !important; } }
 /* Styles for screens that are atleast 768px; */
 @media only screen and (min-width: 768px) { .large-1 { position: relative; width: 8.33333%; }
-  .large-2 { position: relative; width: 16.66667%; }
+  .large-2, body.unleash-post footer.unleash-footer .date, body.unleash-post footer.unleash-footer .social { position: relative; width: 16.66667%; }
   .large-3, ul.image-list.four-across li { position: relative; width: 25%; }
-  .large-4, ul.image-list.three-across li, body.gathering .info-col, body.equip .equip-post-list section.post-wrap { position: relative; width: 33.33333%; }
-  .large-5, body.equip .equip-post-entry section.post-wrap { position: relative; width: 41.66667%; }
-  .large-6 { position: relative; width: 50%; }
-  .large-7, header.page-header p, body.equip .equip-post-entry section.hero-img { position: relative; width: 58.33333%; }
-  .large-8, body.home section.welcome .mission-statement, body.equip .equip-post-list section.hero-img { position: relative; width: 66.66667%; }
+  .large-4, ul.image-list.three-across li, body.gathering .info-col { position: relative; width: 33.33333%; }
+  .large-5, body.equip .equip-post-list section.post-wrap, body.unleash-post footer.unleash-footer .return-nav-wrap { position: relative; width: 41.66667%; }
+  .large-6, body.home section.questions .quote, body.equip .equip-post-entry section.post-wrap { position: relative; width: 50%; }
+  .large-7, header.page-header p { position: relative; width: 58.33333%; }
+  .large-8, body.home section.welcome .mission-statement, body.unleash-post header.unleash-post-header .title, body.unleash-post footer.unleash-footer .spacer { position: relative; width: 66.66667%; }
   .large-9, body.home .highlight-article article, body.gathering .register-now { position: relative; width: 75%; }
-  .large-10 { position: relative; width: 83.33333%; }
+  .large-10, body.home section.questions .question { position: relative; width: 83.33333%; }
   .large-11 { position: relative; width: 91.66667%; }
   .large-12 { position: relative; width: 100%; }
   .row .large-offset-0 { position: relative; margin-left: 0%; }
@@ -128,9 +128,9 @@ select { width: 100%; }
   .pull-10 { position: relative; right: 83.33333%; left: auto; }
   .push-11 { position: relative; left: 91.66667%; right: auto; }
   .pull-11 { position: relative; right: 91.66667%; left: auto; }
-  .column.large-centered, .columns.large-centered, header.page-header p.large-centered, ul.image-list.four-across li.large-centered, ul.image-list.three-across li.large-centered, body.home section.welcome .large-centered.mission-statement, body.home .highlight-article article.large-centered, body.gathering .large-centered.register-now, body.gathering .large-centered.info-col, body.equip .equip-post-list section.large-centered.hero-img, body.equip .equip-post-entry section.large-centered.hero-img, body.equip .equip-post-list section.large-centered.post-wrap, body.equip .equip-post-entry section.large-centered.post-wrap { position: relative; margin-left: auto; margin-right: auto; float: none !important; }
-  .column.large-uncentered, .columns.large-uncentered, header.page-header p.large-uncentered, ul.image-list.four-across li.large-uncentered, ul.image-list.three-across li.large-uncentered, body.home section.welcome .large-uncentered.mission-statement, body.home .highlight-article article.large-uncentered, body.gathering .large-uncentered.register-now, body.gathering .large-uncentered.info-col, body.equip .equip-post-list section.large-uncentered.hero-img, body.equip .equip-post-entry section.large-uncentered.hero-img, body.equip .equip-post-list section.large-uncentered.post-wrap, body.equip .equip-post-entry section.large-uncentered.post-wrap { margin-left: 0; margin-right: 0; float: left !important; }
-  .column.large-uncentered.opposite, .columns.large-uncentered.opposite, header.page-header p.large-uncentered.opposite, ul.image-list.four-across li.large-uncentered.opposite, ul.image-list.three-across li.large-uncentered.opposite, body.home section.welcome .large-uncentered.opposite.mission-statement, body.home .highlight-article article.large-uncentered.opposite, body.gathering .large-uncentered.opposite.register-now, body.gathering .large-uncentered.opposite.info-col, body.equip .equip-post-list section.large-uncentered.opposite.hero-img, body.equip .equip-post-entry section.large-uncentered.opposite.hero-img, body.equip .equip-post-list section.large-uncentered.opposite.post-wrap, body.equip .equip-post-entry section.large-uncentered.opposite.post-wrap { float: right !important; } }
+  .column.large-centered, .columns.large-centered, header.page-header p.large-centered, ul.image-list.four-across li.large-centered, ul.image-list.three-across li.large-centered, body.home section.welcome .large-centered.mission-statement, body.home section.questions .large-centered.quote, body.home section.questions .large-centered.question, body.home .highlight-article article.large-centered, body.gathering .large-centered.register-now, body.gathering .large-centered.info-col, body.equip .equip-post-list section.large-centered.post-wrap, body.equip .equip-post-entry section.large-centered.post-wrap, body.unleash-post header.large-centered.unleash-post-header, body.unleash-post header.unleash-post-header .large-centered.title, body.unleash-post article.large-centered.unleash-article, body.unleash-post footer.unleash-footer .large-centered.date, body.unleash-post footer.unleash-footer .large-centered.spacer, body.unleash-post footer.unleash-footer .large-centered.social, body.unleash-post footer.unleash-footer .large-centered.return-nav-wrap { position: relative; margin-left: auto; margin-right: auto; float: none !important; }
+  .column.large-uncentered, .columns.large-uncentered, header.page-header p.large-uncentered, ul.image-list.four-across li.large-uncentered, ul.image-list.three-across li.large-uncentered, body.home section.welcome .large-uncentered.mission-statement, body.home section.questions .large-uncentered.quote, body.home section.questions .large-uncentered.question, body.home .highlight-article article.large-uncentered, body.gathering .large-uncentered.register-now, body.gathering .large-uncentered.info-col, body.equip .equip-post-list section.large-uncentered.post-wrap, body.equip .equip-post-entry section.large-uncentered.post-wrap, body.unleash-post header.large-uncentered.unleash-post-header, body.unleash-post header.unleash-post-header .large-uncentered.title, body.unleash-post article.large-uncentered.unleash-article, body.unleash-post footer.unleash-footer .large-uncentered.date, body.unleash-post footer.unleash-footer .large-uncentered.spacer, body.unleash-post footer.unleash-footer .large-uncentered.social, body.unleash-post footer.unleash-footer .large-uncentered.return-nav-wrap { margin-left: 0; margin-right: 0; float: left !important; }
+  .column.large-uncentered.opposite, .columns.large-uncentered.opposite, header.page-header p.large-uncentered.opposite, ul.image-list.four-across li.large-uncentered.opposite, ul.image-list.three-across li.large-uncentered.opposite, body.home section.welcome .large-uncentered.opposite.mission-statement, body.home section.questions .large-uncentered.opposite.quote, body.home section.questions .large-uncentered.opposite.question, body.home .highlight-article article.large-uncentered.opposite, body.gathering .large-uncentered.opposite.register-now, body.gathering .large-uncentered.opposite.info-col, body.equip .equip-post-list section.large-uncentered.opposite.post-wrap, body.equip .equip-post-entry section.large-uncentered.opposite.post-wrap, body.unleash-post header.large-uncentered.opposite.unleash-post-header, body.unleash-post header.unleash-post-header .large-uncentered.opposite.title, body.unleash-post article.large-uncentered.opposite.unleash-article, body.unleash-post footer.unleash-footer .large-uncentered.opposite.date, body.unleash-post footer.unleash-footer .large-uncentered.opposite.spacer, body.unleash-post footer.unleash-footer .large-uncentered.opposite.social, body.unleash-post footer.unleash-footer .large-uncentered.opposite.return-nav-wrap { float: right !important; } }
 /* Foundation Block Grids for below small breakpoint */
 @media only screen { [class*="block-grid-"] { display: block; padding: 0; margin: 0 -0.625em; *zoom: 1; }
   [class*="block-grid-"]:before, [class*="block-grid-"]:after { content: " "; display: table; }
@@ -381,10 +381,10 @@ form { margin: 0 0 1em; }
 
 /* Using forms within rows, we need to set some defaults */
 form .row .row { margin: 0 -0.5em; }
-form .row .row .column, form .row .row .columns, form .row .row header.page-header p, header.page-header form .row .row p, form .row .row ul.image-list.four-across li, ul.image-list.four-across form .row .row li, form .row .row ul.image-list.three-across li, ul.image-list.three-across form .row .row li, form .row .row body.home section.welcome .mission-statement, body.home section.welcome form .row .row .mission-statement, form .row .row body.home .highlight-article article, body.home .highlight-article form .row .row article, form .row .row body.gathering .register-now, body.gathering form .row .row .register-now, form .row .row body.gathering .info-col, body.gathering form .row .row .info-col, form .row .row body.equip .equip-post-list section.hero-img, body.equip .equip-post-list form .row .row section.hero-img, form .row .row body.equip .equip-post-entry section.hero-img, body.equip .equip-post-entry form .row .row section.hero-img, form .row .row body.equip .equip-post-list section.post-wrap, body.equip .equip-post-list form .row .row section.post-wrap, form .row .row body.equip .equip-post-entry section.post-wrap, body.equip .equip-post-entry form .row .row section.post-wrap { padding: 0 0.5em; }
+form .row .row .column, form .row .row .columns, form .row .row header.page-header p, header.page-header form .row .row p, form .row .row ul.image-list.four-across li, ul.image-list.four-across form .row .row li, form .row .row ul.image-list.three-across li, ul.image-list.three-across form .row .row li, form .row .row body.home section.welcome .mission-statement, body.home section.welcome form .row .row .mission-statement, form .row .row body.home section.questions .quote, body.home section.questions form .row .row .quote, form .row .row body.home section.questions .question, body.home section.questions form .row .row .question, form .row .row body.home .highlight-article article, body.home .highlight-article form .row .row article, form .row .row body.gathering .register-now, body.gathering form .row .row .register-now, form .row .row body.gathering .info-col, body.gathering form .row .row .info-col, form .row .row body.equip .equip-post-list section.post-wrap, body.equip .equip-post-list form .row .row section.post-wrap, form .row .row body.equip .equip-post-entry section.post-wrap, body.equip .equip-post-entry form .row .row section.post-wrap, form .row .row body.unleash-post header.unleash-post-header, body.unleash-post form .row .row header.unleash-post-header, form .row .row body.unleash-post header.unleash-post-header .title, body.unleash-post header.unleash-post-header form .row .row .title, form .row .row body.unleash-post article.unleash-article, body.unleash-post form .row .row article.unleash-article, form .row .row body.unleash-post footer.unleash-footer .date, body.unleash-post footer.unleash-footer form .row .row .date, form .row .row body.unleash-post footer.unleash-footer .spacer, body.unleash-post footer.unleash-footer form .row .row .spacer, form .row .row body.unleash-post footer.unleash-footer .social, body.unleash-post footer.unleash-footer form .row .row .social, form .row .row body.unleash-post footer.unleash-footer .return-nav-wrap, body.unleash-post footer.unleash-footer form .row .row .return-nav-wrap { padding: 0 0.5em; }
 form .row .row.collapse { margin: 0; }
-form .row .row.collapse .column, form .row .row.collapse .columns, form .row .row.collapse header.page-header p, header.page-header form .row .row.collapse p, form .row .row.collapse ul.image-list.four-across li, ul.image-list.four-across form .row .row.collapse li, form .row .row.collapse ul.image-list.three-across li, ul.image-list.three-across form .row .row.collapse li, form .row .row.collapse body.home section.welcome .mission-statement, body.home section.welcome form .row .row.collapse .mission-statement, form .row .row.collapse body.home .highlight-article article, body.home .highlight-article form .row .row.collapse article, form .row .row.collapse body.gathering .register-now, body.gathering form .row .row.collapse .register-now, form .row .row.collapse body.gathering .info-col, body.gathering form .row .row.collapse .info-col, form .row .row.collapse body.equip .equip-post-list section.hero-img, body.equip .equip-post-list form .row .row.collapse section.hero-img, form .row .row.collapse body.equip .equip-post-entry section.hero-img, body.equip .equip-post-entry form .row .row.collapse section.hero-img, form .row .row.collapse body.equip .equip-post-list section.post-wrap, body.equip .equip-post-list form .row .row.collapse section.post-wrap, form .row .row.collapse body.equip .equip-post-entry section.post-wrap, body.equip .equip-post-entry form .row .row.collapse section.post-wrap { padding: 0; }
-form .row input.column, form .row input.columns, form .row body.home section.welcome input.mission-statement, body.home section.welcome form .row input.mission-statement, form .row body.gathering input.register-now, body.gathering form .row input.register-now, form .row body.gathering input.info-col, body.gathering form .row input.info-col, form .row textarea.column, form .row textarea.columns, form .row body.home section.welcome textarea.mission-statement, body.home section.welcome form .row textarea.mission-statement, form .row body.gathering textarea.register-now, body.gathering form .row textarea.register-now, form .row body.gathering textarea.info-col, body.gathering form .row textarea.info-col { padding-left: 0.5em; }
+form .row .row.collapse .column, form .row .row.collapse .columns, form .row .row.collapse header.page-header p, header.page-header form .row .row.collapse p, form .row .row.collapse ul.image-list.four-across li, ul.image-list.four-across form .row .row.collapse li, form .row .row.collapse ul.image-list.three-across li, ul.image-list.three-across form .row .row.collapse li, form .row .row.collapse body.home section.welcome .mission-statement, body.home section.welcome form .row .row.collapse .mission-statement, form .row .row.collapse body.home section.questions .quote, body.home section.questions form .row .row.collapse .quote, form .row .row.collapse body.home section.questions .question, body.home section.questions form .row .row.collapse .question, form .row .row.collapse body.home .highlight-article article, body.home .highlight-article form .row .row.collapse article, form .row .row.collapse body.gathering .register-now, body.gathering form .row .row.collapse .register-now, form .row .row.collapse body.gathering .info-col, body.gathering form .row .row.collapse .info-col, form .row .row.collapse body.equip .equip-post-list section.post-wrap, body.equip .equip-post-list form .row .row.collapse section.post-wrap, form .row .row.collapse body.equip .equip-post-entry section.post-wrap, body.equip .equip-post-entry form .row .row.collapse section.post-wrap, form .row .row.collapse body.unleash-post header.unleash-post-header, body.unleash-post form .row .row.collapse header.unleash-post-header, form .row .row.collapse body.unleash-post header.unleash-post-header .title, body.unleash-post header.unleash-post-header form .row .row.collapse .title, form .row .row.collapse body.unleash-post article.unleash-article, body.unleash-post form .row .row.collapse article.unleash-article, form .row .row.collapse body.unleash-post footer.unleash-footer .date, body.unleash-post footer.unleash-footer form .row .row.collapse .date, form .row .row.collapse body.unleash-post footer.unleash-footer .spacer, body.unleash-post footer.unleash-footer form .row .row.collapse .spacer, form .row .row.collapse body.unleash-post footer.unleash-footer .social, body.unleash-post footer.unleash-footer form .row .row.collapse .social, form .row .row.collapse body.unleash-post footer.unleash-footer .return-nav-wrap, body.unleash-post footer.unleash-footer form .row .row.collapse .return-nav-wrap { padding: 0; }
+form .row input.column, form .row input.columns, form .row body.home section.welcome input.mission-statement, body.home section.welcome form .row input.mission-statement, form .row body.home section.questions input.quote, body.home section.questions form .row input.quote, form .row body.home section.questions input.question, body.home section.questions form .row input.question, form .row body.gathering input.register-now, body.gathering form .row input.register-now, form .row body.gathering input.info-col, body.gathering form .row input.info-col, form .row body.unleash-post header.unleash-post-header input.title, body.unleash-post header.unleash-post-header form .row input.title, form .row body.unleash-post footer.unleash-footer input.date, body.unleash-post footer.unleash-footer form .row input.date, form .row body.unleash-post footer.unleash-footer input.spacer, body.unleash-post footer.unleash-footer form .row input.spacer, form .row body.unleash-post footer.unleash-footer input.social, body.unleash-post footer.unleash-footer form .row input.social, form .row body.unleash-post footer.unleash-footer input.return-nav-wrap, body.unleash-post footer.unleash-footer form .row input.return-nav-wrap, form .row textarea.column, form .row textarea.columns, form .row body.home section.welcome textarea.mission-statement, body.home section.welcome form .row textarea.mission-statement, form .row body.home section.questions textarea.quote, body.home section.questions form .row textarea.quote, form .row body.home section.questions textarea.question, body.home section.questions form .row textarea.question, form .row body.gathering textarea.register-now, body.gathering form .row textarea.register-now, form .row body.gathering textarea.info-col, body.gathering form .row textarea.info-col, form .row body.unleash-post header.unleash-post-header textarea.title, body.unleash-post header.unleash-post-header form .row textarea.title, form .row body.unleash-post footer.unleash-footer textarea.date, body.unleash-post footer.unleash-footer form .row textarea.date, form .row body.unleash-post footer.unleash-footer textarea.spacer, body.unleash-post footer.unleash-footer form .row textarea.spacer, form .row body.unleash-post footer.unleash-footer textarea.social, body.unleash-post footer.unleash-footer form .row textarea.social, form .row body.unleash-post footer.unleash-footer textarea.return-nav-wrap, body.unleash-post footer.unleash-footer form .row textarea.return-nav-wrap { padding-left: 0.5em; }
 
 /* Label Styles */
 label { font-size: 0.875em; color: #4d4d4d; cursor: pointer; display: block; font-weight: 500; margin-bottom: 0.1875em; /* Styles for required inputs */ }
@@ -499,8 +499,7 @@ ul.pagination li { float: left; display: block; }
 
 html { height: 100%; }
 
-body { background: url(../images/patterns/cream.png) repeat; }
-
+.site-header { background: url(../images/patterns/cream.png) repeat; }
 .site-header .brand { text-align: center; padding: 94px 0 104px; -webkit-transition: all 0.5s ease-in; -moz-transition: all 0.5s ease-in; transition: all 0.5s ease-in; }
 .site-header .brand a { display: block; }
 .site-header .brand h1 { text-indent: -9999px; position: absolute; }
@@ -519,7 +518,7 @@ nav.site-nav ul li.active a:after { content: ''; top: 61px; height: 0; left: 50%
 .content-wrap { background: white; padding-bottom: 142px; }
 
 .site-footer { position: relative; bottom: 0; width: 100%; background: url("../images/patterns/grey.png") repeat; padding: 40px 0; }
-.site-footer .inner { width: 100%; margin-left: auto; margin-right: auto; margin-top: 0; margin-bottom: 0; max-width: 62.5em; *zoom: 1; }
+.site-footer .inner { width: 100%; margin-left: auto; margin-right: auto; margin-top: 0; margin-bottom: 0; max-width: 62.5em; *zoom: 1; padding: 0 15px; }
 .site-footer .inner:before, .site-footer .inner:after { content: " "; display: table; }
 .site-footer .inner:after { clear: both; }
 .site-footer ul li { display: inline-block; }
@@ -533,7 +532,7 @@ nav.site-nav ul li.active a:after { content: ''; top: 61px; height: 0; left: 50%
 
 h1, h2, h3, h4, h5, h6 { text-align: center; text-transform: uppercase; }
 
-h2 { letter-spacing: .4em; line-height: 1.5em; }
+h2 { font-size: 1.25em; letter-spacing: .4em; line-height: 1.5em; }
 
 h3 { line-height: 1.5em; letter-spacing: .24em; }
 
@@ -559,6 +558,8 @@ header.page-header p { margin: auto auto; float: none; letter-spacing: .12em; fo
 .newspaper-col { -webkit-columns: 2 8em; -moz-columns: 2 8em; columns: 2 8em; padding: 0 15px; }
 @media (max-width: 768px) { .newspaper-col { -webkit-columns: 1; -moz-columns: 1; columns: 1; } }
 
+.date { display: inline-block; font-family: "Sackers-Gothic"; letter-spacing: .24em; font-size: 0.875em; }
+
 .dart-wht-right { display: inline-block; background-position: -68px -62px; height: 14px; width: 30px; }
 
 .dart-blk-right { display: inline-block; background-position: -68px -24px; height: 14px; width: 30px; }
@@ -579,17 +580,19 @@ header.page-header p { margin: auto auto; float: none; letter-spacing: .12em; fo
 .brackets.lrg:before, .brackets.lrg:after { position: absolute; font-family: "Sackers-Roman"; font-size: 11.625em; top: 0; }
 .brackets.med:before, .brackets.med:after { position: absolute; font-family: "Sackers-Roman"; font-size: 7.5em; top: 0; }
 
-ul.image-list { width: 100%; margin-left: auto; margin-right: auto; margin-top: 0; margin-bottom: 0; max-width: 62.5em; *zoom: 1; list-style: none; }
+ul.image-list { width: 100%; margin-left: auto; margin-right: auto; margin-top: 0; margin-bottom: 0; max-width: 62.5em; *zoom: 1; list-style: none; font-size: 14px; }
 ul.image-list:before, ul.image-list:after { content: " "; display: table; }
 ul.image-list:after { clear: both; }
 ul.image-list.four-across li { padding: 4px; }
 ul.image-list.three-across li { padding: 4px; }
+@media (max-width: 979px) { ul.image-list.three-across, ul.image-list.four-across { padding: 0 15px; } }
 
 ul.post-list { list-style: none; }
 ul.post-list li { border-bottom: 1px #5f5e5f solid; }
 ul.post-list li:first-child { border-top: 1px #5f5e5f solid; }
 ul.post-list li:last-child { border-bottom: 0px; }
 ul.post-list .dart-blk-right { margin: 6px 15px 0 0; float: right; }
+@media (max-width: 768px) { ul.post-list .dart-blk-right { float: none; } }
 
 .button { box-shadow: none; background: rgba(0, 0, 0, 0); color: #5f5e5f; font-family: "Sackers-Gothic"; position: relative; width: 100%; padding: .8em; }
 .button:after { content: ''; position: absolute; font-family: "EntypoRegular"; font-size: 1.5em; padding-top: 4px; top: 0px; right: 10px; padding-left: 10px; height: 100%; border-left: 1px solid #5f5e5f; }
@@ -605,46 +608,55 @@ input.search:after { content: ''; position: absolute; font-family: "EntypoReg
 
 input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], textarea { height: auto; padding: .4em .8em; font-size: 1em; }
 
-.img-wrap-overlay { position: relative; vertical-align: top; }
-.img-wrap-overlay .overlay-wrap { position: absolute; top: 0; bottom: 0; right: 0; height: 0; overflow: hidden; width: 100%; height: 0; text-align: center; -webkit-transition: background 0.2s linear; -moz-transition: background 0.2s linear; transition: background 0.2s linear; }
-.img-wrap-overlay .overlay-wrap:before { content: ''; display: inline-block; height: 100%; vertical-align: middle; margin-right: -0.25em; }
-.img-wrap-overlay:hover .overlay-wrap { background: rgba(0, 0, 0, 0.8); height: 100% !important; }
-.img-wrap-overlay .inner { display: inline-block; vertical-align: middle; position: relative; top: auto; left: auto; top: 50%; left: 50%; margin: -240px 0 0 -240px; text-align: center; }
-.img-wrap-overlay h4, .img-wrap-overlay p, .img-wrap-overlay span, .img-wrap-overlay a { color: white; }
-.img-wrap-overlay h4 { font-size: 0.875em; max-width: 200px; }
-.img-wrap-overlay p { width: 200px; display: block; }
+ul.image-list li { display: inline-block; position: relative; vertical-align: top; }
+ul.image-list li.active .overlay { background: rgba(0, 0, 0, 0.8); height: 97.8%; }
+ul.image-list li .overlay { margin: 4px; width: 97%; text-align: center; background: rgba(0, 0, 0, 0); height: 0; transition: background 0.2s linear; -webkit-transition: background 0.2s linear; -moz-transition: background 0.2s linear; -o-transition: background 0.2s linear; position: absolute; top: 0; bottom: 0; letter-spacing: 0; overflow: hidden; right: 0; }
+ul.image-list li .overlay:before { content: ''; display: inline-block; height: 97%; vertical-align: middle; margin-right: -0.25em; }
+ul.image-list li .info { display: inline-block; vertical-align: middle; position: relative; top: auto; left: auto; margin: 0; font-size: 12px; font-size: 0.85714rem; line-height: 18px; }
+ul.image-list li .info h4, ul.image-list li .info p, ul.image-list li .info a { color: white; }
+ul.image-list li .info hr { width: 42px; border-color: white; margin: 14px auto 12px; }
+ul.image-list li .info h4 { font-size: 1.25em; }
+ul.image-list li .info p { font-size: 1em; letter-spacing: .12em; padding: 0 24px; }
 
 .cream-pattern { background: url(../images/patterns/cream.png) repeat; width: auto; display: block; }
 .cream-pattern.shadow { -moz-box-shadow: inset 0 0 16px rgba(0, 0, 0, 0.1); -webkit-box-shadow: inset 0 0 16px rgba(0, 0, 0, 0.1); box-shadow: inset 0 0 16px rgba(0, 0, 0, 0.1); }
 
 .sage-pattern { background: url(../images/patterns/sage.png) repeat; width: auto; display: block; }
+.sage-pattern .emph { color: #5f5e5f; }
+.sage-pattern hr { border-color: #5f5e5f; }
 
 .grey-pattern { background: url(../images/patterns/grey.png) repeat; width: auto; display: block; }
 
-body.home { background: url("../images/banners/banner-1.jpg") repeat-y 0 0; background-size: 100%; }
+body.home .site-header { background: url("../images/banners/banner-1.jpg") repeat-y 0 0; background-size: 100%; }
 body.home .site-header .brand { padding: 164px 0; }
 @media (max-width: 979px) { body.home .site-header .brand { padding: 120px 0; } }
 @media (max-width: 480px) { body.home .site-header .brand { padding: 80px 0 32px; } }
 body.home nav.site-nav ul li a { color: white; }
 body.home section.welcome .mission-statement { margin: auto auto; float: none; margin: 42px auto 54px; }
 body.home section.welcome .what-if-wrap { position: relative; }
-body.home section.welcome .what-if-wrap a { padding: 46px 60px; margin-left: 124px; height: 200px; }
+body.home section.welcome .what-if-wrap a { padding: 36px 60px 46px; margin-left: 124px; height: 200px; }
 body.home section.welcome .what-if-wrap a header { float: right; }
-body.home section.welcome .what-if-wrap a header h2 { text-align: center; margin: 0; }
+body.home section.welcome .what-if-wrap a header h2 { font-size: 1.625em; text-align: center; margin: 0; }
 body.home section.welcome .what-if-wrap .what-if-clg { background: url(../images/collages/what-if-clg.png) no-repeat; height: 229px; width: 100%; position: absolute; top: 12px; }
 @media (max-width: 768px) { body.home section.welcome .what-if-wrap a { margin: 0; }
   body.home section.welcome .what-if-wrap a header { float: none; }
   body.home section.welcome .what-if-wrap .what-if-clg { display: none; } }
-body.home section.register { background: url(../images/banners/banner-2.jpg) no-repeat; background-size: 100%; margin-top: -52px; height: 100%; }
+body.home section.register { background: url(../images/banners/banner-2.jpg) no-repeat; margin-top: -52px; height: 100%; }
 body.home section.register .quote { float: left; margin: 92px 0 0 54px; }
 body.home section.register .register-now-wrap { width: 40%; clear: both; float: right; }
-body.home section.register .register-now-wrap a { font-family: "Sackers-Gothic"; text-transform: uppercase; color: white; padding: 18px; text-align: center; letter-spacing: .4em; font-size: 0.875em; margin-top: -24px; }
+body.home section.register .register-now-wrap a { font-family: "Sackers-Gothic"; text-transform: uppercase; color: white; padding: 18px; text-align: center; letter-spacing: .4em; font-size: 0.875em; margin-top: -64px; }
 body.home section.register .register-now-wrap .dart-wht-right { position: relative; top: 2px; }
+@media (max-width: 768px) { body.home section.register .register-now-wrap a { margin-top: -12px; } }
 @media (max-width: 768px) { body.home section.register { margin-top: 0; }
   body.home section.register .quote { float: none; margin: 32px; font-size: 14px; }
   body.home section.register .register-now-wrap { width: 100%; } }
 body.home section.questions { background: url(../images/banners/banner-3.jpg) no-repeat; background-size: 100%; height: 100%; }
-body.home .highlight-article { margin: 42px 0 92px; }
+body.home section.questions .quote { float: right; position: relative; z-index: 2; margin: 32px auto 24px; }
+body.home section.questions .question { margin: auto auto; float: none; padding: 48px 52px 46px; clear: both; position: relative; top: -40px; margin-bottom: -54px; }
+body.home section.questions .question h3 { font-size: 1.75em; }
+@media (max-width: 768px) { body.home section.questions .question { float: left; clear: none; margin: auto; top: 0; }
+  body.home section.questions .quote { margin: auto; } }
+body.home .highlight-article { margin: 52px 0 60px; }
 body.home .highlight-article header { padding: 0 15px; }
 body.home .highlight-article header h2 { letter-spacing: .64em; display: inline-block; font-size: 2em; }
 body.home .highlight-article span.tagline { display: inline-block; font-size: 1.125em; color: #5f5e5f; text-indent: 24px; position: relative; top: -4px; letter-spacing: .12em; }
@@ -655,29 +667,41 @@ body.home .highlight-article article p:before, body.home .highlight-article arti
 body.home .quote, body.home .question { padding: 30px 52px 28px; width: auto; }
 body.home .quote h3, body.home .question h3 { margin: 0; font-size: 1.25em; line-height: 36px; }
 
-body.gathering .more-info-wrap header { margin-bottom: 24px; clear: both; }
-body.gathering .more-info-wrap header h3 { font-size: 0.875em; }
-body.gathering .register-now { margin: auto auto; float: none; padding: 20px 0px 12px; margin: 24px auto 40px; }
-body.gathering .register-now h2 { font-size: 1.5em; width: 300px; margin: 0 auto; }
+body.gathering .site-header { background: url("../images/banners/banner-5.jpg") repeat-y 0 0; background-size: 100%; }
+body.gathering nav.site-nav ul li a { color: white; }
+body.gathering .gathering-dates .cream-pattern { padding: 72px 0 60px; position: relative; }
+body.gathering .gathering-dates .cream-pattern:after, body.gathering .gathering-dates .cream-pattern:before { content: ''; position: absolute; top: 0; height: 0; border-top: 20px solid white; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; }
+body.gathering .gathering-dates .cream-pattern:after { right: 0; width: 50%; border-left: 20px solid rgba(0, 0, 0, 0); }
+body.gathering .gathering-dates .cream-pattern:before { left: 0; width: 50%; border-right: 20px solid rgba(0, 0, 0, 0); }
+body.gathering .gathering-dates .inner { margin: 0 auto; width: 80%; }
+body.gathering .register-now { margin: auto auto; float: none; padding: 20px 0px 12px; margin: 0 auto 54px; }
+body.gathering .register-now h2 { font-size: 1.625em; width: 330px; margin: 0 auto; }
 body.gathering .register-now h2:after { top: 5px; right: -30px; }
 @media (max-width: 768px) { body.gathering .register-now h2 { font-size: 1.125em; width: 230px; }
   body.gathering .register-now h2:after { top: 2px; } }
+body.gathering .more-info-wrap header { margin-bottom: 24px; clear: both; }
+body.gathering .more-info-wrap header h3 { font-size: 0.875em; }
 body.gathering .info-col { margin: 40px auto; }
 body.gathering .info-col h4 { font-size: 1em; }
 
-body.what-if { background: url("../images/banners/banner-1.jpg") repeat-y 0 0; background-size: 100%; }
+.prompt-down { position: absolute; width: 100%; height: 30px; margin: 0 auto; top: -30px; }
+.prompt-down:after, .prompt-down:before { content: ''; position: absolute; top: 0; height: 0; border-bottom: 30px solid white; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; }
+.prompt-down:after { right: 0; width: 50%; border-left: 30px solid rgba(0, 0, 0, 0); }
+.prompt-down:before { left: 0; width: 50%; border-right: 30px solid rgba(0, 0, 0, 0); }
+
+body.what-if .site-header { background: url("../images/banners/banner-1.jpg") repeat-y 0 0; background-size: 100%; }
 body.what-if nav.site-nav ul li a { color: white; }
 
 body.equip nav.site-nav { border-bottom: 4px solid white; }
 body.equip nav.site-nav ul li.active a:after { top: 58px; margin-left: -6px; z-index: 1; }
-body.equip .content-wrap { padding-bottom: 0; }
-body.equip .equip-post-list section.hero-img { padding: 0; }
-body.equip .equip-post-entry section.hero-img { padding: 0; }
-body.equip .equip-post-list section.post-wrap { padding: 0; }
-body.equip .equip-post-entry section.post-wrap { padding: 0; }
+body.equip .content-wrap { padding-bottom: 0; background: transparent; }
+body.equip .equip-post-list section.post-wrap { padding: 0; background: white; }
+body.equip .equip-post-entry section.post-wrap { padding: 0; background: white; }
 body.equip section.post-wrap header.title { background: url(../images/patterns/sage.png) repeat; padding: 12px 0 4px; margin-bottom: 52px; font-size: 14px; }
 body.equip section.post-wrap header.title h2 { letter-spacing: .24em; }
-body.equip section.post-wrap header.title.main { padding: 20px 15px 32px; margin-bottom: 40px; }
+@media (max-width: 979px) { body.equip section.post-wrap header.title h2 { font-style: 1.125em; } }
+body.equip section.post-wrap header.title h2 a { padding-left: 12px; }
+body.equip section.post-wrap header.title.main { padding: 20px 15px 36px; margin-bottom: 40px; }
 body.equip section.post-wrap header.title.main:after, body.equip section.post-wrap header.title.main:before { content: ''; position: absolute; top: 74px; height: 0; border-bottom: 20px solid white; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; }
 body.equip section.post-wrap header.title.main:after { right: 0; width: 50%; border-left: 20px solid rgba(0, 0, 0, 0); }
 body.equip section.post-wrap header.title.main:before { left: 0; width: 50%; border-right: 20px solid rgba(0, 0, 0, 0); }
@@ -686,13 +710,39 @@ body.equip section.post-wrap ul.post-list { margin-top: 54px; }
 body.equip .row { max-width: 100%; }
 body.equip .dropdown.button { text-align: left; }
 body.equip header.article-header { clear: both; margin: 14px 0 12px; }
-body.equip header.article-header h4, body.equip header.article-header .date { display: inline-block; font-family: "Sackers-Gothic"; letter-spacing: .24em; font-size: 0.875em; }
+body.equip header.article-header h4 { display: inline-block; font-family: "Sackers-Gothic"; letter-spacing: .24em; font-size: 0.875em; }
 body.equip header.article-header .date { text-align: right; float: right; margin-top: 4px; }
+@media (max-width: 979px) { body.equip header.article-header .date { float: none; } }
 body.equip article.equip-post { padding: 0 40px; }
 body.equip article.equip-post header { border-bottom: 1px solid #5f5e5f; padding-bottom: 12px; margin-bottom: 32px; }
 body.equip article.equip-post header h4 { font-size: 1em; }
 
-body.unleash { background: url("../images/banners/banner-1.jpg") repeat-y 0 0; background-size: 100%; }
+body.unleash .site-header { background: url("../images/banners/banner-1.jpg") repeat-y 0 0; background-size: 100%; }
 body.unleash nav.site-nav ul li a { color: white; }
 body.unleash header.page-header { margin-bottom: 60px; }
 body.unleash header.page-header .brackets.med:before, body.unleash header.page-header .brackets.med:after { top: 50px; margin: 0 -24px; }
+
+body.unleash-post nav.site-nav { border-bottom: 4px solid #FFF; }
+body.unleash-post header.unleash-post-header { margin: -60px auto 40px; position: relative; }
+body.unleash-post header.unleash-post-header .title { padding: 32px 32px 40px; position: relative; margin: auto auto; float: none; }
+body.unleash-post header.unleash-post-header .title .emph { color: #5f5e5f; font-size: 18px; letter-spacing: .1em; }
+body.unleash-post header.unleash-post-header .title hr { border-color: #5f5e5f; }
+body.unleash-post header.unleash-post-header .title:after, body.unleash-post header.unleash-post-header .title:before { content: ''; position: absolute; bottom: 0; height: 0; border-bottom: 20px solid white; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; }
+body.unleash-post header.unleash-post-header .title:after { right: 0; width: 50%; border-left: 20px solid rgba(0, 0, 0, 0); }
+body.unleash-post header.unleash-post-header .title:before { left: 0; width: 50%; border-right: 20px solid rgba(0, 0, 0, 0); }
+@media (max-width: 768px) { body.unleash-post header.unleash-post-header { margin-top: 0; } }
+body.unleash-post header.unleash-post-header .post-navigation { margin: -124px auto 124px; padding: 0 15px; }
+body.unleash-post header.unleash-post-header .post-navigation a.dart-left, body.unleash-post header.unleash-post-header .post-navigation a.dart-right { font-size: 1em; letter-spacing: .1em; }
+body.unleash-post header.unleash-post-header .post-navigation a.dart-left { position: absolute; left: 60px; }
+body.unleash-post header.unleash-post-header .post-navigation a.dart-left:before { left: -40px; top: 0px; }
+body.unleash-post header.unleash-post-header .post-navigation a.dart-right { position: absolute; right: 60px; }
+body.unleash-post header.unleash-post-header .post-navigation a.dart-right:after { right: -40px; top: 0px; }
+@media (max-width: 979px) { body.unleash-post header.unleash-post-header .post-navigation { margin: 12px auto; } }
+body.unleash-post footer.unleash-footer { margin-top: 42px; }
+body.unleash-post footer.unleash-footer hr.full { margin-bottom: 12px; }
+body.unleash-post footer.unleash-footer .date { float: left; }
+body.unleash-post footer.unleash-footer .spacer { border-top: 1px solid #5f5e5f; }
+body.unleash-post footer.unleash-footer .social { text-align: right; margin: 0; float: right; }
+body.unleash-post footer.unleash-footer .return-nav-wrap { margin: auto auto; float: none; margin-top: 64px; }
+body.unleash-post footer.unleash-footer .return-nav-wrap h4 { letter-spacing: .1em; font-size: 1.25em; padding-top: 36px; }
+@media (max-width: 768px) { body.unleash-post footer.unleash-footer .return-nav-wrap { margin-top: 64px; font-size: 0.875em; } }

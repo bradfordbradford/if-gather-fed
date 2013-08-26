@@ -61,10 +61,10 @@
 
                 .row
 
-                    %section.hero-img
-                        %img{:src => "../images/content/bg-placeholder.jpg", :alt => ""}/
+                    / %section.hero-img
+                    / %img{:src => "../images/content/bg-placeholder.jpg", :alt => ""}/
 
-                    %section.post-wrap.equip-post-list
+                    %section.post-wrap.equip-post-list.push-7.columns
                         %header.title.main
                             %h2 Latest Posts
 
@@ -157,4 +157,6 @@
     %script{:rel => "javascript", :src => "../js/foundation/foundation.js"}
     %script{:rel => "javascript", :src => "../js/foundation/foundation.dropdown.js"}
     %script{:rel => "javascript", :src => "../js/site.js"}
-
+    %script{:rel => "javascript", :src => "http://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.3/jquery.backstretch.min.js"}
+    %script
+        $.backstretch("http://dl.dropbox.com/u/515046/www/garfield-interior.jpg");
