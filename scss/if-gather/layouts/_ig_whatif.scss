@@ -15,8 +15,12 @@ body.what-if {
 
     // Site Header
     .site-header {
-        background: url('../images/banners/banner-1.jpg') repeat-y 0 0;
-        background-size: 100%;
+        background: url('../images/banners/pre-edits/banner-2.jpg') 0 0;
+    }
+
+    // Brand
+    .logo {
+        background: url('../images/logos/ifgather-logo-white-shadow-large+@2x.png') no-repeat !important;
     }
 
     // Navigation
@@ -30,9 +34,152 @@ body.what-if {
             top: 50px;
             margin: 0 -24px;
         }
+
         margin-bottom: 60px;
     }
 
+    .prompt.cream-pattern {
+        @include rgrid(12, 10);
+        @include center-cols();
+        clear:both;
+        margin-top: 60px;
+        padding: 16px 0;
+
+        h4 {
+            margin: 0;
+            font-size: 20px;
+            letter-spacing: .15em
+        }
+
+    }
+
+    .form-wrap.sage-pattern {
+        position: relative;
+
+            &:after, &:before {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                height: 0;
+                border-bottom: 20px solid $white;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                -ms-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+
+            &:after {
+                right: 0;
+                width: 50%;
+                border-left: 20px solid rgba(0, 0, 0, 0);
+            }
+
+            &:before {
+                left: 0;
+                width: 50%;
+                border-right: 20px solid rgba(0, 0, 0, 0);
+            }
+
+        .inner {
+            padding: 0 40px 40px;
+            @include grid-row();
+        }
+
+        .question {
+            @include rgrid(12, 3);
+            margin-top: 74px;
+
+            h4 {
+                font-weight: 600;
+                font-size: emCalc(20);
+                letter-spacing: .2em;
+            }
+        }
+
+
+
+        form {
+            padding: 0 60px;
+            @include rgrid(12, 9);
+            margin: 32px 0 16px;
+
+            textarea.what-if-textarea{
+                border: 0;
+                line-height: 56px;
+                font-size: emCalc(17);
+                margin:-18px 0 0;
+                padding-top: 8px;
+                background: url('../images/ornaments/lines.png') repeat 0 19px;
+                height: 200px;
+
+                &:focus {
+                    background: url('../images/ornaments/lines.png') repeat 0 19px;
+                }
+            }
+
+            input.what-if-input {
+                line-height: 20px;
+                font-size: emCalc(17);
+                background: transparent;
+                margin:40px 0 54px;
+                border: 0;
+                border-bottom: 1px solid $primary-color;
+            }
+
+            .characters {
+                float:left;
+                font-style: italic;
+                font-weight: 600;
+                font-family: $serif-generic;
+                color: $primary-color;
+            }
+
+            input#submit {
+                border: 0;
+                display: block;
+                font-family: inherit;
+                font-style: italic;
+                font-size: 16px;
+                text-align: right;
+                font-weight: 600;
+            }
+
+            .dart-right:after {
+                top: -22px;
+                right: 64px;
+            }
+
+            textarea {
+
+                &:focus {
+                    background: none;
+                }
+            }
+
+        }
+
+        @include breakpoint(phones) {
+            form {
+                padding: 0;
+                margin: 10px 0 24px;
+            }
+            .question {
+                margin-top: 32px;
+            }
+            .brackets {
+                &:before, &:after {
+                    content: '';
+                }
+            }
+        }
+    }
+
+}
+
+@include breakpoint(tablet-H) {
+    html.touch ul.image-list {
+        display: none;
+    }
 }
 
 

@@ -16,14 +16,18 @@ body.home {
 
     // Site Header
     .site-header {
-        background: url('../images/banners/banner-1.jpg') repeat-y 0 0;
-        background-size: 100%;
+        background: url('../images/banners/banner-1.jpg')0 -30px;
     }
 
     // Brand
     .site-header .brand {
-        padding: 164px 0;
+        padding: 156px 0;
+
+        .logo {
+            background: url('../images/logos/ifgather-logo-white-shadow-large+@2x.png') no-repeat;
+        }
     }
+
 
     @include breakpoint(tablet-H) {
         .site-header .brand {
@@ -65,6 +69,7 @@ body.home {
 
                 header {
                     float:right;
+                    width: 260px;
                     h2 {
                         font-size: emCalc(26);
                         text-align: center;
@@ -78,6 +83,26 @@ body.home {
                 width: 100%;
                 position: absolute;
                 top: 12px;
+            }
+
+
+            @include breakpoint(tablet-H) {
+                a {
+                    padding: 54px 32px;
+
+                    header {
+                        float:none;
+                        margin: 0 auto;
+                        h2 {
+                            font-size:emCalc(18);
+                            letter-spacing: emCalc(4);
+                        }
+                    }
+                }
+                .what-if-clg {
+                    left: -32px;
+                }
+
             }
 
             @include breakpoint(tablet-V) {
@@ -100,14 +125,21 @@ body.home {
     // ------------------
     section.register {
         background: url(../images/banners/banner-2.jpg) no-repeat;
-        // background-size: 100%;
         margin-top: -52px;
         height: 100%;
+
+        @include breakpoint(large-monitors) {
+            background-size: 100%;
+        }
 
         .quote {
             float:left;
             margin: 92px 0 0 54px;
 
+            h3 {
+                width: 150px;
+                margin: 0 auto;
+            }
         }
 
         .register-now-wrap {
@@ -243,6 +275,14 @@ body.home {
                 padding: 0 15px;
                 font-size: 12px;
                 margin-bottom: 24px;
+                text-align: center;
+            }
+
+            .brackets.lrg {
+                padding: 0 15px;
+                &:before, &:after {
+                    content: '';
+                }
             }
         }
     }

@@ -16,8 +16,13 @@ body {
     -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
+#site-wrap {
+    position: relative;
+}
+
 // Site Header
 // ----------------
+
 .site-header {
     // Default Site Header
     background: url(../images/patterns/cream.png) repeat;
@@ -35,28 +40,34 @@ body {
              position: absolute;
         }
 
-    }
+        .logo {
+            background: url('../images/logos/ifgather-logo-drk-large+@2x.png') no-repeat;
+            background-size:100% !important;
+            display: inline-block;
+            margin: 0 auto;
+            height: 120px;
+            width: 44.5%;
 
-    @include breakpoint(tablet-H) {
-        .brand {
-            a {
-                width:60%;
-                margin: 0 auto;
+            @include breakpoint(tablet-V) {
+                width: 80%;
+                height: 80px;
             }
         }
-    }
 
-    @include breakpoint(phones) {
-        .brand {
-            padding: 80px 0 32px;
-
-            a {
-                width:80%;
-            }
-        }
     }
 }
 
+
+@include breakpoint(large-monitors) {
+    .site-header {
+        background-size: 100% !important;
+    }
+}
+body.equip, body.story, body.search, body.unleash-story {
+    .site-header {
+        background-size: auto !important;
+    }
+}
 
 
 // Site Navigation
@@ -69,7 +80,7 @@ nav.site-nav {
         margin: 0 auto;
         position: relative;
         top: -40px;
-        @include transition(all .5s ease-in);
+        @include transition(all .5s ease);
 
         li {
             display: inline-block;
@@ -123,7 +134,7 @@ nav.site-nav {
     }
 }
 
-#site-wrap {
+#container {
     position: relative;
 }
 
@@ -150,8 +161,9 @@ nav.site-nav {
         padding: 0 15px;
     }
 
-    ul li {
+    ul li, li {
         display: inline-block;
+        list-style:none;
     }
 
     a {
@@ -175,6 +187,7 @@ nav.site-nav {
         float:right;
         width: 50px;
     }
+
 
     .row {
         padding: 0 20px;

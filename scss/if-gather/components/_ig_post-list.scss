@@ -23,16 +23,11 @@ ul.post-list {
             border-bottom:0px;
         }
 
-        // @include breakpoint(tablet-V) {
-        //     p {
-        //         margin-bottom:34px;
-        //     }
-        // }
     }
 
 
     .dart-blk-right {
-        margin:6px 15px 0 0;
+        margin:-38px 15px 0 0;
         float:right;
 
         @include breakpoint(tablet-V) {

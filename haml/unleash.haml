@@ -1,215 +1,215 @@
-!!!
+!!! 5
+-# paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+/[if lt IE 9] <html lang="en" class="no-js lt-ie9">
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
 
-%html{:lang => "en"}
+%head
+    / Meta
+    %meta{:charset => "UTF-8"}
+    %title If: Gather --dev
+    %meta{:name=>"description", :content=>"If:Gather is…"}
+    %meta{:name=>"author", :content=>"If:Gather"}
+    %meta{:name=>"viewport", :content=>"width=device-width,initial-scale=1"}
+    / Style
+    %link{:rel => "stylesheet", :href => "../css/site.css"}
+    /[if lt IE 9 ]
+        %link{:rel => "stylesheet", :href => "../css/ie.css"}/
+    / Scripts
+    %script{:rel => "javascript", :src => "../js/vendor/custom.modernizr.js"}
 
-    %head
-        / Meta
-        %meta{:charset => "UTF-8"}
-        %title If: Gather --dev
-        %meta{:name=>"description", :content=>"If:Gather is…"}
-        %meta{:name=>"author", :content=>"If:Gather"}
-        %meta{:name=>"viewport", :content=>"width=device-width,initial-scale=1"}
-        / Style
-        %link{:rel => "stylesheet", :href => "../css/site.css"}
-        / Fonts
-        %script{:type => "text/javascript", :src => "//use.typekit.net/ahk2bse.js"}
-        %script{:type => "text/javascript"} try{Typekit.load();}catch(e){}
+%body.unleash
 
-        / Scripts
-        %script{:rel => "javascript", :src => "../js/vendor/custom.modernizr.js"}
+    %nav.pushy.pushy-left
+        %ul
+            %li
+                %a{:href => "gathering.html"}
+                    Gathering
 
-    %body.unleash
+            %li
+                %a{:href => "what-if.html"}
+                    What If?
 
-        %nav.pushy.pushy-left
-            %ul
-                %li
-                    %a{:href => "gathering.html"}
-                        Gathering
+            %li
+                %a{:href => "equip.html"}
+                    Equip
 
-                %li
-                    %a{:href => "what-if.html"}
-                        What If?
+            %li.active
+                %a{:href => "unleash.html"}
+                    Unleash
 
-                %li
-                    %a{:href => "equip.html"}
-                        Equip
+            %li
+                %a{:href => "connect.html"}
+                    Connect
 
-                %li
-                    %a{:href => "unleash.html"}
-                        Unleash
+            %li
+                %a{:href => "who-we-are.html"}
+                    Who We Are
 
-                %li
-                    %a{:href => "connect.html"}
-                        Connect
+    #site-wrap
 
-                %li
-                    %a{:href => "who-we-are.html"}
-                        Who We Are
-
-        #site-wrap
-
-            %section.site-header
-                .brand
-                    %a{:href => "index.html"}
-                        %img{:src => "../images/logos/ifgather-logo-white-shadow-large+@2x.png", :alt => ""}/
-                        %h1 IF:GATHERING
-
-
-                %nav.site-nav
-                    %ul
-                        %li
-                            %a{:href => "gathering.html"}
-                                Gathering
-
-                        %li
-                            %a{:href => "what-if.html"}
-                                What If?
-
-                        %li
-                            %a{:href => "equip.html"}
-                                Equip
-
-                        %li.active
-                            %a{:href => "unleash.html"}
-                                Unleash
-
-                        %li
-                            %a{:href => "connect.html"}
-                                Connect
-
-                        %li
-                            %a{:href => "who-we-are.html"}
-                                Who We Are
+        %section.site-header
+            .brand
+                %a{:href => "index.html"}
+                    %img{:src => "../images/logos/ifgather-logo-white-shadow-large+@2x.png", :alt => ""}/
+                    %h1 IF:GATHERING
 
 
-                .menu-btn
-                    %span ☰
-                    Menu
-
-            %section.content-wrap
-
-                .row
-                    %header.page-header
-                        %h2
-                            unleash
-                        %hr.dotted/
-
-                        %p.brackets.med
-                            Sriracha flexitarian yr, umami blue bottle next level cliche
-                            ugh wolf cardigan elit laboris mustache Brooklyn meggings.
-                            Flannel est meh, helvetica placeat irony forage aliqua yr irure.
-                            Leggings eu High Life, pickled skateboard Schlitz swag delectus.
-
-
-                .row
-                    %ul.image-list.three-across
-                        %li
-                            %a.overlay{:href => "unleash-post.html"}
-                                .info
-                                    %h4
-                                        Mary Sparks
-                                    %hr/
-                                    %p Occupation &amp; Primary Past-Time
-                            %img{:src => "../images/content/placeholder-square.jpg", :alt => ""}/
-
-                        %li
-                            %a.overlay{:href => "unleash-post.html"}
-                                .info
-                                    %h4
-                                        Mary Sparks
-                                    %hr/
-                                    %p Occupation &amp; Primary Past-Time
-                            %img{:src => "../images/content/placeholder-square.jpg", :alt => ""}/
-
-                        %li
-                            %a.overlay{:href => "unleash-post.html"}
-                                .info
-                                    %h4
-                                        Mary Sparks
-                                    %hr/
-                                    %p Occupation &amp; Primary Past-Time
-                            %img{:src => "../images/content/placeholder-square.jpg", :alt => ""}/
-
-                        %li
-                            %a.overlay{:href => "unleash-post.html"}
-                                .info
-                                    %h4
-                                        Mary Sparks
-                                    %hr/
-                                    %p Occupation &amp; Primary Past-Time
-                            %img{:src => "../images/content/placeholder-square.jpg", :alt => ""}/
-
-                        %li
-                            %a.overlay{:href => "unleash-post.html"}
-                                .info
-                                    %h4
-                                        Mary Sparks
-                                    %hr/
-                                    %p Occupation &amp; Primary Past-Time
-                            %img{:src => "../images/content/placeholder-square.jpg", :alt => ""}/
-
-                        %li
-                            %a.overlay{:href => "unleash-post.html"}
-                                .info
-                                    %h4
-                                        Mary Sparks
-                                    %hr/
-                                    %p Occupation &amp; Primary Past-Time
-                            %img{:src => "../images/content/placeholder-square.jpg", :alt => ""}/
-
-                        %li
-                            %a.overlay{:href => "unleash-post.html"}
-                                .info
-                                    %h4
-                                        Mary Sparks
-                                    %hr/
-                                    %p Occupation &amp; Primary Past-Time
-                            %img{:src => "../images/content/placeholder-square.jpg", :alt => ""}/
-
-                        %li
-                            %a.overlay{:href => "unleash-post.html"}
-                                .info
-                                    %h4
-                                        Mary Sparks
-                                    %hr/
-                                    %p Occupation &amp; Primary Past-Time
-                            %img{:src => "../images/content/placeholder-square.jpg", :alt => ""}/
-
-                        %li
-                            %a.overlay{:href => "unleash-post.html"}
-                                .info
-                                    %h4
-                                        Mary Sparks
-                                    %hr/
-                                    %p Occupation &amp; Primary Past-Time
-                            %img{:src => "../images/content/placeholder-square.jpg", :alt => ""}/
-
-
-
-
-
-            %footer.site-footer
-                .inner
-                    .site-map
+            %nav.site-nav
+                %ul
+                    %li
                         %a{:href => "gathering.html"}
                             Gathering
+
+                    %li
                         %a{:href => "what-if.html"}
                             What If?
+
+                    %li
                         %a{:href => "equip.html"}
                             Equip
+
+                    %li.active
                         %a{:href => "unleash.html"}
                             Unleash
+
+                    %li
                         %a{:href => "connect.html"}
                             Connect
+
+                    %li
                         %a{:href => "who-we-are.html"}
                             Who We Are
 
-                    .brand
-                        %a{:href => "index.html"}
-                            %img{:src => "../images/logos/ifgather-logo-white-sm.png", :alt => ""}/
+
+            .menu-btn
+                %span ☰
+                Menu
+
+        %section.content-wrap
+
+            .row
+                %header.page-header
+                    %h2
+                        unleash
+                    %hr.dotted/
+
+                    %p.brackets.med
+                        Sriracha flexitarian yr, umami blue bottle next level cliche
+                        ugh wolf cardigan elit laboris mustache Brooklyn meggings.
+                        Flannel est meh, helvetica placeat irony forage aliqua yr irure.
+                        Leggings eu High Life, pickled skateboard Schlitz swag delectus.
+
+
+            .row
+                %ul.image-list.three-across
+                    %li
+                        %a.overlay{:href => "unleash-post.html"}
+                            .info
+                                %h4
+                                    Mary Sparks
+                                %hr/
+                                %p Occupation &amp; Primary Past-Time
+                        %img{:src => "../images/content/placeholder-square.jpg", :alt => ""}/
+
+                    %li
+                        %a.overlay{:href => "unleash-post.html"}
+                            .info
+                                %h4
+                                    Mary Sparks
+                                %hr/
+                                %p Occupation &amp; Primary Past-Time
+                        %img{:src => "../images/content/placeholder-square.jpg", :alt => ""}/
+
+                    %li
+                        %a.overlay{:href => "unleash-post.html"}
+                            .info
+                                %h4
+                                    Mary Sparks
+                                %hr/
+                                %p Occupation &amp; Primary Past-Time
+                        %img{:src => "../images/content/placeholder-square.jpg", :alt => ""}/
+
+                    %li
+                        %a.overlay{:href => "unleash-post.html"}
+                            .info
+                                %h4
+                                    Mary Sparks
+                                %hr/
+                                %p Occupation &amp; Primary Past-Time
+                        %img{:src => "../images/content/placeholder-square.jpg", :alt => ""}/
+
+                    %li
+                        %a.overlay{:href => "unleash-post.html"}
+                            .info
+                                %h4
+                                    Mary Sparks
+                                %hr/
+                                %p Occupation &amp; Primary Past-Time
+                        %img{:src => "../images/content/placeholder-square.jpg", :alt => ""}/
+
+                    %li
+                        %a.overlay{:href => "unleash-post.html"}
+                            .info
+                                %h4
+                                    Mary Sparks
+                                %hr/
+                                %p Occupation &amp; Primary Past-Time
+                        %img{:src => "../images/content/placeholder-square.jpg", :alt => ""}/
+
+                    %li
+                        %a.overlay{:href => "unleash-post.html"}
+                            .info
+                                %h4
+                                    Mary Sparks
+                                %hr/
+                                %p Occupation &amp; Primary Past-Time
+                        %img{:src => "../images/content/placeholder-square.jpg", :alt => ""}/
+
+                    %li
+                        %a.overlay{:href => "unleash-post.html"}
+                            .info
+                                %h4
+                                    Mary Sparks
+                                %hr/
+                                %p Occupation &amp; Primary Past-Time
+                        %img{:src => "../images/content/placeholder-square.jpg", :alt => ""}/
+
+                    %li
+                        %a.overlay{:href => "unleash-post.html"}
+                            .info
+                                %h4
+                                    Mary Sparks
+                                %hr/
+                                %p Occupation &amp; Primary Past-Time
+                        %img{:src => "../images/content/placeholder-square.jpg", :alt => ""}/
 
 
 
-    %script{:rel => "javascript", :src => "https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"}
+
+
+        %footer.site-footer
+            .inner
+                .site-map
+                    %a{:href => "gathering.html"}
+                        Gathering
+                    %a{:href => "what-if.html"}
+                        What If?
+                    %a{:href => "equip.html"}
+                        Equip
+                    %a{:href => "unleash.html"}
+                        Unleash
+                    %a{:href => "connect.html"}
+                        Connect
+                    %a{:href => "who-we-are.html"}
+                        Who We Are
+
+                .brand
+                    %a{:href => "index.html"}
+                        %img{:src => "../images/logos/ifgather-logo-white-sm.png", :alt => ""}/
+
+
+    %script{:rel => "javascript", :src => "../js/vendor/jquery.js"}
     %script{:rel => "javascript", :src => "../js/pushy/pushy.min.js"}
     %script{:rel => "javascript", :src => "../js/site-ck.js"}
+
+

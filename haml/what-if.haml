@@ -1,183 +1,378 @@
-!!!
+!!! 5
+-# paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+/[if lt IE 9] <html lang="en" class="no-js lt-ie9">
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
 
-%html{:lang => "en"}
+%head
+    / Meta
+    %meta{:charset => "UTF-8"}
+    %title If: Gather --dev
+    %meta{:name=>"description", :content=>"If:Gather is…"}
+    %meta{:name=>"author", :content=>"If:Gather"}
+    %meta{:name=>"viewport", :content=>"width=device-width,initial-scale=1"}
+    / Style
+    %link{:rel => "stylesheet", :href => "../css/site.css"}
+    /[if lt IE 9 ]
+        %link{:rel => "stylesheet", :href => "../css/ie.css"}/
+    / Scripts
+    %script{:rel => "javascript", :src => "../js/vendor/custom.modernizr.js"}
 
-    %head
-        / Meta
-        %meta{:charset => "UTF-8"}
-        %title If: Gather --dev
-        %meta{:name=>"description", :content=>"If:Gather is…"}
-        %meta{:name=>"author", :content=>"If:Gather"}
-        %meta{:name=>"viewport", :content=>"width=device-width,initial-scale=1"}
-        / Style
-        %link{:rel => "stylesheet", :href => "../css/site.css"}
-        / Fonts
-        %script{:type => "text/javascript", :src => "//use.typekit.net/ahk2bse.js"}
-        %script{:type => "text/javascript"} try{Typekit.load();}catch(e){}
+%body.what-if
 
-        / Scripts
-        %script{:rel => "javascript", :src => "../js/vendor/custom.modernizr.js"}
+    %nav.pushy.pushy-left
+        %ul
+            %li
+                %a{:href => "gathering.html"}
+                    Gathering
+
+            %li.active
+                %a{:href => "what-if.html"}
+                    What If?
+
+            %li
+                %a{:href => "equip.html"}
+                    Equip
+
+            %li
+                %a{:href => "unleash.html"}
+                    Unleash
+
+            %li
+                %a{:href => "connect.html"}
+                    Connect
+
+            %li
+                %a{:href => "who-we-are.html"}
+                    Who We Are
 
 
-    %body.what-if
+    #site-wrap
 
-        %nav.pushy.pushy-left
-            %ul
-                %li
+        %section.site-header
+            .brand
+                %a{:href => "index.html"}
+                    %img{:src => "../images/logos/ifgather-logo-white-shadow-large+@2x.png", :alt => ""}/
+                    %h1 IF:GATHERING
+
+
+            #jquery_jplayer
+
+            %nav.site-nav
+                %ul
+                    %li
+                        %a{:href => "gathering.html"}
+                            Gathering
+
+                    %li.active
+                        %a{:href => "what-if.html"}
+                            What If?
+
+                    %li
+                        %a{:href => "equip.html"}
+                            Equip
+
+                    %li
+                        %a{:href => "unleash.html"}
+                            Unleash
+
+                    %li
+                        %a{:href => "connect.html"}
+                            Connect
+
+                    %li
+                        %a{:href => "who-we-are.html"}
+                            Who We Are
+            .menu-btn
+                %span ☰
+                Menu
+
+        %section.content-wrap
+
+            .row
+                %header.page-header
+                    %h2
+                        what if: we feared nothing?
+                    %hr.dotted/
+
+                    %p.brackets.med
+                        Sriracha flexitarian yr, umami blue bottle next level cliche
+                        ugh wolf cardigan elit laboris mustache Brooklyn meggings.
+                        Flannel est meh, helvetica placeat irony forage aliqua yr irure.
+                        Leggings eu High Life, pickled skateboard Schlitz swag delectus.
+
+            .row
+                %ul#player-wrap.image-list.four-across
+                    %li
+                        %a.track{:href => "http://www.jplayer.org/audio/mp3/Miaow-04-Lismore.mp3"}
+                        .overlay
+                            .info
+                                %h4
+                                    Jessica Hische
+                                %hr/
+                                %p Occupation &amp; Primary Past-Time
+                        %img{:src => "../images/content/placeholder-square.jpg", :alt => ""}/
+
+                    %li
+                        %a.track{:href => "http://www.jplayer.org/audio/mp3/Miaow-04-Lismore.mp3"}
+                        .overlay
+                            .info
+                                %h4
+                                    Mary Sparks
+                                %hr/
+                                %p Occupation &amp; Primary Past-Time
+                        %img{:src => "../images/content/placeholder-square.jpg", :alt => ""}/
+
+                    %li
+                        %a.track{:href => "http://www.jplayer.org/audio/mp3/Miaow-04-Lismore.mp3"}
+                        .overlay
+                            .info
+                                %h4
+                                    Megan Wilkes
+                                %hr/
+                                %p Occupation &amp; Primary Past-Time
+                        %img{:src => "../images/content/placeholder-square.jpg", :alt => ""}/
+
+                    %li
+                        %a.track{:href => "http://www.jplayer.org/audio/mp3/Miaow-04-Lismore.mp3"}
+                        .overlay
+                            .info
+                                %h4
+                                    Julie Neill
+                                %hr/
+                                %p Occupation &amp; Primary Past-Time
+                        %img{:src => "../images/content/placeholder-square.jpg", :alt => ""}/
+
+                    %li
+                        %a.track{:href => "http://www.jplayer.org/audio/mp3/Miaow-04-Lismore.mp3"}
+                        .overlay
+                            .info
+                                %h4
+                                    Jessica Hische
+                                %hr/
+                                %p Occupation &amp; Primary Past-Time
+                        %img{:src => "../images/content/placeholder-square.jpg", :alt => ""}/
+
+
+                    %li
+                        %a.track{:href => "http://www.jplayer.org/audio/mp3/Miaow-04-Lismore.mp3"}
+                        .overlay
+                            .info
+                                %h4
+                                    Mary Sparks
+                                %hr/
+                                %p Occupation &amp; Primary Past-Time
+                        %img{:src => "../images/content/placeholder-square.jpg", :alt => ""}/
+
+                    %li
+                        %a.track{:href => "http://www.jplayer.org/audio/mp3/Miaow-04-Lismore.mp3"}
+                        .overlay
+                            .info
+                                %h4
+                                    Megan Wilkes
+                                %hr/
+                                %p Occupation &amp; Primary Past-Time
+                        %img{:src => "../images/content/placeholder-square.jpg", :alt => ""}/
+
+                    %li
+                        %a.track{:href => "http://www.jplayer.org/audio/mp3/Miaow-04-Lismore.mp3"}
+                        .overlay
+                            .info
+                                %h4
+                                    Julie Neill
+                                %hr/
+                                %p Occupation &amp; Primary Past-Time
+                        %img{:src => "../images/content/placeholder-square.jpg", :alt => ""}/
+
+
+            .row
+                .comment-wrap
+                    .cream-pattern.shadow.prompt
+                        .inner
+                            %h4 join the conversation &amp; share your answer
+
+
+                    .sage-pattern.form-wrap
+                        .inner
+                            .question
+                                %h4.sans
+                                    what if: we feared nothing
+
+
+
+                            %form.brackets.lrg{:action => "#", :method => 'get'}
+                                %textarea.what-if-textarea{:name => "", :rows => '4', :cols => '6', :placeholder => "Your Response"}
+                                .characters
+
+                                %input.what-if-input{:type => "text", :placeholder => "Your Name"}/
+
+                                %input#submit{:type => "submit", :value => "Share"}/
+
+                                .dart-right
+
+
+
+            .row
+                %ul.comments-list.js-masonry{:'data-masonry-options' => ""}
+
+                    %li
+                        %blockquote
+                            %p
+                                Enim four loko +1, ex exercitation selvage Thundercats kitsch 3 wolf moon aute banh mi organic sartorial incididunt dolor. Distillery qui direct trade, ennui keffiyeh sartorial ethical chillwave commodo readymade mumblecore skateboard swag lo-fi. Tempor four loko proident, nihil scenester magna 3 wolf moon selvage letterpress pug Thundercats pariatur Wes Anderson art party.
+                            %hr/
+                            %cite
+                                Laren Chandler
+
+                            .addthis_toolbox.addthis_default_style{:'addthis:title' => 'Title to Quote One…', :'addthis:url' => 'www.ifgather.com'}
+                                %a.addthis_button_tweet{:href => ""}
+
+                            %hr.dotted/
+
+                    %li
+                        %blockquote
+                            %p
+                                Enim four loko +1, ex exercitation selvage Thundercats kitsch 3 wolf moon aute banh mi organic sartorial incididunt dolor. Distillery qui direct trade, ennui keffiyeh sartorial ethical chillwave commodo readymade mumblecore skateboard swag lo-fi.
+                            %hr/
+                            %cite
+                                Laren Chandler
+
+                            .addthis_toolbox.addthis_default_style{:'addthis:title' => 'Title to Quote Two', :'addthis:url' => 'www.ifgather.com'}
+                                %a.addthis_button_tweet{:href => ""}
+
+                            %hr.dotted/
+
+                    %li
+                        %blockquote
+                            %p
+                                Thundercats kitsch 3 wolf moon aute banh mi organic sartorial incididunt dolor. Distillery qui direct trade, ennui keffiyeh sartorial ethical chillwave commodo readymade mumblecore skateboard swag lo-fi. Tempor four loko proident, nihil scenester magna 3 wolf moon selvage letterpress pug Thundercats pariatur Wes Anderson art party.
+                            %hr/
+                            %cite
+                                Laren Chandler
+
+                            .addthis_toolbox.addthis_default_style{:'addthis:title' => 'Title to Quote 3', :'addthis:url' => 'www.ifgather.com'}
+                                %a.addthis_button_tweet{:href => ""}
+
+                            %hr.dotted/
+
+                    %li
+                        %blockquote
+                            %p
+                                Enim four loko +1, ex exercitation selvage Thundercats kitsch 3 wolf moon aute banh mi organic sartorial incididunt dolor. Distillery qui direct trade, ennui keffiyeh sartorial ethical chillwave commodo readymade mumblecore skateboard swag lo-fi. Tempor four loko proident, nihil scenester magna 3 wolf moon selvage letterpress pug Thundercats pariatur Wes Anderson art party.
+                            %hr/
+                            %cite
+                                Laren Chandler
+
+                            .addthis_toolbox.addthis_default_style{:'addthis:title' => 'Title to Quote 4', :'addthis:url' => 'www.ifgather.com'}
+                                %a.addthis_button_tweet{:href => ""}
+
+                            %hr.dotted/
+
+                    %li
+                        %blockquote
+                            %p
+                                Enim four loko +1, ex exercitation selvage Thundercats kitsch 3 wolf moon aute banh mi organic sartorial incididunt dolor. Distillery qui direct trade, ennui keffiyeh sartorial ethical chillwave commodo readymade mumblecore skateboard swag lo-fi. Tempor four loko proident, nihil scenester magna 3 wolf moon selvage letterpress pug Thundercats pariatur Wes Anderson art party.
+                            %hr/
+                            %cite
+                                Laren Chandler
+
+                            .addthis_toolbox.addthis_default_style{:'addthis:title' => 'Title to Quote 5', :'addthis:url' => 'www.ifgather.com'}
+                                %a.addthis_button_tweet{:href => ""}
+
+                            %hr.dotted/
+
+                    %li
+                        %blockquote
+                            %p
+                                Enim four loko +1, ex exercitation selvage Thundercats kitsch 3 wolf moon aute banh mi organic sartorial incididunt dolor. Distillery qui direct trade, ennui keffiyeh sartorial ethical chillwave commodo readymade mumblecore skateboard swag lo-fi. Tempor four loko proident, nihil scenester magna 3 wolf moon selvage letterpress pug Thundercats pariatur Wes Anderson art party.
+                            %hr/
+                            %cite
+                                Laren Chandler
+
+                            .addthis_toolbox.addthis_default_style{:'addthis:title' => 'Title to Quote 6', :'addthis:url' => 'www.ifgather.com'}
+                                %a.addthis_button_tweet{:href => ""}
+
+                            %hr.dotted/
+
+                    %li
+                        %blockquote
+                            %p
+                                Enim four loko +1, ex exercitation selvage Thundercats kitsch 3 wolf moon aute banh mi organic sartorial incididunt dolor. Distillery qui direct trade, ennui keffiyeh sartorial ethical chillwave commodo readymade mumblecore skateboard swag lo-fi. Tempor four loko proident, nihil scenester magna 3 wolf moon selvage letterpress pug Thundercats pariatur Wes Anderson art party.
+                            %hr/
+                            %cite
+                                Laren Chandler
+
+                            .addthis_toolbox.addthis_default_style{:'addthis:title' => 'Title to Quote 7', :'addthis:url' => 'www.ifgather.com'}
+                                %a.addthis_button_tweet{:href => ""}
+
+                            %hr.dotted/
+
+
+                    %li
+                        %blockquote
+                            %p
+                                Enim four loko +1, ex exercitation selvage Thundercats kitsch 3 wolf moon aute banh mi organic sartorial incididunt dolor. Distillery qui direct trade, ennui keffiyeh sartorial ethical chillwave commodo readymade mumblecore skateboard swag lo-fi. Tempor four loko proident, nihil scenester magna 3 wolf moon selvage letterpress pug Thundercats pariatur Wes Anderson art party.
+                            %hr/
+                            %cite
+                                Laren Chandler
+
+                            .addthis_toolbox.addthis_default_style{:'addthis:title' => 'Title to Quote 8', :'addthis:url' => 'www.ifgather.com'}
+                                %a.addthis_button_tweet{:href => ""}
+
+                            %hr.dotted/
+
+                    %li
+                        %blockquote
+                            %p
+                                Enim four loko +1, ex exercitation selvage Thundercats kitsch 3 wolf moon aute banh mi organic sartorial incididunt dolor. Distillery qui direct trade, ennui keffiyeh sartorial ethical chillwave commodo readymade mumblecore skateboard swag lo-fi. Tempor four loko proident, nihil scenester magna 3 wolf moon selvage letterpress pug Thundercats pariatur Wes Anderson art party.
+                            %hr/
+                            %cite
+                                Laren Chandler
+
+                            .addthis_toolbox.addthis_default_style{:'addthis:title' => 'Title to Quote 9', :'addthis:url' => 'www.ifgather.com'}
+                                %a.addthis_button_tweet{:href => ""}
+
+                            %hr.dotted/
+
+
+
+        %footer.site-footer
+            .inner
+                .site-map
                     %a{:href => "gathering.html"}
                         Gathering
-
-                %li
                     %a{:href => "what-if.html"}
                         What If?
-
-                %li
                     %a{:href => "equip.html"}
                         Equip
-
-                %li
                     %a{:href => "unleash.html"}
                         Unleash
-
-                %li
                     %a{:href => "connect.html"}
                         Connect
-
-                %li
                     %a{:href => "who-we-are.html"}
                         Who We Are
 
-
-        #site-wrap
-
-            %section.site-header
                 .brand
                     %a{:href => "index.html"}
-                        %img{:src => "../images/logos/ifgather-logo-white-shadow-large+@2x.png", :alt => ""}/
-                        %h1 IF:GATHERING
+                        %img{:src => "../images/logos/ifgather-logo-white-sm.png", :alt => ""}/
 
 
-                #jquery_jplayer
+    / %script{:rel => "javascript", :src => "https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"}
+    %script{:rel => "javascript", :src => "../js/vendor/jquery.js"}
 
-                %nav.site-nav
-                    %ul
-                        %li
-                            %a{:href => "gathering.html"}
-                                Gathering
-
-                        %li.active
-                            %a{:href => "what-if.html"}
-                                What If?
-
-                        %li
-                            %a{:href => "equip.html"}
-                                Equip
-
-                        %li
-                            %a{:href => "unleash.html"}
-                                Unleash
-
-                        %li
-                            %a{:href => "connect.html"}
-                                Connect
-
-                        %li
-                            %a{:href => "who-we-are.html"}
-                                Who We Are
-                .menu-btn
-                    %span ☰
-                    Menu
-
-            %section.content-wrap
-
-                .row
-                    %header.page-header
-                        %h2
-                            what if: we feared nothing?
-                        %hr.dotted/
-
-                        %p.brackets.med
-                            Sriracha flexitarian yr, umami blue bottle next level cliche
-                            ugh wolf cardigan elit laboris mustache Brooklyn meggings.
-                            Flannel est meh, helvetica placeat irony forage aliqua yr irure.
-                            Leggings eu High Life, pickled skateboard Schlitz swag delectus.
-
-                .row
-                    %ul#player-wrap.image-list.four-across
-                        %li
-                            %a.track{:href => "http://www.jplayer.org/audio/mp3/Miaow-04-Lismore.mp3"}
-                            .overlay
-                                .info
-                                    %h4
-                                        Jessica Hische
-                                    %hr/
-                                    %p Occupation &amp; Primary Past-Time
-                            %img{:src => "../images/content/placeholder-square.jpg", :alt => ""}/
-
-                        %li
-                            %a.track{:href => "http://www.jplayer.org/audio/mp3/Miaow-04-Lismore.mp3"}
-                            .overlay
-                                .info
-                                    %h4
-                                        Mary Sparks
-                                    %hr/
-                                    %p Occupation &amp; Primary Past-Time
-                            %img{:src => "../images/content/placeholder-square.jpg", :alt => ""}/
-
-                        %li
-                            %a.track{:href => "http://www.jplayer.org/audio/mp3/Miaow-04-Lismore.mp3"}
-                            .overlay
-                                .info
-                                    %h4
-                                        Megan Wilkes
-                                    %hr/
-                                    %p Occupation &amp; Primary Past-Time
-                            %img{:src => "../images/content/placeholder-square.jpg", :alt => ""}/
-
-                        %li
-                            %a.track{:href => "http://www.jplayer.org/audio/mp3/Miaow-04-Lismore.mp3"}
-                            .overlay
-                                .info
-                                    %h4
-                                        Julie Neill
-                                    %hr/
-                                    %p Occupation &amp; Primary Past-Time
-                            %img{:src => "../images/content/placeholder-square.jpg", :alt => ""}/
-
-
-
-
-
-
-
-
-
-            %footer.site-footer
-                .inner
-                    .site-map
-                        %a{:href => "gathering.html"}
-                            Gathering
-                        %a{:href => "what-if.html"}
-                            What If?
-                        %a{:href => "equip.html"}
-                            Equip
-                        %a{:href => "unleash.html"}
-                            Unleash
-                        %a{:href => "connect.html"}
-                            Connect
-                        %a{:href => "who-we-are.html"}
-                            Who We Are
-
-                    .brand
-                        %a{:href => "index.html"}
-                            %img{:src => "../images/logos/ifgather-logo-white-sm.png", :alt => ""}/
-
-
-
-    %script{:rel => "javascript", :src => "https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"}
     %script{:rel => "javascript", :src => "../js/pushy/pushy.min.js"}
+    %script{:rel => "javascript", :src => "../js/forms/tiny-limiter.js"}
     %script{:rel => "javascript", :src => "../js/jplayer/jquery.jplayer.min.js"}
     %script{:rel => "javascript", :src => "../js/site-ck.js"}
+
+    / Limit Characters
+    %script
+
+
+    / Add This
+    %script
+        var addthis_config = {"data_track_addressbar":true};
+
+    %script{:src => "//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-509d72c21cd49086"}
+
 
 
 

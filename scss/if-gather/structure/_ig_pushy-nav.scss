@@ -10,6 +10,7 @@
   -webkit-box-shadow: inset -10px 0 6px -9px rgba(0, 0, 0, 0.7);
   -moz-box-shadow: inset -10px 0 6px -9px rgba(0, 0, 0, 0.7);
   box-shadow: inset -10px 0 6px -9px rgba(0, 0, 0, 0.7);
+
   a {
     display: block;
     font-family: $serif-roman;
@@ -21,6 +22,17 @@
       color: $secondary-color;
     }
   }
+  li.active a {
+    color: $secondary-color;
+  }
+
+  p {
+    padding: 15px 30px;
+    margin: 42px 0 0;
+    color:white;
+    font-family: $sans-gothic;
+  }
+
 }
 
 
@@ -33,8 +45,7 @@
     padding-bottom: 12px;
     @include transition(all .5s ease-in .5s);
     position: absolute;
-    z-index: -1;
-    // opacity: 0;
+    margin-left: -200px;
 
     span {
         font-family: 'EntypoRegular';
@@ -48,8 +59,7 @@
 
 @include breakpoint(tablet-V) {
     .menu-btn {
-        opacity: 1;
-        z-index: 1;
+        margin-left:32px;
     }
 }
 
@@ -89,6 +99,7 @@
   -webkit-backface-visibility: hidden;
   -webkit-perspective: 1000;
 }
+
 
 /* Site Overlay */
 

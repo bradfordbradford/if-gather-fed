@@ -7,7 +7,21 @@
 // ----------------------------
 // Layout: Equip
 // ----------------------------
-body.equip {
+body.equip, body.story, body.search {
+
+
+    // Feature IMG
+    .feature-img {
+        position: absolute;
+        top: 0;
+        z-index: -1;
+        margin: 5px 0 0;
+
+        img {
+            position: fixed;
+        }
+    }
+
 
     // Navigation
     // ----------
@@ -30,22 +44,6 @@ body.equip {
         padding-bottom:0;
         background:transparent;
     }
-
-    // Section: Hero Img / Post List
-    // ------------------------------
-    // .equip-post-list section.hero-img {
-    //     @include rgrid(12, 7);
-    //     padding: 0;
-    // }
-
-    // Section: Hero Img / Post Entry
-    // ------------------------------
-    // .equip-post-entry section.hero-img {
-    //     @include rgrid(12, 6);
-    //     padding: 0;
-    // }
-
-
 
     // Section: Post List
     // ------------------
@@ -146,6 +144,8 @@ body.equip {
             font-family: $sans-gothic;
             letter-spacing: .24em;
             font-size: emCalc(14);
+            width: 50%;
+            text-align: left;
         }
 
         .date {
@@ -153,6 +153,8 @@ body.equip {
             float: right;
             margin-top: 4px;
         }
+
+
 
         @include breakpoint(tablet-H) {
             .date {
@@ -164,7 +166,7 @@ body.equip {
     // Article: Post Entry
     // -------------------
     article.equip-post {
-        padding: 0 40px;
+        padding: 0 40px 14px;
 
         header {
             border-bottom: 1px solid $primary-color;
@@ -175,8 +177,22 @@ body.equip {
                 font-size: emCalc(16);
             }
         }
+
     }
 
+    .tags {
+        list-style: none;
+        text-align: center;
+        margin: 42px auto 60px;
+
+        li {
+            display: inline-block;
+
+            a {
+                color: $secondary-color;
+            }
+        }
+    }
 }
 
 

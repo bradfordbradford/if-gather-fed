@@ -1,217 +1,214 @@
-!!!
+!!! 5
+-# paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+/[if lt IE 9] <html lang="en" class="no-js lt-ie9">
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
 
-%html{:lang => "en"}
+%head
+    / Meta
+    %meta{:charset => "UTF-8"}
+    %title If: Gather --dev
+    %meta{:name=>"description", :content=>"If:Gather is…"}
+    %meta{:name=>"author", :content=>"If:Gather"}
+    %meta{:name=>"viewport", :content=>"width=device-width,initial-scale=1"}
+    / Style
+    %link{:rel => "stylesheet", :href => "../css/site.css"}
+    /[if lt IE 9 ]
+        %link{:rel => "stylesheet", :href => "../css/ie.css"}/
+    / Scripts
+    %script{:rel => "javascript", :src => "../js/vendor/custom.modernizr.js"}
 
-    %head
-        / Meta
-        %meta{:charset => "UTF-8"}
-        %title If: Gather --dev
-        %meta{:name=>"description", :content=>"If:Gather is…"}
-        %meta{:name=>"author", :content=>"If:Gather"}
-        %meta{:name=>"viewport", :content=>"width=device-width,initial-scale=1"}
-        / Style
-        %link{:rel => "stylesheet", :href => "../css/site.css"}
-        / %link{:rel => "stylesheet", :href => "/css/pushy.css"}
-        / Fonts
-        %script{:type => "text/javascript", :src => "//use.typekit.net/ahk2bse.js"}
-        %script{:type => "text/javascript"} try{Typekit.load();}catch(e){}
+%body.home
 
-        / Scripts
-        %script{:rel => "javascript", :src => "../js/vendor/custom.modernizr.js"}
+    %nav.pushy.pushy-left
+        %ul
+            %li
+                %a{:href => "gathering.html"}
+                    Gathering
 
-    %body.home
+            %li
+                %a{:href => "what-if.html"}
+                    What If?
 
-        %nav.pushy.pushy-left
-            %ul
-                %li
-                    %a{:href => "gathering.html"}
-                        Gathering
+            %li
+                %a{:href => "equip.html"}
+                    Equip
 
-                %li
-                    %a{:href => "what-if.html"}
-                        What If?
+            %li
+                %a{:href => "unleash.html"}
+                    Unleash
 
-                %li
-                    %a{:href => "equip.html"}
-                        Equip
+            %li
+                %a{:href => "connect.html"}
+                    Connect
 
-                %li
-                    %a{:href => "unleash.html"}
-                        Unleash
+            %li
+                %a{:href => "who-we-are.html"}
+                    Who We Are
 
-                %li
-                    %a{:href => "connect.html"}
-                        Connect
+    #site-wrap
 
-                %li
-                    %a{:href => "who-we-are.html"}
-                        Who We Are
-
-        #site-wrap
-
-            %section.site-header
-                .brand
-                    %a{:href => "index.html"}
-                        %img{:src => "../images/logos/ifgather-logo-white-shadow-large+@2x.png", :alt => ""}/
-                        %h1 IF:GATHERING
+        %section.site-header
+            .brand
+                %a{:href => "index.html"}
+                    %img{:src => "../images/logos/ifgather-logo-white-shadow-large+@2x.png", :alt => ""}/
+                    %h1 IF:GATHERING
 
 
-                %nav.site-nav
-                    %ul
-                        %li
-                            %a{:href => "gathering.html"}
-                                Gathering
-
-                        %li
-                            %a{:href => "what-if.html"}
-                                What If?
-
-                        %li
-                            %a{:href => "equip.html"}
-                                Equip
-
-                        %li
-                            %a{:href => "unleash.html"}
-                                Unleash
-
-                        %li
-                            %a{:href => "connect.html"}
-                                Connect
-
-                        %li
-                            %a{:href => "who-we-are.html"}
-                                Who We Are
-
-
-                .menu-btn
-                    %span ☰
-                    Menu
-
-
-
-            %section.content-wrap
-
-                %section.welcome
-                    .row
-                        %h3.mission-statement
-                            we exist to gather, equip
-                            %br/
-                            and unleash
-                            the next generation
-                            %br/
-                            of women to live out their purpose.
-
-
-                    .row
-
-                        .what-if-wrap
-                            %a.quote.cream-pattern.shadow{:href => "#"}
-                                %header
-                                    %h2
-                                        what if
-                                        %br/
-                                        we feared
-                                        %br/
-                                        nothing?
-                            .what-if-clg
-
-
-                %section.register
-                    .row
-                        .quote.sage-pattern
-                            %a{:href => "#"}
-                            %h3.sans
-                                this
-                                %br/
-                                means
-                                %br/
-                                a lot to
-                                %br/
-                                me and
-                                %br/
-                                here's
-                                %br/
-                                why.
-                            %hr/
-                            .emph
-                                Lauren Chandler
-
-                        .register-now-wrap
-                            %a.grey-pattern{:href => "#"}
-                                register now
-                                %span.dart-wht-right.ornament
-
-                %section.equip
-                    .row
-                        .highlight-article.row
-                            %header
-                                %h2 Equip:
-                                %span.tagline.emph A letter from Jennie Allen on the topic of such &amp; such.
-                            %article
-                                %p.brackets.lrg
-                                    Pop-up officia asymmetrical veniam reprehenderit, hella dolor mlkshk selvage tote bag High Life. Small batch american apparel synth, occaecat trust fund intelligentsia polaroid sustainable twee selfies culpa hoodie. Letterpress selvage ullamco viral reprehenderit locavore, gastropub Truffaut leggings readymade single-origin coffee tofu Godard Vice skateboard.Odd Future Neutra organic tumblr DIY ea. Fugiat aute direct trade esse occaecat gentrify craft beer.
-
-
-                %section.questions
-                    .row
-                        .quote.sage-pattern
-                            %a{:href => "#"}
-                                %h3.sans
-                                    i became a part
-                                    %br/
-                                    of this because I
-                                    %br/
-                                    feel strongly yo.
-                                .emph
-                                    %span.ems-before-after
-                                    Jessica Taylor
-                                    %span.ems-before-after
-
-                        .question.cream-pattern.shadow
-                            %a{:href => "#"}
-                                %h3
-                                    we're sure you have questions
-                                .emph
-                                    %span.ems-before-after
-                                    Let's see if we can answer those for you.
-                                    %span.ems-before-after
-
-
-                %section.unleash
-                    .row
-                        .highlight-article.row
-                            %header
-                                %h2 unleash:
-                                %span.tagline.emph Stories of women championing their mission.
-                            %article
-                                %p.brackets.lrg
-                                    Pop-up officia asymmetrical veniam reprehenderit, hella dolor mlkshk selvage tote bag High Life. Small batch american apparel synth, occaecat trust fund intelligentsia polaroid sustainable twee selfies culpa hoodie. Letterpress selvage ullamco viral reprehenderit locavore, gastropub Truffaut leggings readymade single-origin coffee tofu Godard Vice skateboard.Odd Future Neutra organic tumblr DIY ea. Fugiat aute direct trade esse occaecat gentrify craft beer.
-
-
-            %footer.site-footer
-                .inner
-                    .site-map
+            %nav.site-nav
+                %ul
+                    %li
                         %a{:href => "gathering.html"}
                             Gathering
+
+                    %li
                         %a{:href => "what-if.html"}
                             What If?
+
+                    %li
                         %a{:href => "equip.html"}
                             Equip
+
+                    %li
                         %a{:href => "unleash.html"}
                             Unleash
+
+                    %li
                         %a{:href => "connect.html"}
                             Connect
+
+                    %li
                         %a{:href => "who-we-are.html"}
                             Who We Are
 
-                    .brand
-                        %a{:href => "index.html"}
-                            %img{:src => "../images/logos/ifgather-logo-white-sm.png", :alt => ""}/
+            .menu-btn
+                &#9776;
+                Menu
+
+
+
+
+        %section.content-wrap
+
+            %section.welcome
+                .row
+                    %h3.mission-statement
+                        we exist to gather, equip
+                        %br/
+                        and unleash
+                        the next generation
+                        %br/
+                        of women to live out their purpose.
+
+
+                .row
+
+                    .what-if-wrap
+                        %a.quote.cream-pattern.shadow{:href => "#"}
+                            %header
+                                %h2
+                                    what if
+                                    %br/
+                                    we feared
+                                    %br/
+                                    nothing?
+                        .what-if-clg
+
+
+            %section.register
+                .row
+                    .quote.sage-pattern
+                        %a{:href => "#"}
+                        %h3.sans
+                            this
+                            %br/
+                            means
+                            %br/
+                            a lot to
+                            %br/
+                            me and
+                            %br/
+                            here's
+                            %br/
+                            why.
+                        %hr/
+                        .emph
+                            Lauren Chandler
+
+                    .register-now-wrap
+                        %a.grey-pattern{:href => "#"}
+                            register now
+                            %span.dart-wht-right.ornament
+
+            %section.equip
+                .row
+                    .highlight-article.row
+                        %header
+                            %h2 Equip:
+                            %span.tagline.emph A letter from Jennie Allen on the topic of such &amp; such.
+                        %article
+                            %p.brackets.lrg
+                                Pop-up officia asymmetrical veniam reprehenderit, hella dolor mlkshk selvage tote bag High Life. Small batch american apparel synth, occaecat trust fund intelligentsia polaroid sustainable twee selfies culpa hoodie. Letterpress selvage ullamco viral reprehenderit locavore, gastropub Truffaut leggings readymade single-origin coffee tofu Godard Vice skateboard.Odd Future Neutra organic tumblr DIY ea. Fugiat aute direct trade esse occaecat gentrify craft beer.
+
+
+            %section.questions
+                .row
+                    .quote.sage-pattern
+                        %a{:href => "#"}
+                            %h3.sans
+                                i became a part
+                                %br/
+                                of this because I
+                                %br/
+                                feel strongly yo.
+                            .emph
+                                %span.ems-before-after
+                                Jessica Taylor
+                                %span.ems-before-after
+
+                    .question.cream-pattern.shadow
+                        %a{:href => "#"}
+                            %h3
+                                we're sure you have questions
+                            .emph
+                                %span.ems-before-after
+                                Let's see if we can answer those for you.
+                                %span.ems-before-after
+
+
+            %section.unleash
+                .row
+                    .highlight-article.row
+                        %header
+                            %h2 unleash:
+                            %span.tagline.emph Stories of women championing their mission.
+                        %article
+                            %p.brackets.lrg
+                                Pop-up officia asymmetrical veniam reprehenderit, hella dolor mlkshk selvage tote bag High Life. Small batch american apparel synth, occaecat trust fund intelligentsia polaroid sustainable twee selfies culpa hoodie. Letterpress selvage ullamco viral reprehenderit locavore, gastropub Truffaut leggings readymade single-origin coffee tofu Godard Vice skateboard.Odd Future Neutra organic tumblr DIY ea. Fugiat aute direct trade esse occaecat gentrify craft beer.
+
+
+        %footer.site-footer
+            .inner
+                .site-map
+                    %a{:href => "gathering.html"}
+                        Gathering
+                    %a{:href => "what-if.html"}
+                        What If?
+                    %a{:href => "equip.html"}
+                        Equip
+                    %a{:href => "unleash.html"}
+                        Unleash
+                    %a{:href => "connect.html"}
+                        Connect
+                    %a{:href => "who-we-are.html"}
+                        Who We Are
+
+                .brand
+                    %a{:href => "index.html"}
+                        %img{:src => "../images/logos/ifgather-logo-white-sm.png", :alt => ""}/
 
     %script{:rel => "javascript", :src => "https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"}
     %script{:rel => "javascript", :src => "../js/pushy/pushy.min.js"}
     %script{:rel => "javascript", :src => "../js/site-ck.js"}
-
 
 
 

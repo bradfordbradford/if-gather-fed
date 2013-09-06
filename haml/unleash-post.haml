@@ -1,164 +1,163 @@
-!!!
+!!! 5
+-# paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+/[if lt IE 9] <html lang="en" class="no-js lt-ie9">
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
 
-%html{:lang => "en"}
+%head
+    / Meta
+    %meta{:charset => "UTF-8"}
+    %title If: Gather --dev
+    %meta{:name=>"description", :content=>"If:Gather is…"}
+    %meta{:name=>"author", :content=>"If:Gather"}
+    %meta{:name=>"viewport", :content=>"width=device-width,initial-scale=1"}
+    / Style
+    %link{:rel => "stylesheet", :href => "../css/site.css"}
+    /[if lt IE 9 ]
+        %link{:rel => "stylesheet", :href => "../css/ie.css"}/
+    / Scripts
+    %script{:rel => "javascript", :src => "../js/vendor/custom.modernizr.js"}
 
-    %head
-        / Meta
-        %meta{:charset => "UTF-8"}
-        %title If: Gather --dev
-        %meta{:name=>"description", :content=>"If:Gather is…"}
-        %meta{:name=>"author", :content=>"If:Gather"}
-        %meta{:name=>"viewport", :content=>"width=device-width,initial-scale=1"}
-        / Style
-        %link{:rel => "stylesheet", :href => "../css/site.css"}
-        / Fonts
-        %script{:type => "text/javascript", :src => "//use.typekit.net/ahk2bse.js"}
-        %script{:type => "text/javascript"} try{Typekit.load();}catch(e){}
+%body.unleash-story
 
-        / Scripts
-        %script{:rel => "javascript", :src => "../js/vendor/custom.modernizr.js"}
+    %nav.pushy.pushy-left
+        %ul
+            %li
+                %a{:href => "gathering.html"}
+                    Gathering
 
-    %body.unleash-post
+            %li
+                %a{:href => "what-if.html"}
+                    What If?
 
-        %nav.pushy.pushy-left
-            %ul
-                %li
-                    %a{:href => "gathering.html"}
-                        Gathering
+            %li
+                %a{:href => "equip.html"}
+                    Equip
 
-                %li
-                    %a{:href => "what-if.html"}
-                        What If?
+            %li.active
+                %a{:href => "unleash.html"}
+                    Unleash
 
-                %li
-                    %a{:href => "equip.html"}
-                        Equip
+            %li
+                %a{:href => "connect.html"}
+                    Connect
 
-                %li
-                    %a{:href => "unleash.html"}
-                        Unleash
+            %li
+                %a{:href => "who-we-are.html"}
+                    Who We Are
 
-                %li
-                    %a{:href => "connect.html"}
-                        Connect
+    #site-wrap
 
-                %li
-                    %a{:href => "who-we-are.html"}
-                        Who We Are
-
-        #site-wrap
-
-            %section.site-header
-                .brand
-                    %a{:href => "index.html"}
-                        %img{:src => "../images/logos/ifgather-logo-drk-large+@2x.png", :alt => ""}/
-                        %h1 IF:GATHERING
-
-
-
-                %nav.site-nav
-                    %ul
-                        %li
-                            %a{:href => "gathering.html"}
-                                Gathering
-
-                        %li
-                            %a{:href => "what-if.html"}
-                                What If?
-
-                        %li
-                            %a{:href => "equip.html"}
-                                Equip
-
-                        %li.active
-                            %a{:href => "unleash.html"}
-                                Unleash
-
-                        %li
-                            %a{:href => "connect.html"}
-                                Connect
-
-                        %li
-                            %a{:href => "who-we-are.html"}
-                                Who We Are
-
-                .menu-btn
-                    %span ☰
-                    Menu
-
-
-            %section.content-wrap
-                %img{:src => "../images/banners/banner-2.jpg", :alt => ""}/
-
-                .row
-                    %header.unleash-post-header
-                        .title.sage-pattern
-                            %h2.sans
-                                a particularly long title that needs a lot of room
-                            %hr/
-                            .emph Jennie Allen
-
-                        .post-navigation
-                            %a.dart-left prev. post
-                            %a.dart-right next post
-
-                .row
-
-                    %article.unleash-article
-                        %p
-                            Fugiat delectus banh mi non biodiesel, 3 wolf moon magna cardigan 8-bit wayfarers kitsch. Williamsburg gluten-free id yr et, hashtag american apparel selfies Banksy sartorial. Twee Schlitz brunch, ethnic lomo blue bottle dreamcatcher photo booth excepteur Godard +1 craft beer blog quinoa organic. Letterpress tumblr deserunt polaroid. Commodo PBR cray, helvetica mumblecore ex lomo irony. Sartorial craft beer ethical adipisicing ugh. Next level sunt PBR, fanny pack vinyl beard keffiyeh Portland shoreditch Truffaut fixie single-origin coffee kale chips.
-
-                        %p
-                            Esse shabby chic master cleanse skateboard nostrud, Echo Park anim whatever occaecat church-key before they sold out reprehenderit non fixie cillum. Tote bag asymmetrical qui, Terry Richardson Cosby sweater Wes Anderson put a bird on it cred veniam cray pork belly. Narwhal sunt cupidatat, disrupt jean shorts Thundercats minim Portland irure. Truffaut consectetur ea, art party placeat non vero fashion axe. Culpa cillum jean shorts aliqua. Nisi flannel ut vero, anim art party twee mustache fashion axe semiotics Odd Future selfies pug typewriter. Umami non occaecat, fingerstache cred Shoreditch sriracha chillwave fanny pack authentic tattooed.
-
-
-                        %p
-                            Flannel gentrify laboris assumenda 3 wolf moon. Thundercats Marfa banjo, culpa butcher organic flexitarian. Lomo viral laborum esse, qui kale chips quinoa. Kogi odio tattooed culpa trust fund. Vegan accusamus master cleanse pug, forage gluten-free consectetur fixie enim Cosby sweater est raw denim dolore veniam. Asymmetrical PBR craft beer, hella deep v nisi tote bag Portland odio semiotics yr keytar aliquip four loko sint. Dolor master cleanse deep v, Austin deserunt brunch consectetur keytar.
-
-                        %p
-                            Raw denim delectus occupy, Bushwick semiotics church-key qui cardigan sint lomo est quinoa. Excepteur fingerstache occupy 8-bit VHS. Tumblr meggings kale chips Tonx, Thundercats magna cillum gentrify letterpress messenger bag. Nihil Helvetica irure Tumblr, artisan vinyl Bushwick post-ironic iPhone master cleanse hella pork belly. Lo-fi Odd Future proident, consectetur wayfarers chillwave pickled High Life irure deserunt PBR qui. IPhone food truck literally chillwave duis pop-up, nulla raw denim quinoa asymmetrical bespoke adipisicing Helvetica. Etsy before they sold out pork belly, viral biodiesel art party incididunt gluten-free keffiyeh ea kogi.
-
-                        %p
-                            Bushwick you probably haven't heard of them pour-over proident salvia. Aute bicycle rights aliqua banjo American Apparel delectus. Hashtag ad polaroid organic, cray magna direct trade cornhole excepteur consectetur enim wolf. Pop-up Marfa nesciunt photo booth, squid authentic Vice. Tousled cardigan selfies banh mi retro, meggings viral blog wolf you probably haven't heard of them. Etsy laboris squid quinoa locavore, Banksy nisi aliqua you probably haven't heard of them next level pour-over biodiesel esse sustainable before they sold out. Irony sint anim, keffiyeh Marfa VHS next level selvage skateboard aute cillum direct trade fingerstache cred Carles.
+        %section.site-header
+            .brand
+                %a{:href => "index.html"}
+                    %img{:src => "../images/logos/ifgather-logo-drk-large+@2x.png", :alt => ""}/
+                    %h1 IF:GATHERING
 
 
 
-                        %footer.unleash-footer
-                            %hr.full/
-                            .meta
-                                .date
-                                    10.14.13
-
-                                .spacer
-
-                                .social.emph
-                                    social stuff here
-
-
-                            .return-nav-wrap.brackets.med
-                                %a.return{:href => "unleash.html"}
-                                    %h4 back to latest posts
-
-
-            %footer.site-footer
-                .inner
-                    .site-map
+            %nav.site-nav
+                %ul
+                    %li
                         %a{:href => "gathering.html"}
                             Gathering
+
+                    %li
                         %a{:href => "what-if.html"}
                             What If?
+
+                    %li
                         %a{:href => "equip.html"}
                             Equip
+
+                    %li.active
                         %a{:href => "unleash.html"}
                             Unleash
+
+                    %li
                         %a{:href => "connect.html"}
                             Connect
+
+                    %li
                         %a{:href => "who-we-are.html"}
                             Who We Are
 
-                    .brand
-                        %a{:href => "index.html"}
-                            %img{:src => "../images/logos/ifgather-logo-white-sm.png", :alt => ""}/
+            .menu-btn
+                %span ☰
+                Menu
+
+
+        %section.content-wrap
+            %img{:src => "../images/banners/banner-2.jpg", :alt => ""}/
+
+            .row
+                %header.unleash-post-header
+                    .title.sage-pattern
+                        %h2.sans
+                            a particularly long title that needs a lot of room
+                        %hr/
+                        .emph Jennie Allen
+
+                    .post-navigation
+                        %a.dart-left prev. post
+                        %a.dart-right next post
+
+            .row
+
+                %article.unleash-article
+                    %p
+                        Fugiat delectus banh mi non biodiesel, 3 wolf moon magna cardigan 8-bit wayfarers kitsch. Williamsburg gluten-free id yr et, hashtag american apparel selfies Banksy sartorial. Twee Schlitz brunch, ethnic lomo blue bottle dreamcatcher photo booth excepteur Godard +1 craft beer blog quinoa organic. Letterpress tumblr deserunt polaroid. Commodo PBR cray, helvetica mumblecore ex lomo irony. Sartorial craft beer ethical adipisicing ugh. Next level sunt PBR, fanny pack vinyl beard keffiyeh Portland shoreditch Truffaut fixie single-origin coffee kale chips.
+
+                    %p
+                        Esse shabby chic master cleanse skateboard nostrud, Echo Park anim whatever occaecat church-key before they sold out reprehenderit non fixie cillum. Tote bag asymmetrical qui, Terry Richardson Cosby sweater Wes Anderson put a bird on it cred veniam cray pork belly. Narwhal sunt cupidatat, disrupt jean shorts Thundercats minim Portland irure. Truffaut consectetur ea, art party placeat non vero fashion axe. Culpa cillum jean shorts aliqua. Nisi flannel ut vero, anim art party twee mustache fashion axe semiotics Odd Future selfies pug typewriter. Umami non occaecat, fingerstache cred Shoreditch sriracha chillwave fanny pack authentic tattooed.
+
+
+                    %p
+                        Flannel gentrify laboris assumenda 3 wolf moon. Thundercats Marfa banjo, culpa butcher organic flexitarian. Lomo viral laborum esse, qui kale chips quinoa. Kogi odio tattooed culpa trust fund. Vegan accusamus master cleanse pug, forage gluten-free consectetur fixie enim Cosby sweater est raw denim dolore veniam. Asymmetrical PBR craft beer, hella deep v nisi tote bag Portland odio semiotics yr keytar aliquip four loko sint. Dolor master cleanse deep v, Austin deserunt brunch consectetur keytar.
+
+                    %p
+                        Raw denim delectus occupy, Bushwick semiotics church-key qui cardigan sint lomo est quinoa. Excepteur fingerstache occupy 8-bit VHS. Tumblr meggings kale chips Tonx, Thundercats magna cillum gentrify letterpress messenger bag. Nihil Helvetica irure Tumblr, artisan vinyl Bushwick post-ironic iPhone master cleanse hella pork belly. Lo-fi Odd Future proident, consectetur wayfarers chillwave pickled High Life irure deserunt PBR qui. IPhone food truck literally chillwave duis pop-up, nulla raw denim quinoa asymmetrical bespoke adipisicing Helvetica. Etsy before they sold out pork belly, viral biodiesel art party incididunt gluten-free keffiyeh ea kogi.
+
+                    %p
+                        Bushwick you probably haven't heard of them pour-over proident salvia. Aute bicycle rights aliqua banjo American Apparel delectus. Hashtag ad polaroid organic, cray magna direct trade cornhole excepteur consectetur enim wolf. Pop-up Marfa nesciunt photo booth, squid authentic Vice. Tousled cardigan selfies banh mi retro, meggings viral blog wolf you probably haven't heard of them. Etsy laboris squid quinoa locavore, Banksy nisi aliqua you probably haven't heard of them next level pour-over biodiesel esse sustainable before they sold out. Irony sint anim, keffiyeh Marfa VHS next level selvage skateboard aute cillum direct trade fingerstache cred Carles.
+
+
+
+                    %footer.unleash-footer
+                        %hr.full/
+                        .meta
+                            .date
+                                10.14.13
+
+                            .spacer
+
+                            .social.emph
+                                social stuff here
+
+
+                        .return-nav-wrap.brackets.med
+                            %a.return{:href => "unleash.html"}
+                                %h4 back to latest posts
+
+
+        %footer.site-footer
+            .inner
+                .site-map
+                    %a{:href => "gathering.html"}
+                        Gathering
+                    %a{:href => "what-if.html"}
+                        What If?
+                    %a{:href => "equip.html"}
+                        Equip
+                    %a{:href => "unleash.html"}
+                        Unleash
+                    %a{:href => "connect.html"}
+                        Connect
+                    %a{:href => "who-we-are.html"}
+                        Who We Are
+
+                .brand
+                    %a{:href => "index.html"}
+                        %img{:src => "../images/logos/ifgather-logo-white-sm.png", :alt => ""}/
 
 
     %script{:rel => "javascript", :src => "https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"}

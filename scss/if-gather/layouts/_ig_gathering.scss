@@ -13,8 +13,12 @@ body.gathering {
 
     // Site Header
     .site-header {
-        background: url('../images/banners/banner-5.jpg') repeat-y 0 0;
-        background-size: 100%;
+        background: url('../images/banners/pre-edits/banner-1.jpg') repeat-y 0 -120px;
+    }
+
+    // Brand
+    .logo {
+        background: url('../images/logos/ifgather-logo-white-shadow-large+@2x.png') no-repeat !important;
     }
 
     // Navigation

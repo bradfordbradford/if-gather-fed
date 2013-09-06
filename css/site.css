@@ -44,7 +44,7 @@ select { width: 100%; }
 .row { width: 100%; margin-left: auto; margin-right: auto; margin-top: 0; margin-bottom: 0; max-width: 62.5em; *zoom: 1; }
 .row:before, .row:after { content: " "; display: table; }
 .row:after { clear: both; }
-.row.collapse .column, .row.collapse .columns, .row.collapse header.page-header p, header.page-header .row.collapse p, .row.collapse .info-col, .row.collapse ul.image-list.four-across li, ul.image-list.four-across .row.collapse li, .row.collapse ul.image-list.three-across li, ul.image-list.three-across .row.collapse li, .row.collapse ul.profile-list, .row.collapse ul.profile-list.expansive li .profile-img-wrap, ul.profile-list.expansive li .row.collapse .profile-img-wrap, .row.collapse ul.profile-list.expansive li .profile-info-wrap, ul.profile-list.expansive li .row.collapse .profile-info-wrap, .row.collapse ul.profile-list.headshots li, ul.profile-list.headshots .row.collapse li, .row.collapse body.home section.welcome .mission-statement, body.home section.welcome .row.collapse .mission-statement, .row.collapse body.home section.questions .quote, body.home section.questions .row.collapse .quote, .row.collapse body.home section.questions .question, body.home section.questions .row.collapse .question, .row.collapse body.home .highlight-article article, body.home .highlight-article .row.collapse article, .row.collapse body.gathering .register-now, body.gathering .row.collapse .register-now, .row.collapse body.equip .equip-post-list section.post-wrap, body.equip .equip-post-list .row.collapse section.post-wrap, .row.collapse body.equip .equip-post-entry section.post-wrap, body.equip .equip-post-entry .row.collapse section.post-wrap, .row.collapse body.unleash-post header.unleash-post-header, body.unleash-post .row.collapse header.unleash-post-header, .row.collapse body.unleash-post header.unleash-post-header .title, body.unleash-post header.unleash-post-header .row.collapse .title, .row.collapse body.unleash-post article.unleash-article, body.unleash-post .row.collapse article.unleash-article, .row.collapse body.unleash-post footer.unleash-footer .date, body.unleash-post footer.unleash-footer .row.collapse .date, .row.collapse body.unleash-post footer.unleash-footer .spacer, body.unleash-post footer.unleash-footer .row.collapse .spacer, .row.collapse body.unleash-post footer.unleash-footer .social, body.unleash-post footer.unleash-footer .row.collapse .social, .row.collapse body.unleash-post footer.unleash-footer .return-nav-wrap, body.unleash-post footer.unleash-footer .row.collapse .return-nav-wrap { position: relative; padding-left: 0; padding-right: 0; float: left; }
+.row.collapse .column, .row.collapse .columns, .row.collapse header.page-header p, header.page-header .row.collapse p, .row.collapse .info-col, .row.collapse ul.image-list.four-across li, ul.image-list.four-across .row.collapse li, .row.collapse ul.image-list.three-across li, ul.image-list.three-across .row.collapse li, .row.collapse ul.profile-list, .row.collapse ul.profile-list.expansive li .profile-img-wrap, ul.profile-list.expansive li .row.collapse .profile-img-wrap, .row.collapse ul.profile-list.expansive li .profile-info-wrap, ul.profile-list.expansive li .row.collapse .profile-info-wrap, .row.collapse ul.profile-list.headshots li, ul.profile-list.headshots .row.collapse li, .row.collapse ul.comments-list li, ul.comments-list .row.collapse li, .row.collapse body.home section.welcome .mission-statement, body.home section.welcome .row.collapse .mission-statement, .row.collapse body.home section.questions .quote, body.home section.questions .row.collapse .quote, .row.collapse body.home section.questions .question, body.home section.questions .row.collapse .question, .row.collapse body.home .highlight-article article, body.home .highlight-article .row.collapse article, .row.collapse body.gathering .register-now, body.gathering .row.collapse .register-now, .row.collapse body.what-if .prompt.cream-pattern, body.what-if .row.collapse .prompt.cream-pattern, .row.collapse body.what-if .form-wrap.sage-pattern .question, body.what-if .form-wrap.sage-pattern .row.collapse .question, .row.collapse body.what-if .form-wrap.sage-pattern form, body.what-if .form-wrap.sage-pattern .row.collapse form, .row.collapse body.equip .equip-post-list section.post-wrap, body.equip .equip-post-list .row.collapse section.post-wrap, .row.collapse body.story .equip-post-list section.post-wrap, body.story .equip-post-list .row.collapse section.post-wrap, .row.collapse body.search .equip-post-list section.post-wrap, body.search .equip-post-list .row.collapse section.post-wrap, .row.collapse body.equip .equip-post-entry section.post-wrap, body.equip .equip-post-entry .row.collapse section.post-wrap, .row.collapse body.story .equip-post-entry section.post-wrap, body.story .equip-post-entry .row.collapse section.post-wrap, .row.collapse body.search .equip-post-entry section.post-wrap, body.search .equip-post-entry .row.collapse section.post-wrap, .row.collapse body.unleash-story header.unleash-post-header, body.unleash-story .row.collapse header.unleash-post-header, .row.collapse body.unleash-story header.unleash-post-header .title, body.unleash-story header.unleash-post-header .row.collapse .title, .row.collapse body.unleash-story article.unleash-article, body.unleash-story .row.collapse article.unleash-article, .row.collapse body.unleash-story footer.unleash-footer .date, body.unleash-story footer.unleash-footer .row.collapse .date, .row.collapse body.unleash-story footer.unleash-footer .spacer, body.unleash-story footer.unleash-footer .row.collapse .spacer, .row.collapse body.unleash-story footer.unleash-footer .social, body.unleash-story footer.unleash-footer .row.collapse .social, .row.collapse body.unleash-story footer.unleash-footer .return-nav-wrap, body.unleash-story footer.unleash-footer .row.collapse .return-nav-wrap { position: relative; padding-left: 0; padding-right: 0; float: left; }
 .row .row { width: auto; margin-left: -0.9375em; margin-right: -0.9375em; margin-top: 0; margin-bottom: 0; max-width: none; *zoom: 1; }
 .row .row:before, .row .row:after { content: " "; display: table; }
 .row .row:after { clear: both; }
@@ -52,21 +52,21 @@ select { width: 100%; }
 .row .row.collapse:before, .row .row.collapse:after { content: " "; display: table; }
 .row .row.collapse:after { clear: both; }
 
-.column, .columns, header.page-header p, .info-col, ul.image-list.four-across li, ul.image-list.three-across li, ul.profile-list, ul.profile-list.expansive li .profile-img-wrap, ul.profile-list.expansive li .profile-info-wrap, ul.profile-list.headshots li, body.home section.welcome .mission-statement, body.home section.questions .quote, body.home section.questions .question, body.home .highlight-article article, body.gathering .register-now, body.equip .equip-post-list section.post-wrap, body.equip .equip-post-entry section.post-wrap, body.unleash-post header.unleash-post-header, body.unleash-post header.unleash-post-header .title, body.unleash-post article.unleash-article, body.unleash-post footer.unleash-footer .date, body.unleash-post footer.unleash-footer .spacer, body.unleash-post footer.unleash-footer .social, body.unleash-post footer.unleash-footer .return-nav-wrap { position: relative; padding-left: 0.9375em; padding-right: 0.9375em; width: 100%; float: left; }
+.column, .columns, header.page-header p, .info-col, ul.image-list.four-across li, ul.image-list.three-across li, ul.profile-list, ul.profile-list.expansive li .profile-img-wrap, ul.profile-list.expansive li .profile-info-wrap, ul.profile-list.headshots li, ul.comments-list li, body.home section.welcome .mission-statement, body.home section.questions .quote, body.home section.questions .question, body.home .highlight-article article, body.gathering .register-now, body.what-if .prompt.cream-pattern, body.what-if .form-wrap.sage-pattern .question, body.what-if .form-wrap.sage-pattern form, body.equip .equip-post-list section.post-wrap, body.story .equip-post-list section.post-wrap, body.search .equip-post-list section.post-wrap, body.equip .equip-post-entry section.post-wrap, body.story .equip-post-entry section.post-wrap, body.search .equip-post-entry section.post-wrap, body.unleash-story header.unleash-post-header, body.unleash-story header.unleash-post-header .title, body.unleash-story article.unleash-article, body.unleash-story footer.unleash-footer .date, body.unleash-story footer.unleash-footer .spacer, body.unleash-story footer.unleash-footer .social, body.unleash-story footer.unleash-footer .return-nav-wrap { position: relative; padding-left: 0.9375em; padding-right: 0.9375em; width: 100%; float: left; }
 
-@media only screen { .column, .columns, header.page-header p, .info-col, ul.image-list.four-across li, ul.image-list.three-across li, ul.profile-list, ul.profile-list.expansive li .profile-img-wrap, ul.profile-list.expansive li .profile-info-wrap, ul.profile-list.headshots li, body.home section.welcome .mission-statement, body.home section.questions .quote, body.home section.questions .question, body.home .highlight-article article, body.gathering .register-now, body.equip .equip-post-list section.post-wrap, body.equip .equip-post-entry section.post-wrap, body.unleash-post header.unleash-post-header, body.unleash-post header.unleash-post-header .title, body.unleash-post article.unleash-article, body.unleash-post footer.unleash-footer .date, body.unleash-post footer.unleash-footer .spacer, body.unleash-post footer.unleash-footer .social, body.unleash-post footer.unleash-footer .return-nav-wrap { position: relative; padding-left: 0.9375em; padding-right: 0.9375em; float: left; }
+@media only screen { .column, .columns, header.page-header p, .info-col, ul.image-list.four-across li, ul.image-list.three-across li, ul.profile-list, ul.profile-list.expansive li .profile-img-wrap, ul.profile-list.expansive li .profile-info-wrap, ul.profile-list.headshots li, ul.comments-list li, body.home section.welcome .mission-statement, body.home section.questions .quote, body.home section.questions .question, body.home .highlight-article article, body.gathering .register-now, body.what-if .prompt.cream-pattern, body.what-if .form-wrap.sage-pattern .question, body.what-if .form-wrap.sage-pattern form, body.equip .equip-post-list section.post-wrap, body.story .equip-post-list section.post-wrap, body.search .equip-post-list section.post-wrap, body.equip .equip-post-entry section.post-wrap, body.story .equip-post-entry section.post-wrap, body.search .equip-post-entry section.post-wrap, body.unleash-story header.unleash-post-header, body.unleash-story header.unleash-post-header .title, body.unleash-story article.unleash-article, body.unleash-story footer.unleash-footer .date, body.unleash-story footer.unleash-footer .spacer, body.unleash-story footer.unleash-footer .social, body.unleash-story footer.unleash-footer .return-nav-wrap { position: relative; padding-left: 0.9375em; padding-right: 0.9375em; float: left; }
   .small-1 { position: relative; width: 8.33333%; }
   .small-2 { position: relative; width: 16.66667%; }
-  .small-3, ul.image-list.four-across li { position: relative; width: 25%; }
-  .small-4, ul.image-list.three-across li, body.unleash-post footer.unleash-footer .date, body.unleash-post footer.unleash-footer .spacer, body.unleash-post footer.unleash-footer .social { position: relative; width: 33.33333%; }
+  .small-3, ul.image-list.four-across li, ul.profile-list.expansive li .profile-img-wrap { position: relative; width: 25%; }
+  .small-4, ul.image-list.three-across li, body.unleash-story footer.unleash-footer .date, body.unleash-story footer.unleash-footer .spacer, body.unleash-story footer.unleash-footer .social { position: relative; width: 33.33333%; }
   .small-5 { position: relative; width: 41.66667%; }
   .small-6 { position: relative; width: 50%; }
-  .small-7, body.unleash-post footer.unleash-footer .return-nav-wrap { position: relative; width: 58.33333%; }
+  .small-7, body.unleash-story footer.unleash-footer .return-nav-wrap { position: relative; width: 58.33333%; }
   .small-8 { position: relative; width: 66.66667%; }
   .small-9 { position: relative; width: 75%; }
   .small-10 { position: relative; width: 83.33333%; }
   .small-11 { position: relative; width: 91.66667%; }
-  .small-12, header.page-header p, .info-col, ul.profile-list, ul.profile-list.expansive li .profile-img-wrap, ul.profile-list.expansive li .profile-info-wrap, ul.profile-list.headshots li, body.home section.welcome .mission-statement, body.home section.questions .quote, body.home section.questions .question, body.home .highlight-article article, body.gathering .register-now, body.equip .equip-post-list section.post-wrap, body.equip .equip-post-entry section.post-wrap, body.unleash-post header.unleash-post-header, body.unleash-post header.unleash-post-header .title, body.unleash-post article.unleash-article { position: relative; width: 100%; }
+  .small-12, header.page-header p, .info-col, ul.profile-list, ul.profile-list.expansive li .profile-info-wrap, ul.profile-list.headshots li, ul.comments-list li, body.home section.welcome .mission-statement, body.home section.questions .quote, body.home section.questions .question, body.home .highlight-article article, body.gathering .register-now, body.what-if .prompt.cream-pattern, body.what-if .form-wrap.sage-pattern .question, body.what-if .form-wrap.sage-pattern form, body.equip .equip-post-list section.post-wrap, body.story .equip-post-list section.post-wrap, body.search .equip-post-list section.post-wrap, body.equip .equip-post-entry section.post-wrap, body.story .equip-post-entry section.post-wrap, body.search .equip-post-entry section.post-wrap, body.unleash-story header.unleash-post-header, body.unleash-story header.unleash-post-header .title, body.unleash-story article.unleash-article { position: relative; width: 100%; }
   .small-offset-0 { position: relative; margin-left: 0%; }
   .small-offset-1 { position: relative; margin-left: 8.33333%; }
   .small-offset-2 { position: relative; margin-left: 16.66667%; }
@@ -80,18 +80,18 @@ select { width: 100%; }
   .small-offset-10 { position: relative; margin-left: 83.33333%; }
   [class*="column"] + [class*="column"]:last-child { float: right; }
   [class*="column"] + [class*="column"].end { float: left; }
-  .column.small-centered, .columns.small-centered, header.page-header p.small-centered, .small-centered.info-col, ul.image-list.four-across li.small-centered, ul.image-list.three-across li.small-centered, ul.small-centered.profile-list, ul.profile-list.expansive li .small-centered.profile-img-wrap, ul.profile-list.expansive li .small-centered.profile-info-wrap, ul.profile-list.headshots li.small-centered, body.home section.welcome .small-centered.mission-statement, body.home section.questions .small-centered.quote, body.home section.questions .small-centered.question, body.home .highlight-article article.small-centered, body.gathering .small-centered.register-now, body.equip .equip-post-list section.small-centered.post-wrap, body.equip .equip-post-entry section.small-centered.post-wrap, body.unleash-post header.small-centered.unleash-post-header, body.unleash-post header.unleash-post-header .small-centered.title, body.unleash-post article.small-centered.unleash-article, body.unleash-post footer.unleash-footer .small-centered.date, body.unleash-post footer.unleash-footer .small-centered.spacer, body.unleash-post footer.unleash-footer .small-centered.social, body.unleash-post footer.unleash-footer .small-centered.return-nav-wrap { position: relative; margin-left: auto; margin-right: auto; float: none !important; } }
+  .column.small-centered, .columns.small-centered, header.page-header p.small-centered, .small-centered.info-col, ul.image-list.four-across li.small-centered, ul.image-list.three-across li.small-centered, ul.small-centered.profile-list, ul.profile-list.expansive li .small-centered.profile-img-wrap, ul.profile-list.expansive li .small-centered.profile-info-wrap, ul.profile-list.headshots li.small-centered, ul.comments-list li.small-centered, body.home section.welcome .small-centered.mission-statement, body.home section.questions .small-centered.quote, body.home section.questions .small-centered.question, body.home .highlight-article article.small-centered, body.gathering .small-centered.register-now, body.what-if .small-centered.prompt.cream-pattern, body.what-if .form-wrap.sage-pattern .small-centered.question, body.what-if .form-wrap.sage-pattern form.small-centered, body.equip .equip-post-list section.small-centered.post-wrap, body.story .equip-post-list section.small-centered.post-wrap, body.search .equip-post-list section.small-centered.post-wrap, body.equip .equip-post-entry section.small-centered.post-wrap, body.story .equip-post-entry section.small-centered.post-wrap, body.search .equip-post-entry section.small-centered.post-wrap, body.unleash-story header.small-centered.unleash-post-header, body.unleash-story header.unleash-post-header .small-centered.title, body.unleash-story article.small-centered.unleash-article, body.unleash-story footer.unleash-footer .small-centered.date, body.unleash-story footer.unleash-footer .small-centered.spacer, body.unleash-story footer.unleash-footer .small-centered.social, body.unleash-story footer.unleash-footer .small-centered.return-nav-wrap { position: relative; margin-left: auto; margin-right: auto; float: none !important; } }
 /* Styles for screens that are atleast 768px; */
 @media only screen and (min-width: 768px) { .large-1 { position: relative; width: 8.33333%; }
-  .large-2, ul.profile-list.expansive li .profile-img-wrap, body.unleash-post footer.unleash-footer .date, body.unleash-post footer.unleash-footer .social { position: relative; width: 16.66667%; }
-  .large-3 { position: relative; width: 25%; }
-  .large-4, .info-col, ul.profile-list.headshots li { position: relative; width: 33.33333%; }
-  .large-5, body.equip .equip-post-list section.post-wrap, body.unleash-post footer.unleash-footer .return-nav-wrap { position: relative; width: 41.66667%; }
-  .large-6, body.home section.questions .quote, body.equip .equip-post-entry section.post-wrap { position: relative; width: 50%; }
+  .large-2, ul.profile-list.expansive li .profile-img-wrap, body.unleash-story footer.unleash-footer .date, body.unleash-story footer.unleash-footer .social { position: relative; width: 16.66667%; }
+  .large-3, body.what-if .form-wrap.sage-pattern .question { position: relative; width: 25%; }
+  .large-4, .info-col, ul.profile-list.headshots li, ul.comments-list li { position: relative; width: 33.33333%; }
+  .large-5, body.equip .equip-post-list section.post-wrap, body.story .equip-post-list section.post-wrap, body.search .equip-post-list section.post-wrap, body.unleash-story footer.unleash-footer .return-nav-wrap { position: relative; width: 41.66667%; }
+  .large-6, body.home section.questions .quote, body.equip .equip-post-entry section.post-wrap, body.story .equip-post-entry section.post-wrap, body.search .equip-post-entry section.post-wrap { position: relative; width: 50%; }
   .large-7, header.page-header p { position: relative; width: 58.33333%; }
-  .large-8, body.home section.welcome .mission-statement, body.unleash-post header.unleash-post-header .title, body.unleash-post footer.unleash-footer .spacer { position: relative; width: 66.66667%; }
-  .large-9, body.home .highlight-article article, body.gathering .register-now { position: relative; width: 75%; }
-  .large-10, ul.profile-list, ul.profile-list.expansive li .profile-info-wrap, body.home section.questions .question { position: relative; width: 83.33333%; }
+  .large-8, body.home section.welcome .mission-statement, body.unleash-story header.unleash-post-header .title, body.unleash-story footer.unleash-footer .spacer { position: relative; width: 66.66667%; }
+  .large-9, body.home .highlight-article article, body.gathering .register-now, body.what-if .form-wrap.sage-pattern form { position: relative; width: 75%; }
+  .large-10, ul.profile-list, ul.profile-list.expansive li .profile-info-wrap, body.home section.questions .question, body.what-if .prompt.cream-pattern { position: relative; width: 83.33333%; }
   .large-11 { position: relative; width: 91.66667%; }
   .large-12 { position: relative; width: 100%; }
   .row .large-offset-0 { position: relative; margin-left: 0%; }
@@ -128,9 +128,9 @@ select { width: 100%; }
   .pull-10 { position: relative; right: 83.33333%; left: auto; }
   .push-11 { position: relative; left: 91.66667%; right: auto; }
   .pull-11 { position: relative; right: 91.66667%; left: auto; }
-  .column.large-centered, .columns.large-centered, header.page-header p.large-centered, .large-centered.info-col, ul.image-list.four-across li.large-centered, ul.image-list.three-across li.large-centered, ul.large-centered.profile-list, ul.profile-list.expansive li .large-centered.profile-img-wrap, ul.profile-list.expansive li .large-centered.profile-info-wrap, ul.profile-list.headshots li.large-centered, body.home section.welcome .large-centered.mission-statement, body.home section.questions .large-centered.quote, body.home section.questions .large-centered.question, body.home .highlight-article article.large-centered, body.gathering .large-centered.register-now, body.equip .equip-post-list section.large-centered.post-wrap, body.equip .equip-post-entry section.large-centered.post-wrap, body.unleash-post header.large-centered.unleash-post-header, body.unleash-post header.unleash-post-header .large-centered.title, body.unleash-post article.large-centered.unleash-article, body.unleash-post footer.unleash-footer .large-centered.date, body.unleash-post footer.unleash-footer .large-centered.spacer, body.unleash-post footer.unleash-footer .large-centered.social, body.unleash-post footer.unleash-footer .large-centered.return-nav-wrap { position: relative; margin-left: auto; margin-right: auto; float: none !important; }
-  .column.large-uncentered, .columns.large-uncentered, header.page-header p.large-uncentered, .large-uncentered.info-col, ul.image-list.four-across li.large-uncentered, ul.image-list.three-across li.large-uncentered, ul.large-uncentered.profile-list, ul.profile-list.expansive li .large-uncentered.profile-img-wrap, ul.profile-list.expansive li .large-uncentered.profile-info-wrap, ul.profile-list.headshots li.large-uncentered, body.home section.welcome .large-uncentered.mission-statement, body.home section.questions .large-uncentered.quote, body.home section.questions .large-uncentered.question, body.home .highlight-article article.large-uncentered, body.gathering .large-uncentered.register-now, body.equip .equip-post-list section.large-uncentered.post-wrap, body.equip .equip-post-entry section.large-uncentered.post-wrap, body.unleash-post header.large-uncentered.unleash-post-header, body.unleash-post header.unleash-post-header .large-uncentered.title, body.unleash-post article.large-uncentered.unleash-article, body.unleash-post footer.unleash-footer .large-uncentered.date, body.unleash-post footer.unleash-footer .large-uncentered.spacer, body.unleash-post footer.unleash-footer .large-uncentered.social, body.unleash-post footer.unleash-footer .large-uncentered.return-nav-wrap { margin-left: 0; margin-right: 0; float: left !important; }
-  .column.large-uncentered.opposite, .columns.large-uncentered.opposite, header.page-header p.large-uncentered.opposite, .large-uncentered.opposite.info-col, ul.image-list.four-across li.large-uncentered.opposite, ul.image-list.three-across li.large-uncentered.opposite, ul.large-uncentered.opposite.profile-list, ul.profile-list.expansive li .large-uncentered.opposite.profile-img-wrap, ul.profile-list.expansive li .large-uncentered.opposite.profile-info-wrap, ul.profile-list.headshots li.large-uncentered.opposite, body.home section.welcome .large-uncentered.opposite.mission-statement, body.home section.questions .large-uncentered.opposite.quote, body.home section.questions .large-uncentered.opposite.question, body.home .highlight-article article.large-uncentered.opposite, body.gathering .large-uncentered.opposite.register-now, body.equip .equip-post-list section.large-uncentered.opposite.post-wrap, body.equip .equip-post-entry section.large-uncentered.opposite.post-wrap, body.unleash-post header.large-uncentered.opposite.unleash-post-header, body.unleash-post header.unleash-post-header .large-uncentered.opposite.title, body.unleash-post article.large-uncentered.opposite.unleash-article, body.unleash-post footer.unleash-footer .large-uncentered.opposite.date, body.unleash-post footer.unleash-footer .large-uncentered.opposite.spacer, body.unleash-post footer.unleash-footer .large-uncentered.opposite.social, body.unleash-post footer.unleash-footer .large-uncentered.opposite.return-nav-wrap { float: right !important; } }
+  .column.large-centered, .columns.large-centered, header.page-header p.large-centered, .large-centered.info-col, ul.image-list.four-across li.large-centered, ul.image-list.three-across li.large-centered, ul.large-centered.profile-list, ul.profile-list.expansive li .large-centered.profile-img-wrap, ul.profile-list.expansive li .large-centered.profile-info-wrap, ul.profile-list.headshots li.large-centered, ul.comments-list li.large-centered, body.home section.welcome .large-centered.mission-statement, body.home section.questions .large-centered.quote, body.home section.questions .large-centered.question, body.home .highlight-article article.large-centered, body.gathering .large-centered.register-now, body.what-if .large-centered.prompt.cream-pattern, body.what-if .form-wrap.sage-pattern .large-centered.question, body.what-if .form-wrap.sage-pattern form.large-centered, body.equip .equip-post-list section.large-centered.post-wrap, body.story .equip-post-list section.large-centered.post-wrap, body.search .equip-post-list section.large-centered.post-wrap, body.equip .equip-post-entry section.large-centered.post-wrap, body.story .equip-post-entry section.large-centered.post-wrap, body.search .equip-post-entry section.large-centered.post-wrap, body.unleash-story header.large-centered.unleash-post-header, body.unleash-story header.unleash-post-header .large-centered.title, body.unleash-story article.large-centered.unleash-article, body.unleash-story footer.unleash-footer .large-centered.date, body.unleash-story footer.unleash-footer .large-centered.spacer, body.unleash-story footer.unleash-footer .large-centered.social, body.unleash-story footer.unleash-footer .large-centered.return-nav-wrap { position: relative; margin-left: auto; margin-right: auto; float: none !important; }
+  .column.large-uncentered, .columns.large-uncentered, header.page-header p.large-uncentered, .large-uncentered.info-col, ul.image-list.four-across li.large-uncentered, ul.image-list.three-across li.large-uncentered, ul.large-uncentered.profile-list, ul.profile-list.expansive li .large-uncentered.profile-img-wrap, ul.profile-list.expansive li .large-uncentered.profile-info-wrap, ul.profile-list.headshots li.large-uncentered, ul.comments-list li.large-uncentered, body.home section.welcome .large-uncentered.mission-statement, body.home section.questions .large-uncentered.quote, body.home section.questions .large-uncentered.question, body.home .highlight-article article.large-uncentered, body.gathering .large-uncentered.register-now, body.what-if .large-uncentered.prompt.cream-pattern, body.what-if .form-wrap.sage-pattern .large-uncentered.question, body.what-if .form-wrap.sage-pattern form.large-uncentered, body.equip .equip-post-list section.large-uncentered.post-wrap, body.story .equip-post-list section.large-uncentered.post-wrap, body.search .equip-post-list section.large-uncentered.post-wrap, body.equip .equip-post-entry section.large-uncentered.post-wrap, body.story .equip-post-entry section.large-uncentered.post-wrap, body.search .equip-post-entry section.large-uncentered.post-wrap, body.unleash-story header.large-uncentered.unleash-post-header, body.unleash-story header.unleash-post-header .large-uncentered.title, body.unleash-story article.large-uncentered.unleash-article, body.unleash-story footer.unleash-footer .large-uncentered.date, body.unleash-story footer.unleash-footer .large-uncentered.spacer, body.unleash-story footer.unleash-footer .large-uncentered.social, body.unleash-story footer.unleash-footer .large-uncentered.return-nav-wrap { margin-left: 0; margin-right: 0; float: left !important; }
+  .column.large-uncentered.opposite, .columns.large-uncentered.opposite, header.page-header p.large-uncentered.opposite, .large-uncentered.opposite.info-col, ul.image-list.four-across li.large-uncentered.opposite, ul.image-list.three-across li.large-uncentered.opposite, ul.large-uncentered.opposite.profile-list, ul.profile-list.expansive li .large-uncentered.opposite.profile-img-wrap, ul.profile-list.expansive li .large-uncentered.opposite.profile-info-wrap, ul.profile-list.headshots li.large-uncentered.opposite, ul.comments-list li.large-uncentered.opposite, body.home section.welcome .large-uncentered.opposite.mission-statement, body.home section.questions .large-uncentered.opposite.quote, body.home section.questions .large-uncentered.opposite.question, body.home .highlight-article article.large-uncentered.opposite, body.gathering .large-uncentered.opposite.register-now, body.what-if .large-uncentered.opposite.prompt.cream-pattern, body.what-if .form-wrap.sage-pattern .large-uncentered.opposite.question, body.what-if .form-wrap.sage-pattern form.large-uncentered.opposite, body.equip .equip-post-list section.large-uncentered.opposite.post-wrap, body.story .equip-post-list section.large-uncentered.opposite.post-wrap, body.search .equip-post-list section.large-uncentered.opposite.post-wrap, body.equip .equip-post-entry section.large-uncentered.opposite.post-wrap, body.story .equip-post-entry section.large-uncentered.opposite.post-wrap, body.search .equip-post-entry section.large-uncentered.opposite.post-wrap, body.unleash-story header.large-uncentered.opposite.unleash-post-header, body.unleash-story header.unleash-post-header .large-uncentered.opposite.title, body.unleash-story article.large-uncentered.opposite.unleash-article, body.unleash-story footer.unleash-footer .large-uncentered.opposite.date, body.unleash-story footer.unleash-footer .large-uncentered.opposite.spacer, body.unleash-story footer.unleash-footer .large-uncentered.opposite.social, body.unleash-story footer.unleash-footer .large-uncentered.opposite.return-nav-wrap { float: right !important; } }
 /* Foundation Block Grids for below small breakpoint */
 @media only screen { [class*="block-grid-"] { display: block; padding: 0; margin: 0 -0.625em; *zoom: 1; }
   [class*="block-grid-"]:before, [class*="block-grid-"]:after { content: " "; display: table; }
@@ -381,10 +381,10 @@ form { margin: 0 0 1em; }
 
 /* Using forms within rows, we need to set some defaults */
 form .row .row { margin: 0 -0.5em; }
-form .row .row .column, form .row .row .columns, form .row .row header.page-header p, header.page-header form .row .row p, form .row .row .info-col, form .row .row ul.image-list.four-across li, ul.image-list.four-across form .row .row li, form .row .row ul.image-list.three-across li, ul.image-list.three-across form .row .row li, form .row .row ul.profile-list, form .row .row ul.profile-list.expansive li .profile-img-wrap, ul.profile-list.expansive li form .row .row .profile-img-wrap, form .row .row ul.profile-list.expansive li .profile-info-wrap, ul.profile-list.expansive li form .row .row .profile-info-wrap, form .row .row ul.profile-list.headshots li, ul.profile-list.headshots form .row .row li, form .row .row body.home section.welcome .mission-statement, body.home section.welcome form .row .row .mission-statement, form .row .row body.home section.questions .quote, body.home section.questions form .row .row .quote, form .row .row body.home section.questions .question, body.home section.questions form .row .row .question, form .row .row body.home .highlight-article article, body.home .highlight-article form .row .row article, form .row .row body.gathering .register-now, body.gathering form .row .row .register-now, form .row .row body.equip .equip-post-list section.post-wrap, body.equip .equip-post-list form .row .row section.post-wrap, form .row .row body.equip .equip-post-entry section.post-wrap, body.equip .equip-post-entry form .row .row section.post-wrap, form .row .row body.unleash-post header.unleash-post-header, body.unleash-post form .row .row header.unleash-post-header, form .row .row body.unleash-post header.unleash-post-header .title, body.unleash-post header.unleash-post-header form .row .row .title, form .row .row body.unleash-post article.unleash-article, body.unleash-post form .row .row article.unleash-article, form .row .row body.unleash-post footer.unleash-footer .date, body.unleash-post footer.unleash-footer form .row .row .date, form .row .row body.unleash-post footer.unleash-footer .spacer, body.unleash-post footer.unleash-footer form .row .row .spacer, form .row .row body.unleash-post footer.unleash-footer .social, body.unleash-post footer.unleash-footer form .row .row .social, form .row .row body.unleash-post footer.unleash-footer .return-nav-wrap, body.unleash-post footer.unleash-footer form .row .row .return-nav-wrap { padding: 0 0.5em; }
+form .row .row .column, form .row .row .columns, form .row .row header.page-header p, header.page-header form .row .row p, form .row .row .info-col, form .row .row ul.image-list.four-across li, ul.image-list.four-across form .row .row li, form .row .row ul.image-list.three-across li, ul.image-list.three-across form .row .row li, form .row .row ul.profile-list, form .row .row ul.profile-list.expansive li .profile-img-wrap, ul.profile-list.expansive li form .row .row .profile-img-wrap, form .row .row ul.profile-list.expansive li .profile-info-wrap, ul.profile-list.expansive li form .row .row .profile-info-wrap, form .row .row ul.profile-list.headshots li, ul.profile-list.headshots form .row .row li, form .row .row ul.comments-list li, ul.comments-list form .row .row li, form .row .row body.home section.welcome .mission-statement, body.home section.welcome form .row .row .mission-statement, form .row .row body.home section.questions .quote, body.home section.questions form .row .row .quote, form .row .row body.home section.questions .question, body.home section.questions form .row .row .question, form .row .row body.home .highlight-article article, body.home .highlight-article form .row .row article, form .row .row body.gathering .register-now, body.gathering form .row .row .register-now, form .row .row body.what-if .prompt.cream-pattern, body.what-if form .row .row .prompt.cream-pattern, form .row .row body.what-if .form-wrap.sage-pattern .question, body.what-if .form-wrap.sage-pattern form .row .row .question, form .row .row body.what-if .form-wrap.sage-pattern form, body.what-if .form-wrap.sage-pattern form .row .row form, form .row .row body.equip .equip-post-list section.post-wrap, body.equip .equip-post-list form .row .row section.post-wrap, form .row .row body.story .equip-post-list section.post-wrap, body.story .equip-post-list form .row .row section.post-wrap, form .row .row body.search .equip-post-list section.post-wrap, body.search .equip-post-list form .row .row section.post-wrap, form .row .row body.equip .equip-post-entry section.post-wrap, body.equip .equip-post-entry form .row .row section.post-wrap, form .row .row body.story .equip-post-entry section.post-wrap, body.story .equip-post-entry form .row .row section.post-wrap, form .row .row body.search .equip-post-entry section.post-wrap, body.search .equip-post-entry form .row .row section.post-wrap, form .row .row body.unleash-story header.unleash-post-header, body.unleash-story form .row .row header.unleash-post-header, form .row .row body.unleash-story header.unleash-post-header .title, body.unleash-story header.unleash-post-header form .row .row .title, form .row .row body.unleash-story article.unleash-article, body.unleash-story form .row .row article.unleash-article, form .row .row body.unleash-story footer.unleash-footer .date, body.unleash-story footer.unleash-footer form .row .row .date, form .row .row body.unleash-story footer.unleash-footer .spacer, body.unleash-story footer.unleash-footer form .row .row .spacer, form .row .row body.unleash-story footer.unleash-footer .social, body.unleash-story footer.unleash-footer form .row .row .social, form .row .row body.unleash-story footer.unleash-footer .return-nav-wrap, body.unleash-story footer.unleash-footer form .row .row .return-nav-wrap { padding: 0 0.5em; }
 form .row .row.collapse { margin: 0; }
-form .row .row.collapse .column, form .row .row.collapse .columns, form .row .row.collapse header.page-header p, header.page-header form .row .row.collapse p, form .row .row.collapse .info-col, form .row .row.collapse ul.image-list.four-across li, ul.image-list.four-across form .row .row.collapse li, form .row .row.collapse ul.image-list.three-across li, ul.image-list.three-across form .row .row.collapse li, form .row .row.collapse ul.profile-list, form .row .row.collapse ul.profile-list.expansive li .profile-img-wrap, ul.profile-list.expansive li form .row .row.collapse .profile-img-wrap, form .row .row.collapse ul.profile-list.expansive li .profile-info-wrap, ul.profile-list.expansive li form .row .row.collapse .profile-info-wrap, form .row .row.collapse ul.profile-list.headshots li, ul.profile-list.headshots form .row .row.collapse li, form .row .row.collapse body.home section.welcome .mission-statement, body.home section.welcome form .row .row.collapse .mission-statement, form .row .row.collapse body.home section.questions .quote, body.home section.questions form .row .row.collapse .quote, form .row .row.collapse body.home section.questions .question, body.home section.questions form .row .row.collapse .question, form .row .row.collapse body.home .highlight-article article, body.home .highlight-article form .row .row.collapse article, form .row .row.collapse body.gathering .register-now, body.gathering form .row .row.collapse .register-now, form .row .row.collapse body.equip .equip-post-list section.post-wrap, body.equip .equip-post-list form .row .row.collapse section.post-wrap, form .row .row.collapse body.equip .equip-post-entry section.post-wrap, body.equip .equip-post-entry form .row .row.collapse section.post-wrap, form .row .row.collapse body.unleash-post header.unleash-post-header, body.unleash-post form .row .row.collapse header.unleash-post-header, form .row .row.collapse body.unleash-post header.unleash-post-header .title, body.unleash-post header.unleash-post-header form .row .row.collapse .title, form .row .row.collapse body.unleash-post article.unleash-article, body.unleash-post form .row .row.collapse article.unleash-article, form .row .row.collapse body.unleash-post footer.unleash-footer .date, body.unleash-post footer.unleash-footer form .row .row.collapse .date, form .row .row.collapse body.unleash-post footer.unleash-footer .spacer, body.unleash-post footer.unleash-footer form .row .row.collapse .spacer, form .row .row.collapse body.unleash-post footer.unleash-footer .social, body.unleash-post footer.unleash-footer form .row .row.collapse .social, form .row .row.collapse body.unleash-post footer.unleash-footer .return-nav-wrap, body.unleash-post footer.unleash-footer form .row .row.collapse .return-nav-wrap { padding: 0; }
-form .row input.column, form .row input.columns, form .row input.info-col, form .row ul.profile-list.expansive li input.profile-img-wrap, ul.profile-list.expansive li form .row input.profile-img-wrap, form .row ul.profile-list.expansive li input.profile-info-wrap, ul.profile-list.expansive li form .row input.profile-info-wrap, form .row body.home section.welcome input.mission-statement, body.home section.welcome form .row input.mission-statement, form .row body.home section.questions input.quote, body.home section.questions form .row input.quote, form .row body.home section.questions input.question, body.home section.questions form .row input.question, form .row body.gathering input.register-now, body.gathering form .row input.register-now, form .row body.unleash-post header.unleash-post-header input.title, body.unleash-post header.unleash-post-header form .row input.title, form .row body.unleash-post footer.unleash-footer input.date, body.unleash-post footer.unleash-footer form .row input.date, form .row body.unleash-post footer.unleash-footer input.spacer, body.unleash-post footer.unleash-footer form .row input.spacer, form .row body.unleash-post footer.unleash-footer input.social, body.unleash-post footer.unleash-footer form .row input.social, form .row body.unleash-post footer.unleash-footer input.return-nav-wrap, body.unleash-post footer.unleash-footer form .row input.return-nav-wrap, form .row textarea.column, form .row textarea.columns, form .row textarea.info-col, form .row ul.profile-list.expansive li textarea.profile-img-wrap, ul.profile-list.expansive li form .row textarea.profile-img-wrap, form .row ul.profile-list.expansive li textarea.profile-info-wrap, ul.profile-list.expansive li form .row textarea.profile-info-wrap, form .row body.home section.welcome textarea.mission-statement, body.home section.welcome form .row textarea.mission-statement, form .row body.home section.questions textarea.quote, body.home section.questions form .row textarea.quote, form .row body.home section.questions textarea.question, body.home section.questions form .row textarea.question, form .row body.gathering textarea.register-now, body.gathering form .row textarea.register-now, form .row body.unleash-post header.unleash-post-header textarea.title, body.unleash-post header.unleash-post-header form .row textarea.title, form .row body.unleash-post footer.unleash-footer textarea.date, body.unleash-post footer.unleash-footer form .row textarea.date, form .row body.unleash-post footer.unleash-footer textarea.spacer, body.unleash-post footer.unleash-footer form .row textarea.spacer, form .row body.unleash-post footer.unleash-footer textarea.social, body.unleash-post footer.unleash-footer form .row textarea.social, form .row body.unleash-post footer.unleash-footer textarea.return-nav-wrap, body.unleash-post footer.unleash-footer form .row textarea.return-nav-wrap { padding-left: 0.5em; }
+form .row .row.collapse .column, form .row .row.collapse .columns, form .row .row.collapse header.page-header p, header.page-header form .row .row.collapse p, form .row .row.collapse .info-col, form .row .row.collapse ul.image-list.four-across li, ul.image-list.four-across form .row .row.collapse li, form .row .row.collapse ul.image-list.three-across li, ul.image-list.three-across form .row .row.collapse li, form .row .row.collapse ul.profile-list, form .row .row.collapse ul.profile-list.expansive li .profile-img-wrap, ul.profile-list.expansive li form .row .row.collapse .profile-img-wrap, form .row .row.collapse ul.profile-list.expansive li .profile-info-wrap, ul.profile-list.expansive li form .row .row.collapse .profile-info-wrap, form .row .row.collapse ul.profile-list.headshots li, ul.profile-list.headshots form .row .row.collapse li, form .row .row.collapse ul.comments-list li, ul.comments-list form .row .row.collapse li, form .row .row.collapse body.home section.welcome .mission-statement, body.home section.welcome form .row .row.collapse .mission-statement, form .row .row.collapse body.home section.questions .quote, body.home section.questions form .row .row.collapse .quote, form .row .row.collapse body.home section.questions .question, body.home section.questions form .row .row.collapse .question, form .row .row.collapse body.home .highlight-article article, body.home .highlight-article form .row .row.collapse article, form .row .row.collapse body.gathering .register-now, body.gathering form .row .row.collapse .register-now, form .row .row.collapse body.what-if .prompt.cream-pattern, body.what-if form .row .row.collapse .prompt.cream-pattern, form .row .row.collapse body.what-if .form-wrap.sage-pattern .question, body.what-if .form-wrap.sage-pattern form .row .row.collapse .question, form .row .row.collapse body.what-if .form-wrap.sage-pattern form, body.what-if .form-wrap.sage-pattern form .row .row.collapse form, form .row .row.collapse body.equip .equip-post-list section.post-wrap, body.equip .equip-post-list form .row .row.collapse section.post-wrap, form .row .row.collapse body.story .equip-post-list section.post-wrap, body.story .equip-post-list form .row .row.collapse section.post-wrap, form .row .row.collapse body.search .equip-post-list section.post-wrap, body.search .equip-post-list form .row .row.collapse section.post-wrap, form .row .row.collapse body.equip .equip-post-entry section.post-wrap, body.equip .equip-post-entry form .row .row.collapse section.post-wrap, form .row .row.collapse body.story .equip-post-entry section.post-wrap, body.story .equip-post-entry form .row .row.collapse section.post-wrap, form .row .row.collapse body.search .equip-post-entry section.post-wrap, body.search .equip-post-entry form .row .row.collapse section.post-wrap, form .row .row.collapse body.unleash-story header.unleash-post-header, body.unleash-story form .row .row.collapse header.unleash-post-header, form .row .row.collapse body.unleash-story header.unleash-post-header .title, body.unleash-story header.unleash-post-header form .row .row.collapse .title, form .row .row.collapse body.unleash-story article.unleash-article, body.unleash-story form .row .row.collapse article.unleash-article, form .row .row.collapse body.unleash-story footer.unleash-footer .date, body.unleash-story footer.unleash-footer form .row .row.collapse .date, form .row .row.collapse body.unleash-story footer.unleash-footer .spacer, body.unleash-story footer.unleash-footer form .row .row.collapse .spacer, form .row .row.collapse body.unleash-story footer.unleash-footer .social, body.unleash-story footer.unleash-footer form .row .row.collapse .social, form .row .row.collapse body.unleash-story footer.unleash-footer .return-nav-wrap, body.unleash-story footer.unleash-footer form .row .row.collapse .return-nav-wrap { padding: 0; }
+form .row input.column, form .row input.columns, form .row input.info-col, form .row ul.profile-list.expansive li input.profile-img-wrap, ul.profile-list.expansive li form .row input.profile-img-wrap, form .row ul.profile-list.expansive li input.profile-info-wrap, ul.profile-list.expansive li form .row input.profile-info-wrap, form .row body.home section.welcome input.mission-statement, body.home section.welcome form .row input.mission-statement, form .row body.home section.questions input.quote, body.home section.questions form .row input.quote, form .row body.home section.questions input.question, body.home section.questions form .row input.question, form .row body.gathering input.register-now, body.gathering form .row input.register-now, form .row body.what-if input.prompt.cream-pattern, body.what-if form .row input.prompt.cream-pattern, form .row body.what-if .form-wrap.sage-pattern input.question, body.what-if .form-wrap.sage-pattern form .row input.question, form .row body.unleash-story header.unleash-post-header input.title, body.unleash-story header.unleash-post-header form .row input.title, form .row body.unleash-story footer.unleash-footer input.date, body.unleash-story footer.unleash-footer form .row input.date, form .row body.unleash-story footer.unleash-footer input.spacer, body.unleash-story footer.unleash-footer form .row input.spacer, form .row body.unleash-story footer.unleash-footer input.social, body.unleash-story footer.unleash-footer form .row input.social, form .row body.unleash-story footer.unleash-footer input.return-nav-wrap, body.unleash-story footer.unleash-footer form .row input.return-nav-wrap, form .row textarea.column, form .row textarea.columns, form .row textarea.info-col, form .row ul.profile-list.expansive li textarea.profile-img-wrap, ul.profile-list.expansive li form .row textarea.profile-img-wrap, form .row ul.profile-list.expansive li textarea.profile-info-wrap, ul.profile-list.expansive li form .row textarea.profile-info-wrap, form .row body.home section.welcome textarea.mission-statement, body.home section.welcome form .row textarea.mission-statement, form .row body.home section.questions textarea.quote, body.home section.questions form .row textarea.quote, form .row body.home section.questions textarea.question, body.home section.questions form .row textarea.question, form .row body.gathering textarea.register-now, body.gathering form .row textarea.register-now, form .row body.what-if textarea.prompt.cream-pattern, body.what-if form .row textarea.prompt.cream-pattern, form .row body.what-if .form-wrap.sage-pattern textarea.question, body.what-if .form-wrap.sage-pattern form .row textarea.question, form .row body.unleash-story header.unleash-post-header textarea.title, body.unleash-story header.unleash-post-header form .row textarea.title, form .row body.unleash-story footer.unleash-footer textarea.date, body.unleash-story footer.unleash-footer form .row textarea.date, form .row body.unleash-story footer.unleash-footer textarea.spacer, body.unleash-story footer.unleash-footer form .row textarea.spacer, form .row body.unleash-story footer.unleash-footer textarea.social, body.unleash-story footer.unleash-footer form .row textarea.social, form .row body.unleash-story footer.unleash-footer textarea.return-nav-wrap, body.unleash-story footer.unleash-footer form .row textarea.return-nav-wrap { padding-left: 0.5em; }
 
 /* Label Styles */
 label { font-size: 0.875em; color: #4d4d4d; cursor: pointer; display: block; font-weight: 500; margin-bottom: 0.1875em; /* Styles for required inputs */ }
@@ -501,15 +501,19 @@ html { height: 100%; }
 
 body { overflow-x: hidden; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
+#site-wrap { position: relative; }
+
 .site-header { background: url(../images/patterns/cream.png) repeat; }
 .site-header .brand { text-align: center; padding: 94px 0 104px; -webkit-transition: all 0.5s ease-in; -moz-transition: all 0.5s ease-in; transition: all 0.5s ease-in; }
 .site-header .brand a { display: block; }
 .site-header .brand h1 { text-indent: -9999px; position: absolute; }
-@media (max-width: 979px) { .site-header .brand a { width: 60%; margin: 0 auto; } }
-@media (max-width: 480px) { .site-header .brand { padding: 80px 0 32px; }
-  .site-header .brand a { width: 80%; } }
+.site-header .brand .logo { background: url("../images/logos/ifgather-logo-drk-large+@2x.png") no-repeat; background-size: 100% !important; display: inline-block; margin: 0 auto; height: 120px; width: 44.5%; }
+@media (max-width: 768px) { .site-header .brand .logo { width: 80%; height: 80px; } }
 
-nav.site-nav ul { list-style: none; display: table; margin: 0 auto; position: relative; top: -40px; -webkit-transition: all 0.5s ease-in; -moz-transition: all 0.5s ease-in; transition: all 0.5s ease-in; }
+@media (min-width: 1250px) { .site-header { background-size: 100% !important; } }
+body.equip .site-header, body.story .site-header, body.search .site-header, body.unleash-story .site-header { background-size: auto !important; }
+
+nav.site-nav ul { list-style: none; display: table; margin: 0 auto; position: relative; top: -40px; -webkit-transition: all 0.5s ease; -moz-transition: all 0.5s ease; transition: all 0.5s ease; }
 nav.site-nav ul li { display: inline-block; }
 nav.site-nav ul li a { padding: 14px 20px; font-family: "Sackers-Roman"; color: #5f5e5f; letter-spacing: .4em; position: relative; font-size: 0.875em; -webkit-transition: all 0.15s ease-in-out; -moz-transition: all 0.15s ease-in-out; transition: all 0.15s ease-in-out; }
 nav.site-nav ul li a:hover { color: #d0b26f !important; }
@@ -517,7 +521,7 @@ nav.site-nav ul li.active a:after { content: ''; top: 61px; height: 0; left: 50%
 @media (max-width: 979px) { nav.site-nav ul li a { padding: 10px; } }
 @media (max-width: 768px) { nav.site-nav ul { opacity: 0; z-index: -1; } }
 
-#site-wrap { position: relative; }
+#container { position: relative; }
 
 .content-wrap { background: white; padding-bottom: 142px; }
 
@@ -525,7 +529,7 @@ nav.site-nav ul li.active a:after { content: ''; top: 61px; height: 0; left: 50%
 .site-footer .inner { width: 100%; margin-left: auto; margin-right: auto; margin-top: 0; margin-bottom: 0; max-width: 62.5em; *zoom: 1; padding: 0 15px; }
 .site-footer .inner:before, .site-footer .inner:after { content: " "; display: table; }
 .site-footer .inner:after { clear: both; }
-.site-footer ul li { display: inline-block; }
+.site-footer ul li, .site-footer li { display: inline-block; list-style: none; }
 .site-footer a { color: white; font-family: "Sackers-Roman"; padding: 0 10px 0 0; letter-spacing: .2em; font-size: 0.875em; }
 .site-footer .site-map { float: left; line-height: 30px; }
 .site-footer .site-map a { display: inline-block; }
@@ -547,6 +551,8 @@ hr.dotted { border-style: hidden; position: relative; margin: 0.25em auto 2.1875
 hr.dotted:after { position: absolute; content: '............'; letter-spacing: .24em; top: -12px; left: 50%; margin-left: -40px; }
 hr.full { width: 100%; }
 
+body ::selection { color: #FFF; background-color: #C9E4D9; }
+
 header.page-header { margin: 40px auto; text-align: center; }
 header.page-header h2 { font-size: 1.75em; }
 header.page-header p { margin: auto auto; float: none; letter-spacing: .12em; font-size: 1em; }
@@ -554,7 +560,15 @@ header.page-header p { margin: auto auto; float: none; letter-spacing: .12em; fo
 .info-col { margin: 40px auto; }
 .info-col h4 { font-size: 1em; }
 
-.emph { font-size: 1em; font-style: italic; text-transform: none; font-family: "Georgia", "Times New Roman", Georgia, serif; font-weight: 200; margin: 12px auto 14px; text-align: center; }
+cite, .emph { font-size: 1em; font-style: italic; text-transform: none; font-family: "Georgia", "Times New Roman", Georgia, serif; font-weight: 200; margin: 12px auto 14px; text-align: center; display: block; }
+
+blockquote { border-left: 0; }
+blockquote p, blockquote cite { color: #5f5e5f; }
+blockquote hr { margin-left: 0; }
+blockquote cite { font-weight: 600; text-align: left; }
+blockquote cite:before { content: ''; }
+
+cite { display: inline-block; }
 
 .ems-before-after { position: relative; border-top: 1px solid #5f5e5f; width: 32px; top: -4px; display: inline-block; margin: 0 12px; }
 
@@ -590,11 +604,13 @@ header.page-header p { margin: auto auto; float: none; letter-spacing: .12em; fo
 .pushy { position: fixed; width: 200px; height: 100%; top: 0; z-index: 9999; background: url("../images/patterns/grey.png") repeat; font-size: 0.9em; font-weight: bold; -webkit-box-shadow: inset -10px 0 6px -9px rgba(0, 0, 0, 0.7); -moz-box-shadow: inset -10px 0 6px -9px rgba(0, 0, 0, 0.7); box-shadow: inset -10px 0 6px -9px rgba(0, 0, 0, 0.7); }
 .pushy a { display: block; font-family: "Sackers-Roman"; color: white; padding: 15px 30px; border-top: 1px solid #5f5e5f; text-decoration: none; }
 .pushy a:hover { color: #d0b26f; }
+.pushy li.active a { color: #d0b26f; }
+.pushy p { padding: 15px 30px; margin: 42px 0 0; color: white; font-family: "Sackers-Gothic"; }
 
-.menu-btn { font-family: "Sackers-Roman"; color: white; font-size: 0.875em; letter-spacing: .4em; margin: -48px 6px 0; padding-bottom: 12px; -webkit-transition: all 0.5s ease-in 0.5s; -moz-transition: all 0.5s ease-in 0.5s; transition: all 0.5s ease-in 0.5s; position: absolute; z-index: -1; }
+.menu-btn { font-family: "Sackers-Roman"; color: white; font-size: 0.875em; letter-spacing: .4em; margin: -48px 6px 0; padding-bottom: 12px; -webkit-transition: all 0.5s ease-in 0.5s; -moz-transition: all 0.5s ease-in 0.5s; transition: all 0.5s ease-in 0.5s; position: absolute; margin-left: -200px; }
 .menu-btn span { font-family: 'EntypoRegular'; font-size: 2em; display: inline-block; position: relative; top: 2px; left: 5px; }
 
-@media (max-width: 768px) { .menu-btn { opacity: 1; z-index: 1; } }
+@media (max-width: 768px) { .menu-btn { margin-left: 32px; } }
 /* Menu Movement */
 .pushy-left { -webkit-transform: translate3d(-200px, 0, 0); -moz-transform: translate3d(-200px, 0, 0); -ms-transform: translate3d(-200px, 0, 0); -o-transform: translate3d(-200px, 0, 0); transform: translate3d(-200px, 0, 0); }
 
@@ -628,7 +644,7 @@ ul.post-list { list-style: none; }
 ul.post-list li { border-bottom: 1px #5f5e5f solid; }
 ul.post-list li:first-child { border-top: 1px #5f5e5f solid; }
 ul.post-list li:last-child { border-bottom: 0px; }
-ul.post-list .dart-blk-right { margin: 6px 15px 0 0; float: right; }
+ul.post-list .dart-blk-right { margin: -38px 15px 0 0; float: right; }
 @media (max-width: 768px) { ul.post-list .dart-blk-right { float: none; } }
 
 ul.profile-list { list-style: none; margin: auto auto; float: none; margin-bottom: 40px; }
@@ -636,25 +652,37 @@ ul.profile-list.expansive li { width: 100%; margin-left: auto; margin-right: aut
 ul.profile-list.expansive li:before, ul.profile-list.expansive li:after { content: " "; display: table; }
 ul.profile-list.expansive li:after { clear: both; }
 ul.profile-list.expansive li .profile-img-wrap { margin-top: 6px; }
+ul.profile-list.expansive li .profile-img-wrap a { display: inline-block; }
+@media (max-width: 480px) { ul.profile-list.expansive li .profile-img-wrap { width: 32%; } }
 ul.profile-list.expansive li .name { text-align: left; font-size: 1.125em; margin-bottom: 0px; font-family: "Sackers-Gothic"; }
 ul.profile-list.expansive li .occupation { font-style: italic; color: #858485; font-weight: 600; font-size: 1em; display: block; margin-bottom: 0; }
+@media (max-width: 768px) { ul.profile-list.expansive li .name, ul.profile-list.expansive li .occupation { text-align: center; }
+  ul.profile-list.expansive li .profile-img-wrap { margin: auto auto; float: none; margin-bottom: 12px; } }
 ul.profile-list.headshots li { margin-bottom: 24px; }
-ul.profile-list.headshots li .profile-img-wrap a { width: 75%; display: block; margin: 0 auto; }
+ul.profile-list.headshots li .profile-img-wrap a { display: block; width: 50%; margin: 0 auto; }
 ul.profile-list.headshots li .name { font-size: 0.875em; margin: 18px 0 4px; font-family: "Sackers-Gothic"; }
+@media (max-width: 768px) { ul.profile-list.headshots li .profile-img-wrap a { width: 20%; } }
+@media (max-width: 480px) { ul.profile-list.headshots li .profile-img-wrap a { width: 32%; } }
 
-.button { box-shadow: none; background: rgba(0, 0, 0, 0); color: #5f5e5f; font-family: "Sackers-Gothic"; position: relative; width: 100%; padding: .8em; }
+ul.comments-list { list-style: none; }
+ul.comments-list li { margin: 40px auto; max-height: 400px; }
+ul.comments-list .dotted { margin: 24px 0 0; }
+ul.comments-list .dotted:after { left: 0; margin-left: 0; }
+
+.button { box-shadow: none; background: transparent; color: #5f5e5f; font-family: "Sackers-Gothic"; position: relative; width: 100%; padding: .8em; }
 .button.dropdown:after { content: ''; position: absolute; font-family: "EntypoRegular"; font-size: 1.5em; padding-top: 4px; top: 0px; right: 10px; padding-left: 10px; height: 100%; border-left: 1px solid #5f5e5f; }
-.button:hover { background: transparent; color: inherit; }
+.button:hover { background: transparent; color: inherit; color: #d0b26f; }
 
 .dropdown.button { padding: 0.5em .8em; }
+.dropdown.button:hover { color: inherit; }
 
 .f-dropdown { max-width: 66%; }
 .f-dropdown li a { padding: 8px 12px 4px; }
 
-input.search, textarea { box-shadow: none; background: rgba(0, 0, 0, 0); color: #5f5e5f; font-family: "Sackers-Gothic"; position: relative; width: 100%; }
-input.search:after, textarea:after { content: ''; position: absolute; font-family: "EntypoRegular"; font-size: 1.5em; padding-top: 9px; top: 0px; right: 10px; padding-left: 10px; height: 100%; border-left: 1px solid #5f5e5f; }
+input, input.what-if-input, textarea { box-shadow: none; background: rgba(0, 0, 0, 0); color: #5f5e5f; font-family: "Sackers-Gothic"; position: relative; width: 100%; }
+input.search:after, input.what-if-input.search:after, textarea.search:after { content: ''; position: absolute; font-family: "EntypoRegular"; font-size: 1.5em; padding-top: 9px; top: 0px; right: 10px; padding-left: 10px; height: 100%; border-left: 1px solid #5f5e5f; }
 
-input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], textarea { height: auto; padding: .4em .8em; font-size: 1em; }
+input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], textarea { height: auto; padding: 10px 12px 7px; font-size: 1em; }
 
 ul.image-list li { display: inline-block; position: relative; vertical-align: top; }
 ul.image-list li.active .overlay, ul.image-list li:hover .overlay { background: rgba(0, 0, 0, 0.8); height: 97.8%; }
@@ -676,22 +704,29 @@ ul.image-list li .info p { font-size: 1em; letter-spacing: .12em; padding: 0 24p
 
 .grey-pattern { background: url(../images/patterns/grey.png) repeat; width: auto; display: block; }
 
-body.home .site-header { background: url("../images/banners/banner-1.jpg") repeat-y 0 0; background-size: 100%; }
-body.home .site-header .brand { padding: 164px 0; }
+body.home .site-header { background: url("../images/banners/banner-1.jpg") 0 -30px; }
+body.home .site-header .brand { padding: 156px 0; }
+body.home .site-header .brand .logo { background: url("../images/logos/ifgather-logo-white-shadow-large+@2x.png") no-repeat; }
 @media (max-width: 979px) { body.home .site-header .brand { padding: 120px 0; } }
 @media (max-width: 480px) { body.home .site-header .brand { padding: 80px 0 32px; } }
 body.home nav.site-nav ul li a { color: white; }
 body.home section.welcome .mission-statement { margin: auto auto; float: none; margin: 42px auto 54px; }
 body.home section.welcome .what-if-wrap { position: relative; }
 body.home section.welcome .what-if-wrap a { padding: 36px 60px 46px; margin-left: 124px; height: 200px; }
-body.home section.welcome .what-if-wrap a header { float: right; }
+body.home section.welcome .what-if-wrap a header { float: right; width: 260px; }
 body.home section.welcome .what-if-wrap a header h2 { font-size: 1.625em; text-align: center; margin: 0; }
 body.home section.welcome .what-if-wrap .what-if-clg { background: url(../images/collages/what-if-clg.png) no-repeat; height: 229px; width: 100%; position: absolute; top: 12px; }
+@media (max-width: 979px) { body.home section.welcome .what-if-wrap a { padding: 54px 32px; }
+  body.home section.welcome .what-if-wrap a header { float: none; margin: 0 auto; }
+  body.home section.welcome .what-if-wrap a header h2 { font-size: 1.125em; letter-spacing: 0.25em; }
+  body.home section.welcome .what-if-wrap .what-if-clg { left: -32px; } }
 @media (max-width: 768px) { body.home section.welcome .what-if-wrap a { margin: 0; }
   body.home section.welcome .what-if-wrap a header { float: none; }
   body.home section.welcome .what-if-wrap .what-if-clg { display: none; } }
 body.home section.register { background: url(../images/banners/banner-2.jpg) no-repeat; margin-top: -52px; height: 100%; }
+@media (min-width: 1250px) { body.home section.register { background-size: 100%; } }
 body.home section.register .quote { float: left; margin: 92px 0 0 54px; }
+body.home section.register .quote h3 { width: 150px; margin: 0 auto; }
 body.home section.register .register-now-wrap { width: 40%; clear: both; float: right; }
 body.home section.register .register-now-wrap a { font-family: "Sackers-Gothic"; text-transform: uppercase; color: white; padding: 18px; text-align: center; letter-spacing: .4em; font-size: 0.875em; margin-top: -64px; }
 body.home section.register .register-now-wrap .dart-wht-right { position: relative; top: 2px; }
@@ -712,11 +747,14 @@ body.home .highlight-article span.tagline { display: inline-block; font-size: 1.
 body.home .highlight-article .brackets.lrg:before, body.home .highlight-article .brackets.lrg:after { top: 80px; }
 body.home .highlight-article article { float: right; }
 body.home .highlight-article article p:before, body.home .highlight-article article p:after { top: -60px; }
-@media (max-width: 480px) { body.home .highlight-article header { padding: 0 15px; font-size: 12px; margin-bottom: 24px; } }
+@media (max-width: 480px) { body.home .highlight-article header { padding: 0 15px; font-size: 12px; margin-bottom: 24px; text-align: center; }
+  body.home .highlight-article .brackets.lrg { padding: 0 15px; }
+  body.home .highlight-article .brackets.lrg:before, body.home .highlight-article .brackets.lrg:after { content: ''; } }
 body.home .quote, body.home .question { padding: 30px 52px 28px; width: auto; }
 body.home .quote h3, body.home .question h3 { margin: 0; font-size: 1.25em; line-height: 36px; }
 
-body.gathering .site-header { background: url("../images/banners/banner-5.jpg") repeat-y 0 0; background-size: 100%; }
+body.gathering .site-header { background: url("../images/banners/pre-edits/banner-1.jpg") repeat-y 0 -120px; }
+body.gathering .logo { background: url("../images/logos/ifgather-logo-white-shadow-large+@2x.png") no-repeat !important; }
 body.gathering nav.site-nav ul li a { color: white; }
 body.gathering .gathering-dates .cream-pattern { padding: 72px 0 60px; position: relative; }
 body.gathering .gathering-dates .cream-pattern:after, body.gathering .gathering-dates .cream-pattern:before { content: ''; position: absolute; top: 0; height: 0; border-top: 20px solid white; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; }
@@ -736,71 +774,104 @@ body.gathering .more-info-wrap header h3 { font-size: 0.875em; }
 .prompt-down:after { right: 0; width: 50%; border-left: 30px solid rgba(0, 0, 0, 0); }
 .prompt-down:before { left: 0; width: 50%; border-right: 30px solid rgba(0, 0, 0, 0); }
 
-body.what-if .site-header { background: url("../images/banners/banner-1.jpg") repeat-y 0 0; background-size: 100%; }
+body.what-if .site-header { background: url("../images/banners/pre-edits/banner-2.jpg") 0 0; }
+body.what-if .logo { background: url("../images/logos/ifgather-logo-white-shadow-large+@2x.png") no-repeat !important; }
 body.what-if nav.site-nav ul li a { color: white; }
 body.what-if header.page-header { margin-bottom: 60px; }
 body.what-if header.page-header .brackets.med:before, body.what-if header.page-header .brackets.med:after { top: 50px; margin: 0 -24px; }
+body.what-if .prompt.cream-pattern { margin: auto auto; float: none; clear: both; margin-top: 60px; padding: 16px 0; }
+body.what-if .prompt.cream-pattern h4 { margin: 0; font-size: 20px; letter-spacing: 0.15em; }
+body.what-if .form-wrap.sage-pattern { position: relative; }
+body.what-if .form-wrap.sage-pattern:after, body.what-if .form-wrap.sage-pattern:before { content: ''; position: absolute; bottom: 0; height: 0; border-bottom: 20px solid white; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; }
+body.what-if .form-wrap.sage-pattern:after { right: 0; width: 50%; border-left: 20px solid rgba(0, 0, 0, 0); }
+body.what-if .form-wrap.sage-pattern:before { left: 0; width: 50%; border-right: 20px solid rgba(0, 0, 0, 0); }
+body.what-if .form-wrap.sage-pattern .inner { padding: 0 40px 40px; width: 100%; margin-left: auto; margin-right: auto; margin-top: 0; margin-bottom: 0; max-width: 62.5em; *zoom: 1; }
+body.what-if .form-wrap.sage-pattern .inner:before, body.what-if .form-wrap.sage-pattern .inner:after { content: " "; display: table; }
+body.what-if .form-wrap.sage-pattern .inner:after { clear: both; }
+body.what-if .form-wrap.sage-pattern .question { margin-top: 74px; }
+body.what-if .form-wrap.sage-pattern .question h4 { font-weight: 600; font-size: 1.25em; letter-spacing: .2em; }
+body.what-if .form-wrap.sage-pattern form { padding: 0 60px; margin: 32px 0 16px; }
+body.what-if .form-wrap.sage-pattern form textarea.what-if-textarea { border: 0; line-height: 56px; font-size: 1.0625em; margin: -18px 0 0; padding-top: 8px; background: url("../images/ornaments/lines.png") repeat 0 19px; height: 200px; }
+body.what-if .form-wrap.sage-pattern form textarea.what-if-textarea:focus { background: url("../images/ornaments/lines.png") repeat 0 19px; }
+body.what-if .form-wrap.sage-pattern form input.what-if-input { line-height: 20px; font-size: 1.0625em; background: transparent; margin: 40px 0 54px; border: 0; border-bottom: 1px solid #5f5e5f; }
+body.what-if .form-wrap.sage-pattern form .characters { float: left; font-style: italic; font-weight: 600; font-family: "Georgia", "Times New Roman", Georgia, serif; color: #5f5e5f; }
+body.what-if .form-wrap.sage-pattern form input#submit { border: 0; display: block; font-family: inherit; font-style: italic; font-size: 16px; text-align: right; font-weight: 600; }
+body.what-if .form-wrap.sage-pattern form .dart-right:after { top: -22px; right: 64px; }
+body.what-if .form-wrap.sage-pattern form textarea:focus { background: none; }
+@media (max-width: 480px) { body.what-if .form-wrap.sage-pattern form { padding: 0; margin: 10px 0 24px; }
+  body.what-if .form-wrap.sage-pattern .question { margin-top: 32px; }
+  body.what-if .form-wrap.sage-pattern .brackets:before, body.what-if .form-wrap.sage-pattern .brackets:after { content: ''; } }
 
-body.equip nav.site-nav { border-bottom: 4px solid white; }
-body.equip nav.site-nav ul li.active a:after { top: 58px; margin-left: -6px; z-index: 1; }
-body.equip .content-wrap { padding-bottom: 0; background: transparent; }
-body.equip .equip-post-list section.post-wrap { padding: 0; background: white; }
-body.equip .equip-post-entry section.post-wrap { padding: 0; background: white; }
-body.equip section.post-wrap header.title { background: url(../images/patterns/sage.png) repeat; padding: 12px 0 4px; margin-bottom: 52px; font-size: 14px; }
-body.equip section.post-wrap header.title h2 { letter-spacing: .24em; }
-@media (max-width: 979px) { body.equip section.post-wrap header.title h2 { font-style: 1.125em; } }
-body.equip section.post-wrap header.title h2 a { padding-left: 12px; }
-body.equip section.post-wrap header.title.main { padding: 20px 15px 36px; margin-bottom: 40px; }
-body.equip section.post-wrap header.title.main:after, body.equip section.post-wrap header.title.main:before { content: ''; position: absolute; top: 74px; height: 0; border-bottom: 20px solid white; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; }
-body.equip section.post-wrap header.title.main:after { right: 0; width: 50%; border-left: 20px solid rgba(0, 0, 0, 0); }
-body.equip section.post-wrap header.title.main:before { left: 0; width: 50%; border-right: 20px solid rgba(0, 0, 0, 0); }
-body.equip section.post-wrap .sort-options, body.equip section.post-wrap ul.post-list { padding: 0 30px; }
-body.equip section.post-wrap ul.post-list { margin-top: 54px; }
-body.equip .row { max-width: 100%; }
-body.equip .dropdown.button { text-align: left; }
-body.equip header.article-header { clear: both; margin: 14px 0 12px; }
-body.equip header.article-header h4 { display: inline-block; font-family: "Sackers-Gothic"; letter-spacing: .24em; font-size: 0.875em; }
-body.equip header.article-header .date { text-align: right; float: right; margin-top: 4px; }
-@media (max-width: 979px) { body.equip header.article-header .date { float: none; } }
-body.equip article.equip-post { padding: 0 40px; }
-body.equip article.equip-post header { border-bottom: 1px solid #5f5e5f; padding-bottom: 12px; margin-bottom: 32px; }
-body.equip article.equip-post header h4 { font-size: 1em; }
+@media (max-width: 979px) { html.touch ul.image-list { display: none; } }
+body.equip .feature-img, body.story .feature-img, body.search .feature-img { position: absolute; top: 0; z-index: -1; margin: 5px 0 0; }
+body.equip .feature-img img, body.story .feature-img img, body.search .feature-img img { position: fixed; }
+body.equip nav.site-nav, body.story nav.site-nav, body.search nav.site-nav { border-bottom: 4px solid white; }
+body.equip nav.site-nav ul li.active a:after, body.story nav.site-nav ul li.active a:after, body.search nav.site-nav ul li.active a:after { top: 58px; margin-left: -6px; z-index: 1; }
+body.equip .content-wrap, body.story .content-wrap, body.search .content-wrap { padding-bottom: 0; background: transparent; }
+body.equip .equip-post-list section.post-wrap, body.story .equip-post-list section.post-wrap, body.search .equip-post-list section.post-wrap { padding: 0; background: white; }
+body.equip .equip-post-entry section.post-wrap, body.story .equip-post-entry section.post-wrap, body.search .equip-post-entry section.post-wrap { padding: 0; background: white; }
+body.equip section.post-wrap header.title, body.story section.post-wrap header.title, body.search section.post-wrap header.title { background: url(../images/patterns/sage.png) repeat; padding: 12px 0 4px; margin-bottom: 52px; font-size: 14px; }
+body.equip section.post-wrap header.title h2, body.story section.post-wrap header.title h2, body.search section.post-wrap header.title h2 { letter-spacing: .24em; }
+@media (max-width: 979px) { body.equip section.post-wrap header.title h2, body.story section.post-wrap header.title h2, body.search section.post-wrap header.title h2 { font-style: 1.125em; } }
+body.equip section.post-wrap header.title h2 a, body.story section.post-wrap header.title h2 a, body.search section.post-wrap header.title h2 a { padding-left: 12px; }
+body.equip section.post-wrap header.title.main, body.story section.post-wrap header.title.main, body.search section.post-wrap header.title.main { padding: 20px 15px 36px; margin-bottom: 40px; }
+body.equip section.post-wrap header.title.main:after, body.equip section.post-wrap header.title.main:before, body.story section.post-wrap header.title.main:after, body.story section.post-wrap header.title.main:before, body.search section.post-wrap header.title.main:after, body.search section.post-wrap header.title.main:before { content: ''; position: absolute; top: 74px; height: 0; border-bottom: 20px solid white; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; }
+body.equip section.post-wrap header.title.main:after, body.story section.post-wrap header.title.main:after, body.search section.post-wrap header.title.main:after { right: 0; width: 50%; border-left: 20px solid rgba(0, 0, 0, 0); }
+body.equip section.post-wrap header.title.main:before, body.story section.post-wrap header.title.main:before, body.search section.post-wrap header.title.main:before { left: 0; width: 50%; border-right: 20px solid rgba(0, 0, 0, 0); }
+body.equip section.post-wrap .sort-options, body.equip section.post-wrap ul.post-list, body.story section.post-wrap .sort-options, body.story section.post-wrap ul.post-list, body.search section.post-wrap .sort-options, body.search section.post-wrap ul.post-list { padding: 0 30px; }
+body.equip section.post-wrap ul.post-list, body.story section.post-wrap ul.post-list, body.search section.post-wrap ul.post-list { margin-top: 54px; }
+body.equip .row, body.story .row, body.search .row { max-width: 100%; }
+body.equip .dropdown.button, body.story .dropdown.button, body.search .dropdown.button { text-align: left; }
+body.equip header.article-header, body.story header.article-header, body.search header.article-header { clear: both; margin: 14px 0 12px; }
+body.equip header.article-header h4, body.story header.article-header h4, body.search header.article-header h4 { display: inline-block; font-family: "Sackers-Gothic"; letter-spacing: .24em; font-size: 0.875em; width: 50%; text-align: left; }
+body.equip header.article-header .date, body.story header.article-header .date, body.search header.article-header .date { text-align: right; float: right; margin-top: 4px; }
+@media (max-width: 979px) { body.equip header.article-header .date, body.story header.article-header .date, body.search header.article-header .date { float: none; } }
+body.equip article.equip-post, body.story article.equip-post, body.search article.equip-post { padding: 0 40px 14px; }
+body.equip article.equip-post header, body.story article.equip-post header, body.search article.equip-post header { border-bottom: 1px solid #5f5e5f; padding-bottom: 12px; margin-bottom: 32px; }
+body.equip article.equip-post header h4, body.story article.equip-post header h4, body.search article.equip-post header h4 { font-size: 1em; }
+body.equip .tags, body.story .tags, body.search .tags { list-style: none; text-align: center; margin: 42px auto 60px; }
+body.equip .tags li, body.story .tags li, body.search .tags li { display: inline-block; }
+body.equip .tags li a, body.story .tags li a, body.search .tags li a { color: #d0b26f; }
 
-body.unleash .site-header { background: url("../images/banners/banner-1.jpg") repeat-y 0 0; background-size: 100%; }
+body.unleash .site-header { background: url("../images/banners/edits/banner-3.jpg") repeat-y 0 0; }
 body.unleash nav.site-nav ul li a { color: white; }
+body.unleash .logo { background: url("../images/logos/ifgather-logo-white-shadow-large+@2x.png") no-repeat !important; }
 body.unleash header.page-header { margin-bottom: 60px; }
 body.unleash header.page-header .brackets.med:before, body.unleash header.page-header .brackets.med:after { top: 50px; margin: 0 -24px; }
 
-body.unleash-post nav.site-nav { border-bottom: 4px solid #FFF; }
-body.unleash-post header.unleash-post-header { margin: -60px auto 40px; position: relative; }
-body.unleash-post header.unleash-post-header .title { padding: 32px 32px 40px; position: relative; margin: auto auto; float: none; }
-body.unleash-post header.unleash-post-header .title .emph { color: #5f5e5f; font-size: 18px; letter-spacing: .1em; }
-body.unleash-post header.unleash-post-header .title hr { border-color: #5f5e5f; }
-body.unleash-post header.unleash-post-header .title:after, body.unleash-post header.unleash-post-header .title:before { content: ''; position: absolute; bottom: 0; height: 0; border-bottom: 20px solid white; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; }
-body.unleash-post header.unleash-post-header .title:after { right: 0; width: 50%; border-left: 20px solid rgba(0, 0, 0, 0); }
-body.unleash-post header.unleash-post-header .title:before { left: 0; width: 50%; border-right: 20px solid rgba(0, 0, 0, 0); }
-@media (max-width: 768px) { body.unleash-post header.unleash-post-header { margin-top: 0; } }
-body.unleash-post header.unleash-post-header .post-navigation { margin: -124px auto 124px; padding: 0 15px; }
-body.unleash-post header.unleash-post-header .post-navigation a.dart-left, body.unleash-post header.unleash-post-header .post-navigation a.dart-right { font-size: 1em; letter-spacing: .1em; }
-body.unleash-post header.unleash-post-header .post-navigation a.dart-left { position: absolute; left: 60px; }
-body.unleash-post header.unleash-post-header .post-navigation a.dart-left:before { left: -40px; top: 0px; }
-body.unleash-post header.unleash-post-header .post-navigation a.dart-right { position: absolute; right: 60px; }
-body.unleash-post header.unleash-post-header .post-navigation a.dart-right:after { right: -40px; top: 0px; }
-@media (max-width: 979px) { body.unleash-post header.unleash-post-header .post-navigation { margin: 12px auto; } }
-body.unleash-post footer.unleash-footer { margin-top: 42px; }
-body.unleash-post footer.unleash-footer hr.full { margin-bottom: 12px; }
-body.unleash-post footer.unleash-footer .date { float: left; }
-body.unleash-post footer.unleash-footer .spacer { border-top: 1px solid #5f5e5f; }
-body.unleash-post footer.unleash-footer .social { text-align: right; margin: 0; float: right; }
-body.unleash-post footer.unleash-footer .return-nav-wrap { margin: auto auto; float: none; margin-top: 64px; }
-body.unleash-post footer.unleash-footer .return-nav-wrap h4 { letter-spacing: .1em; font-size: 1.25em; padding-top: 36px; }
-@media (max-width: 768px) { body.unleash-post footer.unleash-footer .return-nav-wrap { margin-top: 64px; font-size: 0.875em; } }
+body.unleash-story nav.site-nav { border-bottom: 4px solid #FFF; }
+body.unleash-story img.banner { width: 100%; }
+body.unleash-story header.unleash-post-header { margin: -20px auto 40px; position: relative; }
+body.unleash-story header.unleash-post-header.with-banner { margin: -60px auto 40px; }
+body.unleash-story header.unleash-post-header .title { padding: 32px 32px 40px; position: relative; margin: auto auto; float: none; }
+body.unleash-story header.unleash-post-header .title .emph { color: #5f5e5f; font-size: 18px; letter-spacing: .1em; }
+body.unleash-story header.unleash-post-header .title hr { border-color: #5f5e5f; }
+body.unleash-story header.unleash-post-header .title:after, body.unleash-story header.unleash-post-header .title:before { content: ''; position: absolute; bottom: 0; height: 0; border-bottom: 20px solid white; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; }
+body.unleash-story header.unleash-post-header .title:after { right: 0; width: 50%; border-left: 20px solid rgba(0, 0, 0, 0); }
+body.unleash-story header.unleash-post-header .title:before { left: 0; width: 50%; border-right: 20px solid rgba(0, 0, 0, 0); }
+@media (max-width: 768px) { body.unleash-story header.unleash-post-header { margin-top: 0; } }
+body.unleash-story header.unleash-post-header .post-navigation { margin: -124px auto 124px; padding: 0 15px; }
+body.unleash-story header.unleash-post-header .post-navigation a.dart-left, body.unleash-story header.unleash-post-header .post-navigation a.dart-right { font-size: 1em; letter-spacing: .1em; }
+body.unleash-story header.unleash-post-header .post-navigation a.dart-left { position: absolute; left: 60px; }
+body.unleash-story header.unleash-post-header .post-navigation a.dart-left:before { left: -40px; top: 0px; }
+body.unleash-story header.unleash-post-header .post-navigation a.dart-right { position: absolute; right: 60px; }
+body.unleash-story header.unleash-post-header .post-navigation a.dart-right:after { right: -40px; top: 0px; }
+@media (max-width: 979px) { body.unleash-story header.unleash-post-header .post-navigation { margin: 12px auto; } }
+body.unleash-story footer.unleash-footer { margin-top: 42px; }
+body.unleash-story footer.unleash-footer hr.full { margin-bottom: 12px; }
+body.unleash-story footer.unleash-footer .date { float: left; }
+body.unleash-story footer.unleash-footer .spacer { border-top: 1px solid #5f5e5f; }
+body.unleash-story footer.unleash-footer .social { text-align: right; margin: 0; float: right; }
+body.unleash-story footer.unleash-footer .return-nav-wrap { margin: auto auto; float: none; margin-top: 64px; }
+body.unleash-story footer.unleash-footer .return-nav-wrap h4 { letter-spacing: .1em; font-size: 1.25em; padding-top: 36px; }
+@media (max-width: 768px) { body.unleash-story footer.unleash-footer .return-nav-wrap { margin-top: 64px; font-size: 0.875em; } }
 
 body.connect .site-header { background: url("../images/banners/banner-1.jpg") repeat-y 0 0; background-size: 100%; }
 body.connect nav.site-nav ul li a { color: white; }
 body.connect form { margin-top: 24px; }
 
-body.who-we-are .site-header { background: url("../images/banners/banner-5.jpg") repeat-y 0 0; background-size: 100%; }
+body.who-we-are .site-header { background: url("../images/banners/pre-edits/banner-1.jpg") repeat-y 0 -120px; }
+body.who-we-are .logo { background: url("../images/logos/ifgather-logo-white-shadow-large+@2x.png") no-repeat !important; }
 body.who-we-are nav.site-nav ul li a { color: white; }
 body.who-we-are header.page-section-header { margin: 24px auto 60px; }
 body.who-we-are .panel { margin: 60px 0 0; padding: 24px 0 142px; background: url(../images/patterns/cream.png) repeat; }

@@ -1,0 +1,71 @@
+
+
+
+.lt-ie9 {
+    // Hide Brackets
+    .brackets:after, .brackets:before {
+        content: '';
+    }
+
+    // Equip Post List
+    body.equip {
+        .equip-post-list section.post-wrap, .equip-post-entry section.post-wrap {
+            width: 45%;
+            float:right
+        }
+    }
+
+    // Image Lists
+    ul.three-across.image-list li, ul.four-across .image-list li {
+        width: 25%
+    }
+
+    //Hide Pushy, Audio, Spacer, Menu Btn
+    nav.pushy, #player-wrap, .spacer, .menu-btn {
+        display: none;
+    }
+
+    // Dumb Piddly Shit
+    body.unleash-post footer.unleash-footer .social {
+        margin-top: -12px;
+    }
+
+    ul.profile-list {
+        &.headshots {
+            li {
+                float:left;
+                display: inline-block;
+                width: 33.3333333%;
+
+                a {
+                    width: 50%;
+                }
+            }
+        }
+
+
+        &.expansive {
+            .profile-img-wrap {
+                float:left;
+                width: 25%;
+            }
+            .profile-info-wrap {
+                float:left;
+                width: 75%;
+            }
+
+        }
+    }
+
+    .info-col {
+        width: 33.3333333%;
+        float:left;
+    }
+
+
+    // IE 7
+    nav.site-nav ul {margin-left: 200px}
+    nav.site-nav ul li {float:left;}
+
+
+}

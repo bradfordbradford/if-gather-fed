@@ -1,0 +1,12 @@
+.lt-ie9 .brackets:after, .lt-ie9 .brackets:before { content: ''; }
+.lt-ie9 body.equip .equip-post-list section.post-wrap, .lt-ie9 body.equip .equip-post-entry section.post-wrap { width: 45%; float: right; }
+.lt-ie9 ul.three-across.image-list li, .lt-ie9 ul.four-across .image-list li { width: 25%; }
+.lt-ie9 nav.pushy, .lt-ie9 #player-wrap, .lt-ie9 .spacer, .lt-ie9 .menu-btn { display: none; }
+.lt-ie9 body.unleash-post footer.unleash-footer .social { margin-top: -12px; }
+.lt-ie9 ul.profile-list.headshots li { float: left; display: inline-block; width: 33.3333333%; }
+.lt-ie9 ul.profile-list.headshots li a { width: 50%; }
+.lt-ie9 ul.profile-list.expansive .profile-img-wrap { float: left; width: 25%; }
+.lt-ie9 ul.profile-list.expansive .profile-info-wrap { float: left; width: 75%; }
+.lt-ie9 .info-col { width: 33.3333333%; float: left; }
+.lt-ie9 nav.site-nav ul { margin-left: 200px; }
+.lt-ie9 nav.site-nav ul li { float: left; }

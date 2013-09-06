@@ -23,8 +23,16 @@ ul.profile-list {
         clear: both;
 
         .profile-img-wrap {
-            @include rgrid(12, 2);
+            @include rgrid(3, 2);
             margin-top: 6px;
+
+            a {
+                display: inline-block;
+            }
+
+            @include breakpoint(phones) {
+                width: 32%;
+            }
         }
 
         .profile-info-wrap {
@@ -47,6 +55,19 @@ ul.profile-list {
             margin-bottom: 0;
         }
 
+        @include breakpoint(tablet-V) {
+            .name, .occupation {
+                text-align: center;
+            }
+
+            .profile-img-wrap {
+                @include center-cols();
+                margin-bottom: 12px;
+            }
+
+        }
+
+
     }
 
 
@@ -57,9 +78,10 @@ ul.profile-list {
 
 
         .profile-img-wrap {
+
             a {
-                width: 75%;
                 display: block;
+                width: 50%;
                 margin: 0 auto;
             }
         }
@@ -69,8 +91,17 @@ ul.profile-list {
             margin: 18px 0 4px;
             font-family: $sans-gothic;
         }
+
+        @include breakpoint(tablet-V) {
+             .profile-img-wrap a {
+                width: 20%;
+             }
+        }
+
+        @include breakpoint(phones) {
+             .profile-img-wrap a {
+                width: 32%;
+             }
+        }
     }
-
-
-
 }

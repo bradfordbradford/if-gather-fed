@@ -9,7 +9,7 @@
 // ----------------------------
 .button {
     box-shadow: none;
-    background: rgba(0, 0, 0, 0);
+    background:transparent;
     color: $primary-color;
     font-family: $sans-gothic;
     position: relative;
@@ -32,12 +32,17 @@
     &:hover {
         background: transparent;
         color: inherit;
+        color: $secondary-color;
     }
 
 }
 
 .dropdown.button {
     padding: 0.5em .8em;
+
+    &:hover {
+        color: inherit;
+    }
 }
 
 // Dropdown Menu

@@ -1,169 +1,172 @@
-!!!
+!!! 5
+-# paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+/[if lt IE 9] <html lang="en" class="no-js lt-ie9">
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
 
-%html{:lang => "en"}
+%head
+    / Meta
+    %meta{:charset => "UTF-8"}
+    %title If: Gather --dev
+    %meta{:name=>"description", :content=>"If:Gather is…"}
+    %meta{:name=>"author", :content=>"If:Gather"}
+    %meta{:name=>"viewport", :content=>"width=device-width,initial-scale=1"}
+    / Style
+    %link{:rel => "stylesheet", :href => "../css/site.css"}
+    /[if lt IE 9 ]
+        %link{:rel => "stylesheet", :href => "../css/ie.css"}/
+    / Scripts
+    %script{:rel => "javascript", :src => "../js/vendor/custom.modernizr.js"}
 
-    %head
-        / Meta
-        %meta{:charset => "UTF-8"}
-        %title If: Gather --dev
-        %meta{:name=>"description", :content=>"If:Gather is…"}
-        %meta{:name=>"author", :content=>"If:Gather"}
-        %meta{:name=>"viewport", :content=>"width=device-width,initial-scale=1"}
-        / Style
-        %link{:rel => "stylesheet", :href => "../css/site.css"}
-        / Fonts
-        %script{:type => "text/javascript", :src => "//use.typekit.net/ahk2bse.js"}
-        %script{:type => "text/javascript"} try{Typekit.load();}catch(e){}
+%body.gathering
 
-        / Scripts
-        %script{:rel => "javascript", :src => "../js/vendor/custom.modernizr.js"}
+    %nav.pushy.pushy-left
+        %ul
+            %li.active
+                %a{:href => "gathering.html"}
+                    Gathering
 
-    %body.gathering
+            %li
+                %a{:href => "what-if.html"}
+                    What If?
 
-        %nav.pushy.pushy-left
-            %ul
-                %li
-                    %a{:href => "gathering.html"}
-                        Gathering
+            %li
+                %a{:href => "equip.html"}
+                    Equip
 
-                %li
-                    %a{:href => "what-if.html"}
-                        What If?
+            %li
+                %a{:href => "unleash.html"}
+                    Unleash
 
-                %li
-                    %a{:href => "equip.html"}
-                        Equip
+            %li
+                %a{:href => "connect.html"}
+                    Connect
 
-                %li
-                    %a{:href => "unleash.html"}
-                        Unleash
+            %li
+                %a{:href => "who-we-are.html"}
+                    Who We Are
 
-                %li
-                    %a{:href => "connect.html"}
-                        Connect
+    #site-wrap
 
-                %li
-                    %a{:href => "who-we-are.html"}
-                        Who We Are
-
-        #site-wrap
-
-            %section.site-header
-                .brand
-                    %a{:href => "index.html"}
-                        %img{:src => "../images/logos/ifgather-logo-white-shadow-large+@2x.png", :alt => ""}/
-                        %h1 IF:GATHERING
-
-
-                %nav.site-nav
-                    %ul
-                        %li.active
-                            %a{:href => "gathering.html"}
-                                Gathering
-
-                        %li
-                            %a{:href => "what-if.html"}
-                                What If?
-
-                        %li
-                            %a{:href => "equip.html"}
-                                Equip
-
-                        %li
-                            %a{:href => "unleash.html"}
-                                Unleash
-
-                        %li
-                            %a{:href => "connect.html"}
-                                Connect
-
-                        %li
-                            %a{:href => "who-we-are.html"}
-                                Who We Are
-
-                .menu-btn
-                    %span ☰
-                    Menu
+        %section.site-header
+            .brand
+                %a{:href => "index.html"}
+                    %img{:src => "../images/logos/ifgather-logo-white-shadow-large+@2x.png", :alt => ""}/
+                    %h1 IF:GATHERING
 
 
-            %section.content-wrap
-
-                .row
-                    %header.page-header
-                        %h2
-                            If: Gathering
-                        %hr.dotted/
-
-                        %p
-                            A fresh, deep, honest space for the next generation of women
-                            to wrestle with essential questions that plague their generation.
-                            %br/
-                            Questions like: If God is real, then what?
-
-
-                .row
-                    %section.gathering-dates
-                        .cream-pattern
-                            .inner
-                                %img{:src => "../images/collages/ifgather-gathering-date.png", :alt => "IF:GATHER - Feb 7-8, 2014 (Austin, TX)"}/
-
-
-                        .register-now.sage-pattern
-                            %h2.dart-right Register Now
-
-                .row
-                    %section.more-info-wrap
-                        %header
-                            %h3.sans More About the Gathering
-                            %hr.dotted/
-
-                        .more-info-text.newspaper-col
-                            %p
-                                Esse bespoke before they sold out voluptate do Pinterest, enim wayfarers organic tote bag minim mustache exercitation. Helvetica nostrud minim forage, Echo Park semiotics +1 commodo labore YOLO pitchfork wolf leggings Wes Anderson salvia. Jean shorts butcher four loko. Helvetica placeat irony forage aliqua yr irure
-
-                        .info-col
-                            %h4.sans Culture
-                            %p
-                                Sriracha flexitarian yr, umami blue bottle next level cliche ugh wolf cardigan elit laboris mustache Brooklyn meggings. Flannel est meh, helvetica placeat irony forage aliqua yr irure. Leggings eu High Life, pickled skateboard Schlitz swag delectus trust fund
-
-                        .info-col
-                            %h4.sans Content
-                            %p
-                                Esse bespoke before they sold out voluptate do Pinterest, enim wayfarers organic tote bag minim mustache exercitation. Helvetica nostrud minim forage, Echo Park semiotics +1 commodo labore YOLO pitchfork wolf leggings Wes Anderson salvia. Jean shorts butcher four loko.
-
-
-                        .info-col
-                            %h4.sans Schedule
-                            %p
-                                Sriracha flexitarian yr, umami blue bottle next level cliche ugh wolf cardigan elit laboris mustache Brooklyn meggings. Flannel est meh, helvetica placeat irony forage aliqua yr irure. Leggings eu High Life, pickled skateboard Schlitz swag delectus trust fund
-
-
-
-                        %header
-                            %h3.sans lodging &amp; food around austin texas
-                            %hr.dotted/
-
-
-
-            %footer.site-footer
-                .inner
-                    .site-map
+            %nav.site-nav
+                %ul
+                    %li.active
                         %a{:href => "gathering.html"}
                             Gathering
+
+                    %li
                         %a{:href => "what-if.html"}
                             What If?
+
+                    %li
                         %a{:href => "equip.html"}
                             Equip
+
+                    %li
                         %a{:href => "unleash.html"}
                             Unleash
+
+                    %li
                         %a{:href => "connect.html"}
                             Connect
+
+                    %li
                         %a{:href => "who-we-are.html"}
                             Who We Are
 
-                    .brand
-                        %a{:href => "index.html"}
-                            %img{:src => "../images/logos/ifgather-logo-white-sm.png", :alt => ""}/
+            .menu-btn
+                %span ☰
+                Menu
+
+
+        %section.content-wrap
+
+            .row
+                %header.page-header
+                    %h2
+                        If: Gathering
+                    %hr.dotted/
+
+                    %p
+                        A fresh, deep, honest space for the next generation of women
+                        to wrestle with essential questions that plague their generation.
+                        %br/
+                        Questions like: If God is real, then what?
+
+
+            .row
+                %section.gathering-dates
+                    .cream-pattern
+                        .inner
+                            %img{:src => "../images/collages/ifgather-gathering-date.png", :alt => "IF:GATHER - Feb 7-8, 2014 (Austin, TX)"}/
+
+
+                    .register-now.sage-pattern
+                        %h2.dart-right Register Now
+
+            .row
+                %section.more-info-wrap
+                    %header
+                        %h3.sans More About the Gathering
+                        %hr.dotted/
+
+                    .more-info-text.newspaper-col
+                        %p
+                            Esse bespoke before they sold out voluptate do Pinterest, enim wayfarers organic tote bag minim mustache exercitation. Helvetica nostrud minim forage, Echo Park semiotics +1 commodo labore YOLO pitchfork wolf leggings Wes Anderson salvia. Jean shorts butcher four loko. Helvetica placeat irony forage aliqua yr irure
+
+                    .info-col
+                        %h4.sans Culture
+                        %p
+                            Sriracha flexitarian yr, umami blue bottle next level cliche ugh wolf cardigan elit laboris mustache Brooklyn meggings. Flannel est meh, helvetica placeat irony forage aliqua yr irure. Leggings eu High Life, pickled skateboard Schlitz swag delectus trust fund
+
+                    .info-col
+                        %h4.sans Content
+                        %p
+                            Esse bespoke before they sold out voluptate do Pinterest, enim wayfarers organic tote bag minim mustache exercitation. Helvetica nostrud minim forage, Echo Park semiotics +1 commodo labore YOLO pitchfork wolf leggings Wes Anderson salvia. Jean shorts butcher four loko.
+
+
+                    .info-col
+                        %h4.sans Schedule
+                        %p
+                            Sriracha flexitarian yr, umami blue bottle next level cliche ugh wolf cardigan elit laboris mustache Brooklyn meggings. Flannel est meh, helvetica placeat irony forage aliqua yr irure. Leggings eu High Life, pickled skateboard Schlitz swag delectus trust fund
+
+
+
+                    %header
+                        %h3.sans lodging &amp; food around austin texas
+                        %hr.dotted/
+
+                    .more-info-text.newspaper-col
+                        %p
+                            Esse bespoke before they sold out voluptate do Pinterest, enim wayfarers organic tote bag minim mustache exercitation. Helvetica nostrud minim forage, Echo Park semiotics +1 commodo labore YOLO pitchfork wolf leggings Wes Anderson salvia. Jean shorts butcher four loko. Helvetica placeat irony forage aliqua yr irure
+
+
+
+        %footer.site-footer
+            .inner
+                .site-map
+                    %a{:href => "gathering.html"}
+                        Gathering
+                    %a{:href => "what-if.html"}
+                        What If?
+                    %a{:href => "equip.html"}
+                        Equip
+                    %a{:href => "unleash.html"}
+                        Unleash
+                    %a{:href => "connect.html"}
+                        Connect
+                    %a{:href => "who-we-are.html"}
+                        Who We Are
+
+                .brand
+                    %a{:href => "index.html"}
+                        %img{:src => "../images/logos/ifgather-logo-white-sm.png", :alt => ""}/
 
 
     %script{:rel => "javascript", :src => "https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"}

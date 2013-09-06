@@ -1,0 +1,29 @@
+
+
+
+
+
+
+// ----------------------------
+// Component: Comment List
+// ----------------------------
+
+ul.comments-list {
+    list-style: none;
+
+    li {
+        @include rgrid(12, 4);
+        margin: 40px auto;max-height: 400px;
+    }
+
+    .dotted {
+        margin: 24px 0 0;
+
+        &:after {
+            left:0;
+            margin-left:0;
+        }
+    }
+
+
+}

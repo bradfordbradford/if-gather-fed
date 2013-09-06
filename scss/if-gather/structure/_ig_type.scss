@@ -61,6 +61,10 @@ hr {
     }
 }
 
+body ::selection {
+color: #FFF;
+background-color: #C9E4D9;
+}
 
 header.page-header {
     margin:40px auto;
@@ -88,7 +92,7 @@ header.page-header {
     }
 }
 
-.emph {
+cite, .emph {
     font-size: emCalc(16);
     font-style: italic;
     text-transform: none;
@@ -96,6 +100,34 @@ header.page-header {
     font-weight: 200;
     margin: 12px auto 14px;
     text-align: center;
+    display: block;
+}
+
+// blockquote
+
+blockquote {
+    border-left: 0;
+
+    p, cite {
+        color:$primary-color;
+    }
+
+    hr {
+        margin-left: 0;
+    }
+
+    cite {
+        font-weight: 600;
+        text-align: left;
+
+        &:before {
+            content: '';
+        }
+    }
+}
+
+cite {
+    display: inline-block;
 }
 
 .ems-before-after {
@@ -104,6 +136,7 @@ header.page-header {
     width: 32px;
     top: -4px;
     display: inline-block;
+
     margin: 0 12px;
 }
 
