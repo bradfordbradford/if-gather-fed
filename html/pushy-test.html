@@ -1,21 +1,18 @@
-
 <!DOCTYPE html>
 <html class="no-js">
     <head>
-      <!--   <meta charset="utf-8">
+        <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>Pushy - Off-Canvas Navigation Menu</title>
         <meta name="description" content="Pushy is an off-canvas navigation menu for your website.">
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
- -->
-        <!-- <link rel="stylesheet" href="http://christopheryee.ca/pushy/css/normalize.css"> -->
-        <!-- <link rel="stylesheet" href="http://christopheryee.ca/pushy/css/demo.css"> -->
+
         <!-- Pushy CSS -->
-        <link rel="stylesheet" href="http://christopheryee.ca/pushy/css/pushy.css">
+        <link rel="stylesheet" href="../css/pushy.css">
 
         <!-- jQuery -->
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
         <!-- Modernizr -->
         <script src="http://christopheryee.ca/pushy/js/vendor/modernizr-2.6.2.min.js"></script>
 
@@ -35,22 +32,86 @@
 
 
         <!-- Your Content -->
-        <div id="container">
+        <div id="site-wrap">
+            <!-- Menu Button -->
+            <div class="menu-btn">&#9776; Menu</div>
 
             <h1>Pushy</h1>
 
             <p>Pushy is a responsive off-canvas navigation menu using CSS transforms &amp; transitions.</p>
 
             <p>Feel free to <a href="http://www.twitter.com/cmyee">let me know</a> if you use Pushy in one of your websites.</p>
-            <!-- Menu Button -->
-            <div class="menu-btn">&#9776; Menu</div>
 
+            <a href="http://www.christopheryee.ca/pushy">View Demo</a> |
+            <a href="https://github.com/christophery/pushy">View Project on GitHub</a>
 
+            <h2>Features</h2>
+            <ul>
+                <li>Uses CSS transforms &amp; transitions.</li>
+                <li>Smooth performance on mobile devices.</li>
+                <li>jQuery animation fallback for IE 7 - 9.</li>
+                <li>Menu closes when a link is selected.</li>
+                <li>Menu closes when the site overlay is selected.</li>
+                <li>It's responsive!</li>
+            </ul>
+
+            <h2>Requirements</h2>
+            <ul>
+                <li>jQuery 1.9+</li>
+                <li>Modernizr</li>
+            </ul>
+
+            <h2>Browser Compatibility</h2>
+
+            <h3>Desktop</h3>
+            <ul>
+                <li>IE 7-10</li>
+                <li>Chrome</li>
+                <li>Firefox</li>
+                <li>Safari (Mac)</li>
+            </ul>
+
+            <h3>Mobile</h3>
+            <ul>
+                <li>Chrome (Android 4.2.2)</li>
+                <li>Android Browser (Android 4.2.2)</li>
+                <li>Safari (iOS 6)</li>
+            </ul>
+
+            <h2>Version history</h2>
+
+            0.9.0
+            <ul>
+                <li>Added a site overlay when Pushy is toggled</li>
+                <li>Fixed horizonal scroll bar issue on mobile devices</li>
+                <li>Disabled webkit tap highlight</li>
+                <li>Rejiggered the JS file</li>
+                <li>Updated to jQuery 1.10.1</li>
+                <li>Updated the demo file</li>
+            </ul>
+
+            0.8.4
+            <ul>
+                <li>Fixed performance issue with mobile devices</li>
+                <li>Updated to jQuery 1.10</li>
+                <li>Updated the demo file</li>
+                <li>Updated the read me</li>
+            </ul>
+
+            <h2>Thanks to</h2>
+            <ul>
+                <li><a href="http://html5boilerplate.com/">HTML5 Boilerplate</a></li>
+                <li><a href="http://jquery.com/">jQuery</a></li>
+                <li><a href="http://modernizr.com/">Modernizr</a></li>
+            </ul>
+
+            <footer>
+                Copyright (c) 2013 <a href="http://www.christopheryee.ca">Christopher Yee</a>
+            </footer>
         </div>
 
         <!-- Pushy JS -->
-        <!--<script src="http://christopheryee.ca/pushy/js/pushy.min.js"></script>-->
-        <script rel='javascript' src='../js/pushy/pushy.min.js'></script>
+        <script src="../js/pushy/pushy-new.js"></script>
 
 
     </body>

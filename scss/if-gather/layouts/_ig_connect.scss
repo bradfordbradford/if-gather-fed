@@ -24,10 +24,149 @@ body.connect {
         color: $white;
     }
 
-    form {
-        margin-top: 24px;
+
+
+    // Connect Details
+    .connect-details-wrap {
+        @include rgrid(12,5);
+        @include center-cols();
+        margin: 32px auto 16px;
+        font-size: emCalc(14);
+
+        p {
+            font-size: emCalc(14);
+        }
     }
 
+    .contact-details {
+        @include rgrid(12, 6);
+        position: relative;
+        margin-bottom: 24px;
+
+        b {
+            text-indent: -14px;
+            float:left;
+        }
+        span {
+            margin-left: 14px;
+            float:left;
+        }
+        a:hover {
+            color: $secondary-color;
+        }
+
+        &:after {
+            position: absolute;
+            right: 0;
+            @include transform(rotate(90deg));
+            content: '....';
+            letter-spacing: .24em;
+            top: 50%;
+            margin: -14px -18px;
+
+        }
+
+    }
+
+    @include breakpoint(tablet-H) {
+        .connect-details-wrap {
+            width: 54.66667%;
+        }
+        .contact-details:after {
+            content: '';
+        }
+
+    }
+    .social-details {
+        @include rgrid(12,6);
+        text-align: center;
+
+        a:hover {
+            color: $secondary-color;
+        }
+    }
+
+    // Form
+    .form-wrap {
+        @include rgrid(12,8);
+        @include center-cols();
+        margin-top:32px;
+    }
+
+    // More Info
+    .panel {
+        margin: 60px 0 24px;
+        padding: 64px 0 24px;
+        background: url(../images/patterns/sage.png) repeat;
+
+        .button:hover {
+            background: $primary-color;
+            color: white;
+        }
+    }
+
+    // Mail Chimp Modal
+    #mailchimpModal {
+        form {
+            margin: 40px 0 0;
+
+            input#mce-EMAIL {
+                @include rgrid(12, 9);
+                padding: 12px 12px 11px;
+                border-right: 0;
+            }
+
+            input.button {
+                @include rgrid(12, 3);
+
+            }
+
+        }
+    }
+
+
+    // FAQ Section
+    ul.faq-section {
+        margin-bottom: 140px;
+
+        li {
+            .cbp-nttrigger {
+                padding: 32px 0;
+                background: #eee;
+                border: 1px solid #aaa;
+                margin: 0 auto;
+                border-bottom:0;
+                @include transition(background .15s ease-in-out);
+
+            }
+
+            &:hover, &.cbp-ntopen {
+                .cbp-nttrigger {
+                    background: #d5d5d5;
+                }
+            }
+
+            &:last-child {
+                border-bottom:1px solid #aaa;
+            }
+            .cbp-ntcontent {
+
+                .inner {
+                    padding: 32px 16px;
+                    border: 1px solid #aaa;
+                    border-bottom:0;
+                }
+            }
+
+            // &:first-child {
+            //     .cbp-nttrigger {
+            //         border-bottom:0;
+            //     }
+            // }
+        }
+
+
+    }
 
 }
 

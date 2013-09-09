@@ -13,10 +13,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-h1 {
-
-}
-
 h2 {
     font-size: emCalc(20);
     letter-spacing: .4em;
@@ -28,9 +24,6 @@ h3 {
     letter-spacing: .24em;
 }
 
-h4 {
-
-}
 
 p {
     line-height: 1.9em;
@@ -61,11 +54,15 @@ hr {
     }
 }
 
+
+// Selection Settings
 body ::selection {
 color: #FFF;
 background-color: #C9E4D9;
 }
 
+
+// Page Headers
 header.page-header {
     margin:40px auto;
     text-align: center;
@@ -82,9 +79,10 @@ header.page-header {
     }
 }
 
+
 // Info Columns
 .info-col {
-    margin: 40px auto;
+    margin: 0 auto 40px;
     @include rgrid(12, 4);
 
     h4 {
@@ -92,6 +90,32 @@ header.page-header {
     }
 }
 
+.entypo-social {
+    font-family: "EntypoSocial";
+    font-size: 28px;
+
+    &.circle {
+        border: 1px solid $primary-color;
+        display: inline-block;
+        border-radius: 1000px;
+        width: 30px;
+        text-align: center;
+        @include transition(all .15s ease-in-out);
+
+        &:hover {
+            background: $secondary-color;
+            border-color:$secondary-color;
+            color: white !important;
+        }
+    }
+}
+
+
+a {
+    @include transition(color .15s ease-in-out);
+}
+
+// Cite
 cite, .emph {
     font-size: emCalc(16);
     font-style: italic;
@@ -103,8 +127,8 @@ cite, .emph {
     display: block;
 }
 
-// blockquote
 
+// blockquote
 blockquote {
     border-left: 0;
 
@@ -153,6 +177,7 @@ cite {
 .newspaper-col {
     @include columns(2 8em);
     padding: 0 15px;
+    margin-bottom: 40px;
 
     @include breakpoint(tablet-V) {
         @include columns(1);

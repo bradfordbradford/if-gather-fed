@@ -15,6 +15,7 @@
     position: relative;
     width: 100%;
     padding: .8em;
+    @include transition(all .15s ease-in-out);
 
     &.dropdown:after {
         content: '';

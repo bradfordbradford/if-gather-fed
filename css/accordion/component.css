@@ -1,0 +1,68 @@
+
+/* Accordion style */
+.faq-section {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.cbp-ntsubaccordion {
+	list-style: none;
+}
+
+.faq-section .cbp-nttrigger {
+	cursor: pointer;
+}
+
+.faq-section h3 {
+	margin: 0 0 0.3em;
+	padding: 1em 0 0.5em;
+	border-bottom: 1px solid #ddd;
+	font-size: 2.75em;
+	font-weight: 300;
+}
+
+.faq-section h4 {
+	font-size: 1.2em;
+	text-transform: uppercase;
+	letter-spacing: 0.4em;
+	padding: 0.5em 0 0.5em;
+	margin: 0 0 0.5em;
+}
+
+.faq-section h5 {
+	font-size: 1.2em;
+	color: #aaa;
+	padding: 0.5em 0 0.5em;
+	margin: 0 0 0.5em;
+}
+
+.faq-section .cbp-ntcontent p {
+	color: #888;
+	font-size: 1.25em;
+	font-weight: 300;
+	line-height: 1.5;
+	padding: 0.2em 0 1.5em;
+	margin: 0;
+}
+/* Initial height is zero */
+.faq-section .cbp-ntcontent {
+	height: 0;
+	overflow: hidden;
+}
+
+/* When open, set height to auto */
+.faq-section .cbp-ntopen > .cbp-ntcontent,
+.cbp-ntsubaccordion .cbp-ntopen > .cbp-ntcontent,
+.no-js .faq-section .cbp-ntcontent {
+	height: auto;
+}
+
+/* Example for media query */
+@media screen and (max-width: 32em) {
+
+	.faq-section {
+		font-size: 70%;
+	}
+
+}

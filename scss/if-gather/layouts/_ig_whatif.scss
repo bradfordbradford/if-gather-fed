@@ -8,7 +8,7 @@
 // Layout: What If
 // ----------------------------
 
-body.what-if {
+body.if-then {
 
     // Header & Navigation
     // -------------------
@@ -19,9 +19,9 @@ body.what-if {
     }
 
     // Brand
-    .logo {
-        background: url('../images/logos/ifgather-logo-white-shadow-large+@2x.png') no-repeat !important;
-    }
+    // .logo {
+    //     background: url('../images/logos/ifgather-logo-white-shadow-large+@2x.png') no-repeat !important;
+    // }
 
     // Navigation
     nav.site-nav ul li a {
@@ -175,6 +175,34 @@ body.what-if {
     }
 
 }
+
+  .like-page {
+    margin: 40px auto 0;
+    padding: 0 30px;
+
+    .spacer {
+        @include rgrid(2,5);
+        border-bottom: 1px solid #ABABAB;
+        position: relative;
+
+        &.left {
+            float:left;
+            top:6px;
+        }
+
+        &.right {
+            float:right;
+            top:-12px;
+        }
+
+    }
+
+    .addthis_toolbox.addthis_default_style {
+        width: 80px;
+        margin: 0 auto;
+    }
+}
+
 
 @include breakpoint(tablet-H) {
     html.touch ul.image-list {

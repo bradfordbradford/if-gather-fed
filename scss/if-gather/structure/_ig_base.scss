@@ -40,18 +40,10 @@ body {
              position: absolute;
         }
 
-        .logo {
-            background: url('../images/logos/ifgather-logo-drk-large+@2x.png') no-repeat;
-            background-size:100% !important;
-            display: inline-block;
+        @include breakpoint(tablet-V) {
+            padding: 64px 0 54px;
             margin: 0 auto;
-            height: 120px;
-            width: 44.5%;
-
-            @include breakpoint(tablet-V) {
-                width: 80%;
-                height: 80px;
-            }
+            width: 80%;
         }
 
     }
@@ -63,12 +55,15 @@ body {
         background-size: 100% !important;
     }
 }
-body.equip, body.story, body.search, body.unleash-story {
+body.blog, body.story, body.search, body.unleash-story, body.thanks {
     .site-header {
         background-size: auto !important;
     }
 }
 
+body.thanks .content-wrap {
+    padding: 100px 0 142px;
+}
 
 // Site Navigation
 // ----------------

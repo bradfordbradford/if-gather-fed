@@ -36,6 +36,8 @@
 }
 
 
+
+
 .menu-btn {
     font-family: $serif-roman;
     color: white;
@@ -56,6 +58,13 @@
         left: 5px;
     }
 }
+
+.equip, .search, .story, .unleash-story {
+  .menu-btn {
+    color: $primary-color;
+  }
+}
+
 
 @include breakpoint(tablet-V) {
     .menu-btn {

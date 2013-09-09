@@ -85,12 +85,12 @@
       $(window).triggerHandler('resize.fndtn.section');
       $(window).triggerHandler('hashchange.fndtn.section');
     },
-    
+
     //close nav !one_up on click elsewhere
     close_navs: function(except_nav_with_title) {
       var self = Foundation.libs.section,
           navsToClose = $(self.settings.nav_selector)
-            .filter(function() { return !$.extend({}, 
+            .filter(function() { return !$.extend({},
               self.settings, self.data_options($(this))).one_up; });
 
       if (except_nav_with_title.length > 0) {
@@ -138,7 +138,7 @@
     //sections:
     //  selected sections to resize, are defined on resize forced by visibility changes
     //ensure_has_active_region:
-    //  is true when we force resize for no resized sections that were hidden and became visible, 
+    //  is true when we force resize for no resized sections that were hidden and became visible,
     //  these sections can have no selected region, because all regions were hidden along with section on executing set_active_from_hash
     resize: function(sections, ensure_has_active_region) {
 
@@ -146,10 +146,10 @@
           is_small_window = self.small($(document)),
           //filter for section resize
           should_be_resized = function (section, now_is_hidden) {
-            return !self.is_accordion(section) && 
-              !section.is("[" + self.settings.resized_data_attr + "]") && 
-              (!is_small_window || self.is_horizontal_tabs(section)) && 
-              now_is_hidden === (section.css('display') === 'none' || 
+            return !self.is_accordion(section) &&
+              !section.is("[" + self.settings.resized_data_attr + "]") &&
+              (!is_small_window || self.is_horizontal_tabs(section)) &&
+              now_is_hidden === (section.css('display') === 'none' ||
               !section.parent().is(':visible'));
           };
 
@@ -170,7 +170,7 @@
             content = regions.children(self.settings.content_selector),
             titles_max_height = 0;
 
-          if (ensure_has_active_region && 
+          if (ensure_has_active_region &&
             section.children(self.settings.region_selector).filter("." + self.settings.active_class).length == 0) {
             var settings = $.extend({}, self.settings, self.data_options(section));
 
@@ -311,7 +311,7 @@
     is_vertical_tabs: function(el) {
       return /vertical-tabs/i.test(el.data('section'));
     },
-    
+
     is_auto: function (el) {
       var data_section = el.data('section');
       return data_section === '' || /auto/i.test(data_section);

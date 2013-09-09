@@ -23,9 +23,9 @@ body.home {
     .site-header .brand {
         padding: 156px 0;
 
-        .logo {
-            background: url('../images/logos/ifgather-logo-white-shadow-large+@2x.png') no-repeat;
-        }
+        // .logo {
+        //     background: url('../images/logos/ifgather-logo-white-shadow-large+@2x.png') no-repeat;
+        // }
     }
 
 
@@ -134,10 +134,9 @@ body.home {
 
         .quote {
             float:left;
-            margin: 92px 0 0 54px;
+            margin: 180px 0 0 54px;
 
             h3 {
-                width: 150px;
                 margin: 0 auto;
             }
         }
@@ -253,11 +252,6 @@ body.home {
             letter-spacing: .12em;
         }
 
-        .brackets.lrg {
-            &:before, &:after {
-                top: 80px;
-            }
-        }
         article {
             @include rgrid(12, 9);
             float: right;
@@ -283,6 +277,22 @@ body.home {
                 &:before, &:after {
                     content: '';
                 }
+            }
+        }
+
+        &.join-us {
+            text-align: center;
+            margin: 40px 0 12px;
+            position: relative;
+
+
+            &:before {
+                position: absolute;
+                content: '..............................................';
+                letter-spacing: .24em;
+                top: -52px;
+                left: 50%;
+                margin-left: -168px;
             }
         }
     }

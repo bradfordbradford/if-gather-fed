@@ -13,7 +13,7 @@
     / Style
     %link{:rel => "stylesheet", :href => "../css/site.css"}
     /[if lt IE 9 ]
-        %link{:rel => "stylesheet", :href => "../css/ie.css"}/
+    %link{:rel => "stylesheet", :href => "../css/ie.css"}/
     / Scripts
     %script{:rel => "javascript", :src => "../js/vendor/custom.modernizr.js"}
 
@@ -92,19 +92,125 @@
                         %h2
                             connect
                         %hr.dotted/
+                        %p
+                            We'd love to hear from you, so let's get in touch. Leggings eu High Life, pickled skateboard.
+
+
+
+                .row.connect-details-wrap
+                    .contact-details
+                        %p
+                            %b E:
+                            %span
+                                %a{:href => ""} connect(at)IFGATHERING.com
+
+                            %br/
+
+                            %b A:
+                            %span
+                                PO Box 5262
+                                %br/
+                                Austin, TX
+                                78763
+
+                    .social-details
+                        %a.entypo-social.circle{:href => "#"} &#62220;
+                        %a.entypo-social.circle{:href => "#"} &#62217;
+                        %a.entypo-social.circle{:href => "#"} &#62226;
+                        / %a.entypo-social.circle{:href => "#"} &#62223;
+                        / %a.entypo-social.circle{:href => "#"} &#62211;
+                        / %a.entypo-social.circle{:href => "#"} &#62214;
 
                 .row
-                    %form{:action => "#", :method => 'get'}
-                        %input.search{:type => "text", :placeholder => "First Name"}/
 
-                        %input.search{:type => "text", :placeholder => "Last Name"}/
+                    .form-wrap
+                        %form{:action => "#", :method => 'get'}
+                            %input{:type => "text", :placeholder => "First Name"}/
 
-                        %input.search{:type => "text", :placeholder => "Email Name"}/
+                            %input{:type => "text", :placeholder => "Last Name"}/
 
-                        %textarea{:name => "", :rows => '10', :cols => '10', :placeholder => "Message"}
+                            %input{:type => "text", :placeholder => "Email Name"}/
 
-                        %a.button{:href => "mailto:#"}
-                            share
+                            %textarea{:name => "", :rows => '10', :cols => '10', :placeholder => "Message"}
+
+                            %a.button{:href => "mailto:#"}
+                                share
+
+                .panel
+                    .row
+                        %section.more-info-wrap
+
+                            .info-col
+                                %h4.sans GIVE TIME
+                                %p
+                                    Sriracha flexitarian yr, umami blue bottle next level cliche ugh wolf cardigan elit laboris mustache Brooklyn meggings. Flannel est meh, Wes Anderson helvetica irony forage.
+                                %a.button{:href => ""} Volunteer
+
+                            .info-col
+                                %h4.sans GIVE MONEY
+                                %p
+                                    Sriracha flexitarian yr, umami blue bottle next level cliche ugh wolf cardigan elit laboris mustache Brooklyn meggings. Flannel est meh, Wes Anderson helvetica irony forage.
+                                %a.button{:href => ""} Donate
+
+
+                            .info-col
+                                %h4.sans STAY IN TOUCH
+                                %p
+                                    Sriracha flexitarian yr, umami blue bottle next level cliche ugh wolf cardigan elit laboris mustache Brooklyn meggings. Flannel est meh, Wes Anderson helvetica irony forage.
+                                %a.button{:"data-reveal-id" => "mailchimpModal"}
+                                    Sign Up
+
+                .row
+                    %header.page-header
+                        %h2
+                            FAQ
+                        %hr.dotted/
+
+
+                    %ul#faq-section.faq-section
+                        %li
+                            %h4.cbp-nttrigger Who will be attending this conference?
+                            .cbp-ntcontent
+                                .inner
+                                    %p
+                                        Cotton candy chocolate cake macaroon applicake I love. Tart soufflé I love powder. I love tiramisu lollipop pie. Pudding gummi bears sweet. Candy chocolate I love jujubes pie donut. Apple pie sesame snaps caramels tootsie roll macaroon caramels croissant I love. Sweet roll chocolate lemon drops. I love I love muffin gummi bears I love cotton candy.
+
+                        %li
+                            %h4.cbp-nttrigger Who will be attending this conference?
+                            .cbp-ntcontent
+                                .inner
+                                    %p
+                                        Cotton candy chocolate cake macaroon applicake I love. Tart soufflé I love powder. I love tiramisu lollipop pie. Pudding gummi bears sweet. Candy chocolate I love jujubes pie donut. Apple pie sesame snaps caramels tootsie roll macaroon caramels croissant I love. Sweet roll chocolate lemon drops. I love I love muffin gummi bears I love cotton candy.
+
+                        %li
+                            %h4.cbp-nttrigger Who will be attending this conference?
+                            .cbp-ntcontent
+                                .inner
+                                    %p
+                                        Cotton candy chocolate cake macaroon applicake I love. Tart soufflé I love powder. I love tiramisu lollipop pie. Pudding gummi bears sweet. Candy chocolate I love jujubes pie donut. Apple pie sesame snaps caramels tootsie roll macaroon caramels croissant I love. Sweet roll chocolate lemon drops. I love I love muffin gummi bears I love cotton candy.
+
+                        %li
+                            %h4.cbp-nttrigger Who will be attending this conference?
+                            .cbp-ntcontent
+                                .inner
+                                    %p
+                                        Cotton candy chocolate cake macaroon applicake I love. Tart soufflé I love powder. I love tiramisu lollipop pie. Pudding gummi bears sweet. Candy chocolate I love jujubes pie donut. Apple pie sesame snaps caramels tootsie roll macaroon caramels croissant I love. Sweet roll chocolate lemon drops. I love I love muffin gummi bears I love cotton candy.
+
+                        %li
+                            %h4.cbp-nttrigger Who will be attending this conference?
+                            .cbp-ntcontent
+                                .inner
+                                    %p
+                                        Cotton candy chocolate cake macaroon applicake I love. Tart soufflé I love powder. I love tiramisu lollipop pie. Pudding gummi bears sweet. Candy chocolate I love jujubes pie donut. Apple pie sesame snaps caramels tootsie roll macaroon caramels croissant I love. Sweet roll chocolate lemon drops. I love I love muffin gummi bears I love cotton candy.
+
+                        %li
+                            %h4.cbp-nttrigger Who will be attending this conference?
+                            .cbp-ntcontent
+                                .inner
+                                    %p
+                                        Cotton candy chocolate cake macaroon applicake I love. Tart soufflé I love powder. I love tiramisu lollipop pie. Pudding gummi bears sweet. Candy chocolate I love jujubes pie donut. Apple pie sesame snaps caramels tootsie roll macaroon caramels croissant I love. Sweet roll chocolate lemon drops. I love I love muffin gummi bears I love cotton candy.
+
+
 
 
 
@@ -131,9 +237,26 @@
                         %a{:href => "index.html"}
                             %img{:src => "../images/logos/ifgather-logo-white-sm.png", :alt => ""}/
 
+    #mailchimpModal.reveal-modal
+        %h2
+            join our tribe
+
+        %form{:action => ""}
+            %input#mce-EMAIL{:type => "text"}/
+            %input.button{:type => "submit"}/
+
 
     %script{:rel => "javascript", :src => "https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"}
     %script{:rel => "javascript", :src => "../js/pushy/pushy.min.js"}
-    %script{:rel => "javascript", :src => "../js/site-ck.js"}
+
+    %script{:rel => "javascript", :src => "../js/foundation/ig_foundation-dropdown.js"}
+
+    %script{:rel => "javascript", :src => "../js/accordion/jquery.cbpNTAccordion.min.js"}
+    %script
+        $( function() {
+
+        $( '#faq-section' ).cbpNTAccordion();
+
+        } );
 
 

@@ -7,20 +7,20 @@
 // ----------------------------
 // Layout: Equip
 // ----------------------------
-body.equip, body.story, body.search {
+body.blog, body.story, body.search {
 
 
     // Feature IMG
-    .feature-img {
-        position: absolute;
-        top: 0;
-        z-index: -1;
-        margin: 5px 0 0;
+    // .feature-img {
+    //     position: absolute;
+    //     top: 0;
+    //     z-index: -1;
+    //     margin: 5px 0 0;
 
-        img {
-            position: fixed;
-        }
-    }
+    //     img {
+    //         position: fixed;
+    //     }
+    // }
 
 
     // Navigation
@@ -160,6 +160,9 @@ body.equip, body.story, body.search {
             .date {
                 float:none;
             }
+            h4 {
+                width: auto;
+            }
         }
     }
 
@@ -192,6 +195,10 @@ body.equip, body.story, body.search {
                 color: $secondary-color;
             }
         }
+    }
+
+    #disqus_thread {
+        margin: 40px 32px 18px;
     }
 }
 
