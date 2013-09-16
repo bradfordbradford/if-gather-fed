@@ -1,41 +1,154 @@
 <!DOCTYPE html>
-<!--[if lt IE 9]> <html lang="en" class="no-js lt-ie9"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<html>
 <head>
-  <!-- Meta -->
-  <meta charset='UTF-8'>
-  <title>If: Gather --dev</title>
-  <meta content='If:Gather is…' name='description'>
-  <meta content='If:Gather' name='author'>
-  <meta content='width=device-width,initial-scale=1' name='viewport'>
-  <!-- Style -->
-  <!-- <link href='../css/site.css' rel='stylesheet'> -->
-  <link rel="stylesheet" href="http://christopheryee.ca/pushy/css/pushy.css">
+<meta charset="utf-8" />
 
-  <!-- Scripts -->
-  <script rel='javascript' src='../js/vendor/custom.modernizr.js'></script>
-  <body>
-    <div class="section-container accordion" data-section="accordion">
-  <section>
-    <p class="title" data-section-title><a href="#">Section 1</a></p>
-    <div class="content" data-section-content>
-      <p>Content of section 1.</p>
-    </div>
-  </section>
-  <section>
-    <p class="title" data-section-title><a href="#">Section 2</a></p>
-    <div class="content" data-section-content>
-      <p>Content of section 2.</p>
-    </div>
-  </section>
-</div>
-    </div>
-  </body>
-  <script rel='javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
-  <script rel='javascript' src='../js/foundation/ig_foundation-dropdown.js'></script>
+<!-- Website Design By: www.happyworm.com -->
+<title>Demo : jPlayer as a text based audio player</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://sites.tc/Resources/jQuery.jPlayer.2.4.0/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript">
+//<![CDATA[
 
+$(document).ready(function(){
+
+    // Local copy of jQuery selectors, for performance.
+    var my_jPlayer = $("#jquery_jplayer"),
+        my_trackName = $("#jp_container .track-name"),
+        my_playState = $("#jp_container .play-state"),
+        my_extraPlayInfo = $("#jp_container .extra-play-info");
+
+    // Some options
+    var opt_play_first = false, // If true, will attempt to auto-play the default track on page loads. No effect on mobile devices, like iOS.
+        opt_auto_play = true, // If true, when a track is selected, it will auto-play.
+        opt_text_playing = "Now playing", // Text when playing
+        opt_text_selected = "Track selected"; // Text when not playing
+
+    // A flag to capture the first track
+    var first_track = true;
+
+    // Change the time format
+    $.jPlayer.timeFormat.padMin = false;
+    $.jPlayer.timeFormat.padSec = false;
+    $.jPlayer.timeFormat.sepMin = " min ";
+    $.jPlayer.timeFormat.sepSec = " sec";
+
+    // Initialize the play state text
+    my_playState.text(opt_text_selected);
+
+    // Instance jPlayer
+    my_jPlayer.jPlayer({
+        ready: function () {
+            $("#jp_container .track-default").click();
+        },
+        timeupdate: function(event) {
+            my_extraPlayInfo.text(parseInt(event.jPlayer.status.currentPercentAbsolute, 10) + "%");
+        },
+        play: function(event) {
+            my_playState.text(opt_text_playing);
+        },
+        pause: function(event) {
+            my_playState.text(opt_text_selected);
+        },
+        ended: function(event) {
+            my_playState.text(opt_text_selected);
+        },
+        swfPath: "js",
+        cssSelectorAncestor: "#jp_container",
+        supplied: "mp3",
+        wmode: "window"
+    });
+
+    // Create click handlers for the different tracks
+    $("#jp_container .track").hover(function(e) {
+        my_trackName.text($(this).text());
+        my_jPlayer.jPlayer("setMedia", {
+            mp3: $(this).attr("href")
+        });
+        my_jPlayer.jPlayer("play");
+        first_track = false;
+        $(this).blur();
+        return false;
+    });
+
+    $("#jp_container .track").mouseout(function(e) {
+        my_trackName.text($(this).text());
+        my_jPlayer.jPlayer("setMedia", {
+            mp3: $(this).attr("href")
+        });
+        my_jPlayer.jPlayer("stop");
+        first_track = false;
+        $(this).blur();
+        return false;
+    });
+
+});
+//]]>
+</script>
+
+<style>
+<!--
+
+.demo-container {
+
+    padding:0 20px;
+    font-family: "Myriad Pro Regular","Trebuchet MS";
+}
+
+ul li {
+    width: 15%;
+    /*float:left;*/display: inline-block;
+}
+
+
+.track {
+    /*position: absolute;*/
+
+}
+
+img {
+    max-width: 100%;
+}
+.demo-container a, .demo-container a:link, .demo-container a:visited, .demo-container a:hover, .demo-container a:focus, .demo-container a:active {
+    color: #009BE3;
+}
+
+.demo-container ul {
+    list-style-type:none;
+    padding:0;
+    margin:1em 0;
+    width:100%;
+    overflow:hidden;
+}
+
+</style>
 
 </head>
+<body>
+
+        <div id="jquery_jplayer"></div>
 
 
+        <div id="jp_container" class="demo-container">
+            <ul>
 
+
+                <li><a href="http://www.jplayer.org/audio/mp3/Miaow-05-The-separation.mp3" class="track">
+                    <img src="http://rdio-c.cdn3.rdio.com/album/a/8/2/000000000001e28a/square-600.jpg" alt="">
+                </a></li>
+
+                <li><a href="http://www.jplayer.org/audio/mp3/Miaow-04-Lismore.mp3" class="track">
+                    <img src="http://rdio-b.cdn3.rdio.com/album/9/e/f/0000000000239fe9/2/square-600.jpg" alt="">
+                </a></li>
+
+                <li><a href="http://www.jplayer.org/audio/mp3/Miaow-10-Thin-ice.mp3" class="track">
+                    <img src="http://rdio-a.cdn3.rdio.com/album/1/7/1/00000000002c7171/1/square-600.jpg" alt="">
+                </a></li>
+            </ul>
+
+        </div>
+
+</body>
+
+</html>

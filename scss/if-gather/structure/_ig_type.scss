@@ -88,18 +88,24 @@ header.page-header {
     h4 {
         font-size: emCalc(16);
     }
+
+    p {
+        text-align: justify;
+    }
 }
 
 .entypo-social {
-    font-family: "EntypoSocial";
-    font-size: 28px;
+    font-family: "EntypoSocial" !important;
+    font-size: 28px !important;
 
     &.circle {
         border: 1px solid $primary-color;
         display: inline-block;
         border-radius: 1000px;
         width: 30px;
-        text-align: center;
+        text-align: center !important;
+        letter-spacing: 0 !important;
+        padding: 0 !important;
         @include transition(all .15s ease-in-out);
 
         &:hover {

@@ -20,6 +20,15 @@ body {
     position: relative;
 }
 
+
+// Site Content
+// ----------------
+.content-wrap {
+    background: $white;
+    padding-bottom: 142px;
+}
+
+
 // Site Header
 // ----------------
 
@@ -55,14 +64,21 @@ body {
         background-size: 100% !important;
     }
 }
-body.blog, body.story, body.search, body.unleash-story, body.thanks {
+body.blog, body.story, body.search, body.unleash-story, body.thanks,  body.connect {
     .site-header {
         background-size: auto !important;
     }
+    nav.site-nav ul li a {
+        text-shadow: none !important;
+    }
 }
 
-body.thanks .content-wrap {
+body.thanks .content-wrap, body.register .content-wrap {
     padding: 100px 0 142px;
+}
+
+body.home .content-wrap {
+    padding-bottom:0;
 }
 
 // Site Navigation
@@ -88,10 +104,11 @@ nav.site-nav {
                 position: relative;
                 font-size: emCalc(14);
                 @include transition(all .15s ease-in-out);
+                text-shadow: 1px 1px 11px #333;
 
-                &:hover {
-                    color: $secondary-color !important;
-                }
+                // &:hover {
+                //     color: $primary-color !important;
+                // }
             }
 
             &.active {
@@ -131,13 +148,6 @@ nav.site-nav {
 
 #container {
     position: relative;
-}
-
-// Site Content
-// ----------------
-.content-wrap {
-    background: $white;
-    padding-bottom: 142px;
 }
 
 
@@ -188,6 +198,32 @@ nav.site-nav {
         padding: 0 20px;
     }
 
+
+    .social-details {
+        clear: both;
+        text-align: left;
+        margin: 12px -20px 0;
+        float: left;
+
+        .entypo-social.circle {
+            border-color:white;
+
+            &:hover {
+                border-color: $primary-color;
+                background: $primary-color;
+            }
+        }
+    }
+
+    .logged-in-author {
+        text-align: center;
+        margin-top: 24px;
+        border-top: 1px solid #FFF;
+        padding: 24px 0 0;
+    }
+
+    #facebook-like {clear: both; margin: 94px -20px 0;}
+
     @include breakpoint(tablet-V) {
 
         .brand {
@@ -200,6 +236,17 @@ nav.site-nav {
             float: none;
             text-align: center;
             margin-bottom: 20px;
+        }
+
+        .social-details {
+            text-align: center;
+            margin: 24px -20px 0;
+            float: none;
+        }
+
+        .addthis_toolbox.addthis_default_style {
+            width: 94px;
+            margin: 12px auto;
         }
 
     }

@@ -9,16 +9,12 @@
 // ----------------------------
 
 ul.post-list {
-    min-height: 540px;
+    min-height: 340px;
     list-style: none;
 
     li {
 
         border-bottom: 1px $primary-color solid;
-
-        &:first-child {
-            border-top:1px $primary-color solid;
-        }
 
         &:last-child {
             border-bottom:0px;

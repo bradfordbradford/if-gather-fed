@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Audio - Play On Hover Test</title>
+
+    <style>
+    .birds {
+        height: 100px;
+        width: 100px;
+        background: black;
+    }
+    </style>
+</head>
+<body>
+
+    <a href="http://www.jplayer.org/audio/mp3/Miaow-05-The-separation.mp3" class="play">play</a>
+
+    <!-- <div class="birds">
+       <audio src="http://www.jplayer.org/audio/mp3/Miaow-05-The-separation.mp3" preload="auto"></audio>
+    </div> -->
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+    (function($) {
+        $(function(){
+                $("a.play").each(function() {
+                  $(this).mouseover(function(){
+                       var mp3file = $(this).attr('href');
+                       // asign this mp3file to the player and play it
+                  }).mouseout(function() {
+                       // tell the mp3 player to stop
+                  });
+                });
+        });
+    })(jQuery);
+
+    // $(function(){
+    //     var birdhover     = $('.birds');
+    //         var birdaudio = birdhover.find('audio')[0];
+
+    //     birdhover.hover(function(){
+    //        birdaudio.play();
+    //     }, function(){
+    //        birdaudio.stop();
+    //     });
+    // });
+    </script>
+
+</body>
+</html>

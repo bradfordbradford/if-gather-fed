@@ -25,6 +25,21 @@ body.who-we-are {
         color: $white;
     }
 
+    // Message
+    .jennie-message {
+        @include rgrid(10, 7);
+        @include center-cols();
+
+        h3 {
+            margin: 0;
+            padding: 30px 0 24px;
+        }
+    }
+
+    #videoModal.reveal-modal.open {
+        padding: 0 !important;
+    }
+
     // Headers
     header.page-section-header {
         margin: 32px auto 60px;
@@ -36,6 +51,8 @@ body.who-we-are {
         padding: 24px 0 142px;
         background: url(../images/patterns/cream.png) repeat;
     }
+
+
 
 
 }

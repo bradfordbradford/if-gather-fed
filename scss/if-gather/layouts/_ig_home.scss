@@ -16,7 +16,7 @@ body.home {
 
     // Site Header
     .site-header {
-        background: url('../images/banners/banner-1.jpg')0 -30px;
+        background: url('../images/banners/banner-1.jpg')0 0;
     }
 
     // Brand
@@ -80,7 +80,7 @@ body.home {
             .what-if-clg {
                 background: url(../images/collages/what-if-clg.png) no-repeat;
                 height: 229px;
-                width: 100%;
+                width: 610px;
                 position: absolute;
                 top: 12px;
             }
@@ -100,7 +100,7 @@ body.home {
                     }
                 }
                 .what-if-clg {
-                    left: -32px;
+                    left: -312px;
                 }
 
             }
@@ -135,9 +135,11 @@ body.home {
         .quote {
             float:left;
             margin: 180px 0 0 54px;
+            padding: 40px 52px 38px;
 
             h3 {
                 margin: 0 auto;
+                font-size: 1.05em;
             }
         }
 
